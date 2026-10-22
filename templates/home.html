@@ -31,6 +31,20 @@
   <p class="meta">All papers, with abstracts, DOIs, and BibTeX, on the <a href="/research/">research page</a>.</p>
 </section>
 
+<section>
+  <h2>{{ cfg.weekly_name }}</h2>
+  <p class="meta">{{ cfg.weekly_tagline }}. <a href="/blog/">All posts</a> · <a href="/blog/feed.xml">RSS</a></p>
+  <div class="cards">
+  {% for post in weekly[:3] %}
+  <article class="card">
+    <p class="meta"><time datetime="{{ post.date }}">{{ post.date|longdate }}</time> · {{ post.reading }} min</p>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="blurb">{{ post.description }}</p>
+  </article>
+  {% endfor %}
+  </div>
+</section>
+
 <section class="two-col">
   <div>
     <h2>News</h2>

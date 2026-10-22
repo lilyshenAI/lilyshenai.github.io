@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/listing-language-house-price-discovery/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of my working paper Listing Language and House Price Discovery. From 2.03 million MLS listings, AI-assisted measures of demand heat, seller pressure, and asset frictions predict sale prices, marketing time, and six-month county price-index growth, and the design replicates in Georgia, a market never used for estimation.

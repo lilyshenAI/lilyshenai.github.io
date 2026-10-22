@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of my working paper Soft Information and Price Discovery in Illiquid Asset Markets. Using 63,067 Atlanta listings, seller-stress language tracks local market weakness; part of the signal is distressed-sale composition, but the text channels remain jointly significant predictors of next-year local price-index changes after composition is controlled.

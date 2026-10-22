@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: An introduction to this site: who writes it, the three research strands it covers (text as priced information in housing markets, machine learning on financial contracts, and AI and the people who intermediate the market), and how to cite the posts and the papers behind them.

@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/cheap-talk-or-priced-information-listing-remarks/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of my working paper Cheap Talk or Priced Information? In 63,067 Atlanta MLS transactions, residual listing information is associated with 7.7 percent higher sale prices and 2.5 fewer days on market, adverse disclosure with 17.4 percent lower sale prices, and urgency language with 4.7 percent lower sale prices, showing that remarks carry priced information beyond structured MLS fields.

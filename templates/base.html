@@ -8,7 +8,9 @@
 <meta name="author" content="{{ cfg.author.name|e }}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="{{ canonical }}">
-<link rel="alternate" type="application/rss+xml" title="{{ cfg.blog_name|e }}" href="{{ site }}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.site_name|e }}: all posts" href="{{ site }}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.weekly_name|e }}" href="{{ site }}/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.blog_name|e }}" href="{{ site }}/posts/feed.xml">
 {% if md_twin %}<link rel="alternate" type="text/markdown" title="Markdown version" href="{{ site }}{{ md_twin }}">
 {% endif %}
 {% block head %}{% endblock %}
@@ -32,6 +34,7 @@
       <a href="/research/"{% if nav == 'research' %} class="on"{% endif %}>Research</a>
       <a href="/teaching/"{% if nav == 'teaching' %} class="on"{% endif %}>Teaching</a>
       <a href="/talks/"{% if nav == 'talks' %} class="on"{% endif %}>Talks &amp; media</a>
+      <a href="/blog/"{% if nav == 'blog' %} class="on"{% endif %}>AI Weekly</a>
       <a href="/posts/"{% if nav == 'posts' %} class="on"{% endif %}>Notes</a>
       <a href="/cv/"{% if nav == 'cv' %} class="on"{% endif %}>CV</a>
     </nav>

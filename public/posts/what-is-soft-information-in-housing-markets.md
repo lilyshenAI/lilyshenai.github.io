@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Soft information is what a listing says that structured fields cannot: condition, character, seller circumstances, local demand. This explainer defines the term, contrasts it with hard information, and summarizes what my research finds when listing text is measured with machine learning: it is priced, it changes marketing time, and it moves before price indices do.

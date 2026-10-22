@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.

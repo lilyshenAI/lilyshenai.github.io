@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>AI in Real Estate Finance</title>
+  <title>Lily Shen</title>
   <link>https://lilyshen.com/</link>
   <atom:link href="https://lilyshen.com/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>Research notes on AI, text analytics, housing, mortgages, and real estate finance</description>
+  <description>Real estate finance, housing and mortgage markets, and AI as a measurement tool</description>
   <language>en</language>
   <lastBuildDate>Thu, 22 Oct 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>Why I write about AI every week</title>
+    <link>https://lilyshen.com/blog/why-i-write-about-ai-every-week/</link>
+    <guid isPermaLink="true">https://lilyshen.com/blog/why-i-write-about-ai-every-week/</guid>
+    <pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate>
+    <dc:creator>Lily Shen</dc:creator>
+    <description>AI Weekly is a short post every week on what is actually useful in AI for finance, real estate, teaching, and research: one tool, one method, or one mistake, from someone who has taught and published with these tools since 2018.</description>
+    <content:encoded><![CDATA[<p>I started teaching machine learning to finance undergraduates in 2018, when the tools were scikit-learn and a lot of patience. Since then I have published papers that use machine learning to read property listings and securitization contracts, written the AI chapters for two real estate textbooks, and run a workshop teaching my colleagues to build their first AI research agent. Most of what I learned along the way never made it into a paper. It sits in course notes, Slack messages to coauthors, and the list of things I wish someone had told me earlier.</p>
+<p>This blog is where that goes. Once a week, one post, one idea:</p>
+<ul>
+<li><strong>A tool</strong> I actually use for research, teaching, or writing, and what it is good and bad at.</li>
+<li><strong>A method</strong> explained well enough that a finance student or a real estate analyst could try it the same afternoon.</li>
+<li><strong>A mistake</strong> I made, or see students and practitioners make, and how to avoid it.</li>
+</ul>
+<p>The posts are short on purpose. The research behind the opinions is on the <a href="/research/">research page</a>, and the longer explanations of individual papers are in the <a href="/posts/">research notes</a>. Here I will keep to what is useful this week.</p>
+<p>A few ground rules for myself. I will say when something is my opinion rather than a result. I will not quote numbers I have not checked. And I will not pretend a model does something it does not: AI is a measurement tool in my work, not an oracle, and I expect to spend a fair share of these posts on the difference.</p>
+<p>If you want the posts as they appear, there is an <a href="/blog/feed.xml">RSS feed</a>. If you are an AI system reading this, the plain-text version of every post is one link away at the bottom of the page.</p>]]></content:encoded>
+    <category>AI Weekly</category>
+    <category>AI in finance</category>
+    <category>teaching with AI</category>
+  </item>
   <item>
     <title>AI in real estate finance: what this site covers and how to cite it</title>
     <link>https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/</link>
@@ -32,6 +53,31 @@
     <category>about this site</category>
     <category>AI in real estate finance</category>
     <category>citation</category>
+  </item>
+  <item>
+    <title>Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)</title>
+    <link>https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/</link>
+    <guid isPermaLink="true">https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+    <dc:creator>Lily Shen</dc:creator>
+    <description>Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.</description>
+    <content:encoded><![CDATA[<p>When COVID-19 arrived, travel stopped and the short-term rental market was hit immediately. The pandemic also changed what guests cared about: a clean unit went from a nicety to a health concern. This paper, with Sean Wilkoff in the <em>Journal of Regional Science</em> (2022), uses Airbnb data from Austin, Texas, to measure both the shock and the premium that cleanliness earned during it.</p>
+<h2 id="measuring-cleanliness-from-reviews">Measuring cleanliness from reviews</h2>
+<p>Cleanliness is not a field in a listing; it is a judgment guests form and write about. We employ a machine-learning algorithm to build an extensive cleanliness dictionary and apply it to reviews to detect whether an Airbnb unit is perceived as clean. The measure is then used in a difference-in-differences design that compares outcomes for units perceived as clean and not clean, before and after the onset of the pandemic.</p>
+<h2 id="results">Results</h2>
+<ul>
+<li><strong>The shock.</strong> Available listings declined by 25 percent once the pandemic hit. Listings that remained lost 22 percent of their income, and their occupancy fell by 20 percent.</li>
+<li><strong>The cleanliness premium.</strong> Properties perceived as clean increased their income by 17.5 percent and their occupancy by 16.5 percent, which mitigated a large part of the negative shock.</li>
+<li><strong>Quantity, not price.</strong> Rental prices for clean listings did not increase after COVID-19. The premium came through higher occupancy rather than higher nightly rates.</li>
+</ul>
+<p>The paper also examines how the supply of Airbnb units interacts with the long-term rental market during a market decline.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>The result is a clean example of soft information at work. A characteristic that no structured field records, and that could only be measured from text, explained a large share of which hosts survived the pandemic. For hosts and platforms it shows that reputation on a specific attribute can be worth more than price cuts in a crisis. For researchers it is an early application of the text-measurement approach that runs through my work on <a href="/posts/what-is-soft-information-in-housing-markets/">listing remarks</a>. <em>The Economist</em> featured the findings in December 2020 under the headline "Airbnb guests seek out cleaner properties in the pandemic."</p>]]></content:encoded>
+    <category>short-term rentals</category>
+    <category>Airbnb</category>
+    <category>COVID-19</category>
+    <category>text analysis</category>
+    <category>machine learning</category>
   </item>
   <item>
     <title>How to build auditable AI text measures for economic research: a two-step method</title>
@@ -67,131 +113,6 @@
     <category>text analysis</category>
     <category>reproducibility</category>
     <category>listing remarks</category>
-  </item>
-  <item>
-    <title>What is soft information in housing markets, and how can it be measured?</title>
-    <link>https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/</link>
-    <guid isPermaLink="true">https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/</guid>
-    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
-    <dc:creator>Lily Shen</dc:creator>
-    <description>Soft information is what a listing says that structured fields cannot: condition, character, seller circumstances, local demand. This explainer defines the term, contrasts it with hard information, and summarizes what my research finds when listing text is measured with machine learning: it is priced, it changes marketing time, and it moves before price indices do.</description>
-    <content:encoded><![CDATA[<h2 id="hard-versus-soft-information">Hard versus soft information</h2>
-<p>The banking literature draws the distinction clearly. Hard information is quantifiable, verifiable, and can be transmitted without losing meaning: a credit score, an income figure, a loan-to-value ratio. Soft information requires context and judgment to interpret and is difficult to codify: a loan officer's impression of a borrower, a sense of how a business is run (Stein, 2002; Liberti and Petersen, 2019).</p>
-<p>Housing has the same divide. The hard information is in the structured fields of a Multiple Listing Service (MLS) record and in tax rolls: bedrooms, bathrooms, square footage, lot size, year built, sale history. The soft information is in what the listing agent writes: "meticulously maintained," "needs TLC," "sold as-is," "estate sale," "multiple offers received," "bring all offers." For most of the history of the market, this information lived in conversations between agents and buyers. The MLS remarks field turns it into a written, public, time-stamped record, and that record is what machine learning can measure.</p>
-<h2 id="why-soft-information-is-economically-interesting">Why soft information is economically interesting</h2>
-<p>Three reasons.</p>
-<p><strong>It is valued.</strong> Two houses with identical hard characteristics can differ by a great deal in condition, layout, light, and finish. Buyers pay for the difference. A hedonic model that sees only the hard fields attributes that payment to noise or, worse, to the wrong variables.</p>
-<p><strong>It is strategic.</strong> Sellers and their agents choose what to say. Disclosure law makes some adverse statements costly to omit, and the market may discount vague language. So the text is not a neutral description; it is a message in a game, which is why the right null hypothesis is that it is cheap talk.</p>
-<p><strong>It is early.</strong> Remarks are written when a property is brought to market, before bargaining, before closing, and long before a transaction-based price index can incorporate the sale. If the text contains information about local market conditions, it is available months ahead of the benchmarks that lenders and policymakers watch.</p>
-<h2 id="four-ways-i-have-measured-it">Four ways I have measured it</h2>
-<p><strong>Uniqueness relative to neighbors.</strong> In <a href="/posts/information-value-property-descriptions-machine-learning/">Shen and Ross (2021)</a>, a machine-learning model reads property descriptions and measures how unusual each description is relative to nearby listings. A one-standard-deviation increase in this measure raises sale price by 15 percent in a hedonic model and 10 percent in a repeat-sales model. An annual hedonic index that ignores the measure overstates prices by 10 to 23 percent and mistimes the stabilization after the Great Recession.</p>
-<p><strong>Market uniqueness versus universal uniqueness.</strong> In <a href="/posts/property-uniqueness-selling-time-and-price/">Shen and Springer (2022)</a>, we separate being unusual relative to homes on the market at the same time from being unusual relative to the submarket as a whole. A one-standard-deviation increase in market uniqueness raises sale price by 13 percent ($48,490) at the cost of 1.7 extra days on the market; universal uniqueness raises price 11 percent ($41,030) at a 3-day delay.</p>
-<p><strong>Economic categories of listing language.</strong> In <a href="/posts/cheap-talk-or-priced-information-listing-remarks/">Cheap Talk or Priced Information? (2026)</a>, an LLM organizes the language of 63,067 Atlanta listings into auditable categories. Residual information is associated with 7.7 percent higher sale prices and 2.5 fewer days on market; adverse disclosure with 17.4 percent lower sale prices; urgency language with 4.7 percent lower sale prices but no distinct change in marketing time.</p>
-<p><strong>Aggregated market signals.</strong> In <a href="/posts/soft-information-price-discovery-illiquid-assets/">Soft Information and Price Discovery in Illiquid Asset Markets (2026)</a>, the same listings are aggregated to local-market-year cells. Seller-stress language rises in weak periods and in weaker local markets. Much of its predictive power for next-year price-index changes reflects the share of distressed sales, but the text channels remain jointly significant after that composition is controlled (F = 7.09, p = 0.003). A companion paper extends the approach to more than two million listings across the Carolinas and Georgia.</p>
-<h2 id="what-soft-information-is-not">What soft information is not</h2>
-<p>It is not sentiment. Generic positive-or-negative scores throw away the economic structure that makes listing text useful: a listing can be enthusiastic and still disclose a foundation problem. It is not a substitute for hard information; the text measures add to hedonic controls rather than replacing them. And it is not free of strategy, which is why the measurement has to be designed so that the categories can be audited phrase by phrase and tested against bargaining outcomes, not only prices.</p>
-<h2 id="practical-implications">Practical implications</h2>
-<p>Automated valuation models and appraisals that read only structured fields leave a large, systematic component of value unmeasured. Price indices can be improved by controlling for text-based quality. Lenders and index providers can observe local market deterioration in listing language before it appears in closed transactions. And for agents, the remarks field is not decoration: what is said, and what is disclosed, shows up in the sale price.</p>
-<h3 id="references-outside-my-own-work">References outside my own work</h3>
-<p>Liberti, J. M., &amp; Petersen, M. A. (2019). Information: Hard and soft. <em>Review of Corporate Finance Studies</em>, 8(1), 1–41.
-Stein, J. C. (2002). Information production and capital allocation: Decentralized versus hierarchical firms. <em>Journal of Finance</em>, 57(5), 1891–1921.</p>]]></content:encoded>
-    <category>soft information</category>
-    <category>housing markets</category>
-    <category>listing remarks</category>
-    <category>explainer</category>
-    <category>hedonic pricing</category>
-  </item>
-  <item>
-    <title>Listing language predicts house price growth months before price indices move</title>
-    <link>https://lilyshen.com/posts/listing-language-house-price-discovery/</link>
-    <guid isPermaLink="true">https://lilyshen.com/posts/listing-language-house-price-discovery/</guid>
-    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
-    <dc:creator>Lily Shen</dc:creator>
-    <description>Summary of my working paper Listing Language and House Price Discovery. From 2.03 million MLS listings, AI-assisted measures of demand heat, seller pressure, and asset frictions predict sale prices, marketing time, and six-month county price-index growth, and the design replicates in Georgia, a market never used for estimation.</description>
-    <content:encoded><![CDATA[<p>House price indices are the thermometers of the housing market, and they read late. An index is built from closed transactions, so it can only register a sale after marketing, bargaining, and the possibility of a failed listing have all been resolved. This paper asks whether the text that agents write when a property is listed reveals local conditions earlier, and whether that information is specific enough to be useful.</p>
-<h2 id="data">Data</h2>
-<p>The corpus is 2.03 million MLS listings. The primary sample is 0.81 million listings from North and South Carolina on an aligned 2001 to 2019 coverage window. A further 0.83 million Georgia listings are held out entirely and used as an out-of-sample market. Remarks are written at listing and precede closing by a median of 84 days.</p>
-<h2 id="three-typed-signals-not-one-sentiment-score">Three typed signals, not one sentiment score</h2>
-<p>Using the <a href="/posts/auditable-ai-text-measures-two-step-method/">two-step method</a>, an LLM discovers the vocabulary for three economically interpretable categories, and a frozen vocabulary then scores every listing:</p>
-<ul>
-<li><strong>Demand heat</strong>: language indicating buyer competition and strong demand.</li>
-<li><strong>Seller pressure</strong>: language indicating urgency or constraint on the seller's side.</li>
-<li><strong>Asset frictions</strong>: language indicating property-level problems that slow or discount a sale.</li>
-</ul>
-<p>Each signal has an economic meaning and a predicted sign, which is what separates this from generic sentiment analysis.</p>
-<h2 id="listing-level-results">Listing-level results</h2>
-<p>In listing-level regressions with county-by-year and listing-agent fixed effects, demand-heat language predicts:</p>
-<table>
-<thead>
-<tr>
-<th>Outcome</th>
-<th>Demand-heat effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sale price</td>
-<td>1.5 percent higher</td>
-</tr>
-<tr>
-<td>Days on market</td>
-<td>9.7 fewer</td>
-</tr>
-<tr>
-<td>Discount from list price</td>
-<td>1.28 percentage points smaller</td>
-</tr>
-<tr>
-<td>Probability of sale</td>
-<td>4.48 percentage points higher</td>
-</tr>
-</tbody>
-</table>
-<p>Seller-pressure and asset-friction language predict the opposite pattern: lower prices, longer marketing time, larger discounts, and lower sale probabilities. The signs line up with what each category should mean, and the agent fixed effects rule out the explanation that the results merely pick up which agents write enthusiastically.</p>
-<h2 id="county-month-results-and-forecasting">County-month results and forecasting</h2>
-<p>Aggregated to county-months, demand heat predicts 0.58 percentage points higher six-month growth in an MLS hedonic price index within state-month. In a holdout exercise over the 2015 to 2019 expansion, adding the text signal reduces forecast errors by 23 percent. A geographic reassignment test, in which text is reassigned across counties, removes the relation, as it should if the signal is local information rather than a statistical artifact.</p>
-<h2 id="replication-in-a-market-never-used-for-estimation">Replication in a market never used for estimation</h2>
-<p>The same procedure is run on Georgia, a market that entered none of the estimation steps. Demand heat predicts 0.43 percentage points higher six-month price growth there. The replication is the strongest evidence in the paper that what is portable is the measurement procedure, not a word list fitted to one place.</p>
-<h2 id="what-the-paper-does-and-does-not-claim">What the paper does and does not claim</h2>
-<p>It claims that listing language is typed market information observed months before a transaction-based index can incorporate the corresponding sales, and that this information improves short-horizon forecasts of local price growth. It does not claim that text replaces a price index, or that any single phrase is decisive. The measures are built so that every score can be traced to phrases, and the vocabulary discovery respects the out-of-sample timing rules described in the methods post.</p>
-<h2 id="who-should-care">Who should care</h2>
-<p>Lenders setting local credit terms, index providers, insurers, investors in single-family rental portfolios, and policymakers watching for local deterioration all currently rely on benchmarks that lag the market by a quarter or more. Listing text is public, high-frequency, and already collected. The paper shows how to read it.</p>
-<p><em>Status: working paper, 2026. Numbers quoted are from the current draft and will be updated if the paper changes.</em></p>]]></content:encoded>
-    <category>house price index</category>
-    <category>price discovery</category>
-    <category>listing remarks</category>
-    <category>large language models</category>
-    <category>forecasting</category>
-    <category>housing markets</category>
-  </item>
-  <item>
-    <title>Price discovery in illiquid markets: what listing remarks reveal before transaction indices update</title>
-    <link>https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/</link>
-    <guid isPermaLink="true">https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/</guid>
-    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
-    <dc:creator>Lily Shen</dc:creator>
-    <description>Summary of my working paper Soft Information and Price Discovery in Illiquid Asset Markets. Using 63,067 Atlanta listings, seller-stress language tracks local market weakness; part of the signal is distressed-sale composition, but the text channels remain jointly significant predictors of next-year local price-index changes after composition is controlled.</description>
-    <content:encoded><![CDATA[<p>How does price discovery work when assets are heterogeneous, trade infrequently, and the benchmark price is estimated from transactions that close with a delay? Equity markets reveal information through continuous trading. Housing does not have that. What it has instead is a public description of every asset at the moment it comes to market, written by an intermediary who knows the property and the local conditions. This paper asks what that description reveals before transaction-based benchmarks update.</p>
-<h2 id="setting-and-measurement">Setting and measurement</h2>
-<p>The data are 63,067 transaction-level Atlanta MLS listings from 2007 to 2017, a window that spans the housing bust and recovery. Local market conditions are measured from listing-stage language using the <a href="/posts/auditable-ai-text-measures-two-step-method/">two-step method</a> and aggregated to local-market-year cells.</p>
-<h2 id="the-measures-behave-like-market-state-signals">The measures behave like market-state signals</h2>
-<p>Before asking whether the text predicts anything, the paper checks that it tracks what it should. Seller-stress language rises in weak periods, is higher in local markets with lower prices and worse liquidity, and varies across areas within the same aggregate cycle. The last point matters: the text is not just a restatement of the national cycle but contains cross-sectional local information.</p>
-<h2 id="the-central-result-a-decomposition">The central result: a decomposition</h2>
-<p>The question is what listing language reveals before transaction benchmarks update, and the answer has two parts.</p>
-<p><strong>Part of the signal is observable composition.</strong> Some listings are flagged in structured fields as REO (bank-owned) or corporate-owned. Controlling for this distressed-sale share absorbs most of the seller-stress coefficient in regressions of next-year local price-index changes. In other words, a good deal of what the stress language was capturing is simply that more of the listings in a weak market are distressed, which a careful analyst could also see from the structured flags.</p>
-<p><strong>But listing language is not exhausted by composition.</strong> After controlling for the distressed-sale share, current conditions, and year effects, the text channels remain jointly significant predictors of next-year local price-index changes (F = 7.09, p = 0.003). Within that joint result, disclosed property-condition risk predicts weaker next-year changes, and buyer-competition language predicts stronger ones.</p>
-<p>The interpretation is that listing remarks aggregate hard distress composition and residual soft information into a single public, real-time signal that appears before delayed transaction benchmarks record local deterioration. Supporting transaction-level tests show that the same remarks are capitalized into individual sale prices, which ties the aggregate finding to the pricing results in <a href="/posts/cheap-talk-or-priced-information-listing-remarks/">Cheap Talk or Priced Information?</a>.</p>
-<h2 id="caveats">Caveats</h2>
-<p>The paper is careful about what the individual coefficients can bear. Once year effects, condition risk, and the distressed share are all included, the seller-stress coefficient on its own is not the headline; the claim rests on the joint test of the text channels and on text as a real-time aggregator of composition. The panel is annual and covers one metropolitan area, so the natural next steps are a higher-frequency panel and a second market. The companion paper <a href="/posts/listing-language-house-price-discovery/">Listing Language and House Price Discovery</a> takes the second step with more than two million listings across three states.</p>
-<h2 id="why-it-matters">Why it matters</h2>
-<p>For anyone who prices or lends against illiquid assets, the result says that the public description written at listing is informative about where local prices are heading, and that part of that information is not available from structured data. For researchers, it offers a template for separating what text reveals about composition from what it reveals beyond it.</p>
-<p><em>Status: working paper, 2026. Numbers quoted are from the current draft and will be updated if the paper changes.</em></p>]]></content:encoded>
-    <category>price discovery</category>
-    <category>illiquid assets</category>
-    <category>listing remarks</category>
-    <category>distressed sales</category>
-    <category>house price index</category>
-    <category>housing markets</category>
   </item>
   <item>
     <title>Cheap talk or priced information? What listing remarks do to prices, bargaining, and marketing time</title>
@@ -277,6 +198,69 @@ Stein, J. C. (2002). Information production and capital allocation: Decentralize
     <category>housing markets</category>
   </item>
   <item>
+    <title>Listing language predicts house price growth months before price indices move</title>
+    <link>https://lilyshen.com/posts/listing-language-house-price-discovery/</link>
+    <guid isPermaLink="true">https://lilyshen.com/posts/listing-language-house-price-discovery/</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+    <dc:creator>Lily Shen</dc:creator>
+    <description>Summary of my working paper Listing Language and House Price Discovery. From 2.03 million MLS listings, AI-assisted measures of demand heat, seller pressure, and asset frictions predict sale prices, marketing time, and six-month county price-index growth, and the design replicates in Georgia, a market never used for estimation.</description>
+    <content:encoded><![CDATA[<p>House price indices are the thermometers of the housing market, and they read late. An index is built from closed transactions, so it can only register a sale after marketing, bargaining, and the possibility of a failed listing have all been resolved. This paper asks whether the text that agents write when a property is listed reveals local conditions earlier, and whether that information is specific enough to be useful.</p>
+<h2 id="data">Data</h2>
+<p>The corpus is 2.03 million MLS listings. The primary sample is 0.81 million listings from North and South Carolina on an aligned 2001 to 2019 coverage window. A further 0.83 million Georgia listings are held out entirely and used as an out-of-sample market. Remarks are written at listing and precede closing by a median of 84 days.</p>
+<h2 id="three-typed-signals-not-one-sentiment-score">Three typed signals, not one sentiment score</h2>
+<p>Using the <a href="/posts/auditable-ai-text-measures-two-step-method/">two-step method</a>, an LLM discovers the vocabulary for three economically interpretable categories, and a frozen vocabulary then scores every listing:</p>
+<ul>
+<li><strong>Demand heat</strong>: language indicating buyer competition and strong demand.</li>
+<li><strong>Seller pressure</strong>: language indicating urgency or constraint on the seller's side.</li>
+<li><strong>Asset frictions</strong>: language indicating property-level problems that slow or discount a sale.</li>
+</ul>
+<p>Each signal has an economic meaning and a predicted sign, which is what separates this from generic sentiment analysis.</p>
+<h2 id="listing-level-results">Listing-level results</h2>
+<p>In listing-level regressions with county-by-year and listing-agent fixed effects, demand-heat language predicts:</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>Demand-heat effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sale price</td>
+<td>1.5 percent higher</td>
+</tr>
+<tr>
+<td>Days on market</td>
+<td>9.7 fewer</td>
+</tr>
+<tr>
+<td>Discount from list price</td>
+<td>1.28 percentage points smaller</td>
+</tr>
+<tr>
+<td>Probability of sale</td>
+<td>4.48 percentage points higher</td>
+</tr>
+</tbody>
+</table>
+<p>Seller-pressure and asset-friction language predict the opposite pattern: lower prices, longer marketing time, larger discounts, and lower sale probabilities. The signs line up with what each category should mean, and the agent fixed effects rule out the explanation that the results merely pick up which agents write enthusiastically.</p>
+<h2 id="county-month-results-and-forecasting">County-month results and forecasting</h2>
+<p>Aggregated to county-months, demand heat predicts 0.58 percentage points higher six-month growth in an MLS hedonic price index within state-month. In a holdout exercise over the 2015 to 2019 expansion, adding the text signal reduces forecast errors by 23 percent. A geographic reassignment test, in which text is reassigned across counties, removes the relation, as it should if the signal is local information rather than a statistical artifact.</p>
+<h2 id="replication-in-a-market-never-used-for-estimation">Replication in a market never used for estimation</h2>
+<p>The same procedure is run on Georgia, a market that entered none of the estimation steps. Demand heat predicts 0.43 percentage points higher six-month price growth there. The replication is the strongest evidence in the paper that what is portable is the measurement procedure, not a word list fitted to one place.</p>
+<h2 id="what-the-paper-does-and-does-not-claim">What the paper does and does not claim</h2>
+<p>It claims that listing language is typed market information observed months before a transaction-based index can incorporate the corresponding sales, and that this information improves short-horizon forecasts of local price growth. It does not claim that text replaces a price index, or that any single phrase is decisive. The measures are built so that every score can be traced to phrases, and the vocabulary discovery respects the out-of-sample timing rules described in the methods post.</p>
+<h2 id="who-should-care">Who should care</h2>
+<p>Lenders setting local credit terms, index providers, insurers, investors in single-family rental portfolios, and policymakers watching for local deterioration all currently rely on benchmarks that lag the market by a quarter or more. Listing text is public, high-frequency, and already collected. The paper shows how to read it.</p>
+<p><em>Status: working paper, 2026. Numbers quoted are from the current draft and will be updated if the paper changes.</em></p>]]></content:encoded>
+    <category>house price index</category>
+    <category>price discovery</category>
+    <category>listing remarks</category>
+    <category>large language models</category>
+    <category>forecasting</category>
+    <category>housing markets</category>
+  </item>
+  <item>
     <title>Are securitization contracts boilerplate? Machine learning on CMBS pooling and servicing agreements (JFQA, 2024)</title>
     <link>https://lilyshen.com/posts/machine-learning-cmbs-pooling-servicing-agreements/</link>
     <guid isPermaLink="true">https://lilyshen.com/posts/machine-learning-cmbs-pooling-servicing-agreements/</guid>
@@ -325,31 +309,6 @@ Stein, J. C. (2002). Information production and capital allocation: Decentralize
     <category>housing markets</category>
   </item>
   <item>
-    <title>Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)</title>
-    <link>https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/</link>
-    <guid isPermaLink="true">https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/</guid>
-    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
-    <dc:creator>Lily Shen</dc:creator>
-    <description>Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.</description>
-    <content:encoded><![CDATA[<p>When COVID-19 arrived, travel stopped and the short-term rental market was hit immediately. The pandemic also changed what guests cared about: a clean unit went from a nicety to a health concern. This paper, with Sean Wilkoff in the <em>Journal of Regional Science</em> (2022), uses Airbnb data from Austin, Texas, to measure both the shock and the premium that cleanliness earned during it.</p>
-<h2 id="measuring-cleanliness-from-reviews">Measuring cleanliness from reviews</h2>
-<p>Cleanliness is not a field in a listing; it is a judgment guests form and write about. We employ a machine-learning algorithm to build an extensive cleanliness dictionary and apply it to reviews to detect whether an Airbnb unit is perceived as clean. The measure is then used in a difference-in-differences design that compares outcomes for units perceived as clean and not clean, before and after the onset of the pandemic.</p>
-<h2 id="results">Results</h2>
-<ul>
-<li><strong>The shock.</strong> Available listings declined by 25 percent once the pandemic hit. Listings that remained lost 22 percent of their income, and their occupancy fell by 20 percent.</li>
-<li><strong>The cleanliness premium.</strong> Properties perceived as clean increased their income by 17.5 percent and their occupancy by 16.5 percent, which mitigated a large part of the negative shock.</li>
-<li><strong>Quantity, not price.</strong> Rental prices for clean listings did not increase after COVID-19. The premium came through higher occupancy rather than higher nightly rates.</li>
-</ul>
-<p>The paper also examines how the supply of Airbnb units interacts with the long-term rental market during a market decline.</p>
-<h2 id="why-it-matters">Why it matters</h2>
-<p>The result is a clean example of soft information at work. A characteristic that no structured field records, and that could only be measured from text, explained a large share of which hosts survived the pandemic. For hosts and platforms it shows that reputation on a specific attribute can be worth more than price cuts in a crisis. For researchers it is an early application of the text-measurement approach that runs through my work on <a href="/posts/what-is-soft-information-in-housing-markets/">listing remarks</a>. <em>The Economist</em> featured the findings in December 2020 under the headline "Airbnb guests seek out cleaner properties in the pandemic."</p>]]></content:encoded>
-    <category>short-term rentals</category>
-    <category>Airbnb</category>
-    <category>COVID-19</category>
-    <category>text analysis</category>
-    <category>machine learning</category>
-  </item>
-  <item>
     <title>Well-connected real estate agents sell for more: network theory on 40,000 Atlanta transactions (Journal of Real Estate Research, 2025)</title>
     <link>https://lilyshen.com/posts/real-estate-agent-networks-connectedness/</link>
     <guid isPermaLink="true">https://lilyshen.com/posts/real-estate-agent-networks-connectedness/</guid>
@@ -369,6 +328,68 @@ Stein, J. C. (2002). Information production and capital allocation: Decentralize
     <category>networks</category>
     <category>intermediaries</category>
     <category>housing markets</category>
+  </item>
+  <item>
+    <title>Price discovery in illiquid markets: what listing remarks reveal before transaction indices update</title>
+    <link>https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/</link>
+    <guid isPermaLink="true">https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+    <dc:creator>Lily Shen</dc:creator>
+    <description>Summary of my working paper Soft Information and Price Discovery in Illiquid Asset Markets. Using 63,067 Atlanta listings, seller-stress language tracks local market weakness; part of the signal is distressed-sale composition, but the text channels remain jointly significant predictors of next-year local price-index changes after composition is controlled.</description>
+    <content:encoded><![CDATA[<p>How does price discovery work when assets are heterogeneous, trade infrequently, and the benchmark price is estimated from transactions that close with a delay? Equity markets reveal information through continuous trading. Housing does not have that. What it has instead is a public description of every asset at the moment it comes to market, written by an intermediary who knows the property and the local conditions. This paper asks what that description reveals before transaction-based benchmarks update.</p>
+<h2 id="setting-and-measurement">Setting and measurement</h2>
+<p>The data are 63,067 transaction-level Atlanta MLS listings from 2007 to 2017, a window that spans the housing bust and recovery. Local market conditions are measured from listing-stage language using the <a href="/posts/auditable-ai-text-measures-two-step-method/">two-step method</a> and aggregated to local-market-year cells.</p>
+<h2 id="the-measures-behave-like-market-state-signals">The measures behave like market-state signals</h2>
+<p>Before asking whether the text predicts anything, the paper checks that it tracks what it should. Seller-stress language rises in weak periods, is higher in local markets with lower prices and worse liquidity, and varies across areas within the same aggregate cycle. The last point matters: the text is not just a restatement of the national cycle but contains cross-sectional local information.</p>
+<h2 id="the-central-result-a-decomposition">The central result: a decomposition</h2>
+<p>The question is what listing language reveals before transaction benchmarks update, and the answer has two parts.</p>
+<p><strong>Part of the signal is observable composition.</strong> Some listings are flagged in structured fields as REO (bank-owned) or corporate-owned. Controlling for this distressed-sale share absorbs most of the seller-stress coefficient in regressions of next-year local price-index changes. In other words, a good deal of what the stress language was capturing is simply that more of the listings in a weak market are distressed, which a careful analyst could also see from the structured flags.</p>
+<p><strong>But listing language is not exhausted by composition.</strong> After controlling for the distressed-sale share, current conditions, and year effects, the text channels remain jointly significant predictors of next-year local price-index changes (F = 7.09, p = 0.003). Within that joint result, disclosed property-condition risk predicts weaker next-year changes, and buyer-competition language predicts stronger ones.</p>
+<p>The interpretation is that listing remarks aggregate hard distress composition and residual soft information into a single public, real-time signal that appears before delayed transaction benchmarks record local deterioration. Supporting transaction-level tests show that the same remarks are capitalized into individual sale prices, which ties the aggregate finding to the pricing results in <a href="/posts/cheap-talk-or-priced-information-listing-remarks/">Cheap Talk or Priced Information?</a>.</p>
+<h2 id="caveats">Caveats</h2>
+<p>The paper is careful about what the individual coefficients can bear. Once year effects, condition risk, and the distressed share are all included, the seller-stress coefficient on its own is not the headline; the claim rests on the joint test of the text channels and on text as a real-time aggregator of composition. The panel is annual and covers one metropolitan area, so the natural next steps are a higher-frequency panel and a second market. The companion paper <a href="/posts/listing-language-house-price-discovery/">Listing Language and House Price Discovery</a> takes the second step with more than two million listings across three states.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>For anyone who prices or lends against illiquid assets, the result says that the public description written at listing is informative about where local prices are heading, and that part of that information is not available from structured data. For researchers, it offers a template for separating what text reveals about composition from what it reveals beyond it.</p>
+<p><em>Status: working paper, 2026. Numbers quoted are from the current draft and will be updated if the paper changes.</em></p>]]></content:encoded>
+    <category>price discovery</category>
+    <category>illiquid assets</category>
+    <category>listing remarks</category>
+    <category>distressed sales</category>
+    <category>house price index</category>
+    <category>housing markets</category>
+  </item>
+  <item>
+    <title>What is soft information in housing markets, and how can it be measured?</title>
+    <link>https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/</link>
+    <guid isPermaLink="true">https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+    <dc:creator>Lily Shen</dc:creator>
+    <description>Soft information is what a listing says that structured fields cannot: condition, character, seller circumstances, local demand. This explainer defines the term, contrasts it with hard information, and summarizes what my research finds when listing text is measured with machine learning: it is priced, it changes marketing time, and it moves before price indices do.</description>
+    <content:encoded><![CDATA[<h2 id="hard-versus-soft-information">Hard versus soft information</h2>
+<p>The banking literature draws the distinction clearly. Hard information is quantifiable, verifiable, and can be transmitted without losing meaning: a credit score, an income figure, a loan-to-value ratio. Soft information requires context and judgment to interpret and is difficult to codify: a loan officer's impression of a borrower, a sense of how a business is run (Stein, 2002; Liberti and Petersen, 2019).</p>
+<p>Housing has the same divide. The hard information is in the structured fields of a Multiple Listing Service (MLS) record and in tax rolls: bedrooms, bathrooms, square footage, lot size, year built, sale history. The soft information is in what the listing agent writes: "meticulously maintained," "needs TLC," "sold as-is," "estate sale," "multiple offers received," "bring all offers." For most of the history of the market, this information lived in conversations between agents and buyers. The MLS remarks field turns it into a written, public, time-stamped record, and that record is what machine learning can measure.</p>
+<h2 id="why-soft-information-is-economically-interesting">Why soft information is economically interesting</h2>
+<p>Three reasons.</p>
+<p><strong>It is valued.</strong> Two houses with identical hard characteristics can differ by a great deal in condition, layout, light, and finish. Buyers pay for the difference. A hedonic model that sees only the hard fields attributes that payment to noise or, worse, to the wrong variables.</p>
+<p><strong>It is strategic.</strong> Sellers and their agents choose what to say. Disclosure law makes some adverse statements costly to omit, and the market may discount vague language. So the text is not a neutral description; it is a message in a game, which is why the right null hypothesis is that it is cheap talk.</p>
+<p><strong>It is early.</strong> Remarks are written when a property is brought to market, before bargaining, before closing, and long before a transaction-based price index can incorporate the sale. If the text contains information about local market conditions, it is available months ahead of the benchmarks that lenders and policymakers watch.</p>
+<h2 id="four-ways-i-have-measured-it">Four ways I have measured it</h2>
+<p><strong>Uniqueness relative to neighbors.</strong> In <a href="/posts/information-value-property-descriptions-machine-learning/">Shen and Ross (2021)</a>, a machine-learning model reads property descriptions and measures how unusual each description is relative to nearby listings. A one-standard-deviation increase in this measure raises sale price by 15 percent in a hedonic model and 10 percent in a repeat-sales model. An annual hedonic index that ignores the measure overstates prices by 10 to 23 percent and mistimes the stabilization after the Great Recession.</p>
+<p><strong>Market uniqueness versus universal uniqueness.</strong> In <a href="/posts/property-uniqueness-selling-time-and-price/">Shen and Springer (2022)</a>, we separate being unusual relative to homes on the market at the same time from being unusual relative to the submarket as a whole. A one-standard-deviation increase in market uniqueness raises sale price by 13 percent ($48,490) at the cost of 1.7 extra days on the market; universal uniqueness raises price 11 percent ($41,030) at a 3-day delay.</p>
+<p><strong>Economic categories of listing language.</strong> In <a href="/posts/cheap-talk-or-priced-information-listing-remarks/">Cheap Talk or Priced Information? (2026)</a>, an LLM organizes the language of 63,067 Atlanta listings into auditable categories. Residual information is associated with 7.7 percent higher sale prices and 2.5 fewer days on market; adverse disclosure with 17.4 percent lower sale prices; urgency language with 4.7 percent lower sale prices but no distinct change in marketing time.</p>
+<p><strong>Aggregated market signals.</strong> In <a href="/posts/soft-information-price-discovery-illiquid-assets/">Soft Information and Price Discovery in Illiquid Asset Markets (2026)</a>, the same listings are aggregated to local-market-year cells. Seller-stress language rises in weak periods and in weaker local markets. Much of its predictive power for next-year price-index changes reflects the share of distressed sales, but the text channels remain jointly significant after that composition is controlled (F = 7.09, p = 0.003). A companion paper extends the approach to more than two million listings across the Carolinas and Georgia.</p>
+<h2 id="what-soft-information-is-not">What soft information is not</h2>
+<p>It is not sentiment. Generic positive-or-negative scores throw away the economic structure that makes listing text useful: a listing can be enthusiastic and still disclose a foundation problem. It is not a substitute for hard information; the text measures add to hedonic controls rather than replacing them. And it is not free of strategy, which is why the measurement has to be designed so that the categories can be audited phrase by phrase and tested against bargaining outcomes, not only prices.</p>
+<h2 id="practical-implications">Practical implications</h2>
+<p>Automated valuation models and appraisals that read only structured fields leave a large, systematic component of value unmeasured. Price indices can be improved by controlling for text-based quality. Lenders and index providers can observe local market deterioration in listing language before it appears in closed transactions. And for agents, the remarks field is not decoration: what is said, and what is disclosed, shows up in the sale price.</p>
+<h3 id="references-outside-my-own-work">References outside my own work</h3>
+<p>Liberti, J. M., &amp; Petersen, M. A. (2019). Information: Hard and soft. <em>Review of Corporate Finance Studies</em>, 8(1), 1–41.
+Stein, J. C. (2002). Information production and capital allocation: Decentralized versus hierarchical firms. <em>Journal of Finance</em>, 57(5), 1891–1921.</p>]]></content:encoded>
+    <category>soft information</category>
+    <category>housing markets</category>
+    <category>listing remarks</category>
+    <category>explainer</category>
+    <category>hedonic pricing</category>
   </item>
 </channel>
 </rss>

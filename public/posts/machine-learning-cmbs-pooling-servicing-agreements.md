@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/machine-learning-cmbs-pooling-servicing-agreements/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of Information in Financial Contracts: Evidence from Securitization Agreements, with Brent W. Ambrose, Yiqiang Han, and Sanket Korgaonkar. A machine-learning comparison of the pooling and servicing agreements behind commercial mortgage-backed securities shows substantial variation across deals, underwriters, and time, partly explained by collateral, and correlated with later loan and bond performance.

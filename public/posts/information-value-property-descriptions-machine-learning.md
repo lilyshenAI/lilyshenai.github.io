@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/information-value-property-descriptions-machine-learning/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of Information Value of Property Description: A Machine Learning Approach, with Stephen L. Ross. A machine-learning measure of the soft information in listing text raises sale prices by 15 percent per standard deviation in a hedonic model and 10 percent in a repeat-sales model, and price indices that ignore it overstate prices by 10 to 23 percent and mistime the post-recession stabilization.

@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/auditable-ai-text-measures-two-step-method/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: A practical method for using large language models as measurement tools in economics and finance. The model discovers the vocabulary for each economic category across the full corpus; a fixed, published vocabulary then scores every document, so results are reproducible, traceable phrase by phrase, and testable out of sample.

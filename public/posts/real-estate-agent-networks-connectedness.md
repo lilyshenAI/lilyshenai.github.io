@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/real-estate-agent-networks-connectedness/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of The More, the Merrier: Agent Connectedness in Real Estate Trading Networks, with Xiaojin Sun. A one-standard-deviation increase in an agent's network connectedness is associated with 2.61 percent higher sale prices, and connected agents sell unique properties faster and price them more accurately, consistent with networks improving information flow.

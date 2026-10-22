@@ -35,6 +35,8 @@ from jinja2 import Environment, FileSystemLoader
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "public"
 CFG = yaml.safe_load((ROOT / "config.yaml").read_text())
+SERIES = {"posts": {"dir": "posts", "name": CFG["blog_name"], "tagline": CFG["blog_tagline"]},
+          "blog": {"dir": "blog", "name": CFG["weekly_name"], "tagline": CFG["weekly_tagline"]}}
 SITE = CFG["site_url"].rstrip("/")
 AUTHOR = CFG["author"]
 PAPERS = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text())
@@ -150,14 +152,14 @@ def paper_bibtex(p):
 def post_cite_apa(post):
     d = post["date"]
     return (f"{apa_name(AUTHOR['name'])} ({d.year}, {d.strftime('%B %-d')}). {post['title']}. "
-            f"<em>{CFG['blog_name']}</em>. {post['abs_url']}")
+            f"<em>{post['series']}</em>. {post['abs_url']}")
 
 
 def post_cite_bibtex(post):
     d = post["date"]
     key = f"shen{d.year}post_" + "_".join(slugify(post['title']).split('-')[:2])
     return (f"@misc{{{key},\n  author = {{{AUTHOR['name']}}},\n  title = {{{post['title']}}},\n"
-            f"  howpublished = {{{CFG['blog_name']}, {SITE}}},\n  year = {{{d.year}}},\n"
+            f"  howpublished = {{{post['series']}, {SITE}}},\n  year = {{{d.year}}},\n"
             f"  month = {{{d.strftime('%b').lower()}}},\n  url = {{{post['abs_url']}}},\n"
             f"  note = {{Accessed {dt.date.today().isoformat()}}}\n}}")
 
@@ -262,9 +264,9 @@ def dump_ld(obj):
 
 
 # ----------------------------------------------------------------- content
-def load_posts():
+def load_posts(kind="posts"):
     posts = []
-    for path in sorted((ROOT / "content" / "posts").glob("*.md")):
+    for path in sorted((ROOT / "content" / SERIES[kind]["dir"]).glob("*.md")):
         meta, body = load_md(path)
         if meta.get("draft"):
             continue
@@ -278,7 +280,7 @@ def load_posts():
                 sys.exit(f"{path.name}: unknown paper key '{k}' (see data/papers.yaml)")
             papers.append(PAPERS_BY_KEY[k])
         words = len(re.findall(r"\w+", body))
-        post = dict(slug=slug, url=f"/posts/{slug}/", abs_url=f"{SITE}/posts/{slug}/",
+        post = dict(kind=kind, series=SERIES[kind]["name"], slug=slug, url=f"/{kind}/{slug}/", abs_url=f"{SITE}/{kind}/{slug}/",
                     title=meta["title"], description=" ".join(meta["description"].split()),
                     date=date, updated=as_date(meta.get("updated", date)),
                     tags=as_list(meta.get("tags")), papers=papers, faq=meta.get("faq") or [],
@@ -323,7 +325,7 @@ def markdown_copy(post):
             f"Published: {post['date'].isoformat()}" +
             (f" (updated {post['updated'].isoformat()})" if post["updated"] != post["date"] else ""),
             f"Canonical URL: {post['abs_url']}",
-            f"Site: {CFG['blog_name']}, {CFG['site_name']} ({SITE}/)",
+            f"Series: {post['series']}. Site: {CFG['site_name']} ({SITE}/)",
             f"License: {CFG['license']['name']} ({CFG['license']['url']})", "",
             f"Summary: {post['description']}", ""]
     if post["papers"]:
@@ -345,7 +347,8 @@ def rfc822(d):
     return dt.datetime(d.year, d.month, d.day, 12, 0, 0).strftime("%a, %d %b %Y %H:%M:%S +0000")
 
 
-def build_feed(posts):
+def build_feed(posts, rel="feed.xml", name=None, tagline=None):
+    name = name or CFG["site_name"]; tagline = tagline or CFG["site_tagline"]
     items = []
     for p in posts[:30]:
         items.append(f"""  <item>
@@ -360,17 +363,17 @@ def build_feed(posts):
     feed = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>{xml_escape(CFG['blog_name'])}</title>
+  <title>{xml_escape(name)}</title>
   <link>{SITE}/</link>
-  <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>{xml_escape(CFG['blog_tagline'])}</description>
+  <atom:link href="{SITE}/{rel}" rel="self" type="application/rss+xml"/>
+  <description>{xml_escape(tagline)}</description>
   <language>{CFG['language']}</language>
   <lastBuildDate>{rfc822(dt.date.today())}</lastBuildDate>
 {chr(10).join(items)}
 </channel>
 </rss>
 """
-    write("feed.xml", feed)
+    write(rel, feed)
 
 
 def build_sitemap(posts, tags):
@@ -381,6 +384,7 @@ def build_sitemap(posts, tags):
             (f"{SITE}/talks/", today, "monthly", "0.6"),
             (f"{SITE}/cv/", today, "monthly", "0.7"),
             (f"{SITE}/posts/", max(p["updated"] for p in posts) if posts else today, "weekly", "0.8"),
+            (f"{SITE}/blog/", today, "weekly", "0.8"),
             (f"{SITE}/about/", today, "monthly", "0.6"),
             (f"{SITE}/tags/", today, "monthly", "0.3")]
     urls += [(p["abs_url"], p["updated"], "monthly", "0.8") for p in posts]
@@ -452,7 +456,8 @@ def profile_markdown(posts):
     L += ["", "## Press coverage", ""] + [f"- {m['year']}, {m['outlet']}: {m['title']}" + (f" ({m['url']})" if m.get('url') else "") for m in P["media"]]
     L += ["", "## Selected talks", ""] + [f"- {t['year']}: {t['text']}" for t in P["talks"]]
     L += ["", "## Service", ""] + [f"- {x}" for x in P["service"]]
-    L += ["", "## Research notes on this site", ""] + [f"- {p['title']} ({p['abs_url']}): {p['description']}" for p in posts]
+    L += ["", "## Research notes on this site", ""] + [f"- {p['title']} ({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "posts"]
+    L += ["", f"## {CFG['weekly_name']}: weekly posts on AI", ""] + [f"- {p['title']} ({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "blog"]
     L += ["", f"Skills and data: {P['skills']}", ""]
     return "\n".join(L)
 
@@ -486,12 +491,14 @@ def build_llms(posts):
                 lines.append(f"- [{p['title']}]({link}): {', '.join(p['authors'])}. {p.get('note', '')} ({p['year']}).")
     lines += ["", "## Textbooks", ""] + [f"- {b['title']}, {b.get('edition','')} ({b['publisher']}, {b['year']}), with {', '.join(a for a in b['authors'] if a != A['name'])}." + (f" {b['url']}" if b.get('url') else "") for b in PROFILE["textbooks"]]
     lines += ["", f"## Research notes ({CFG['blog_name']})", ""]
-    lines += [f"- [{p['title']}]({p['abs_url']}): {p['description']}" for p in posts]
+    lines += [f"- [{p['title']}]({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "posts"]
+    lines += ["", f"## {CFG['weekly_name']} (weekly blog on AI)", ""]
+    lines += [f"- [{p['title']}]({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "blog"]
     lines += ["", "## Other files", "",
               f"- [Full text of every research note in Markdown]({SITE}/llms-full.txt)",
               f"- [RSS feed]({SITE}/feed.xml)", f"- [Sitemap]({SITE}/sitemap.xml)", ""]
     write("llms.txt", "\n".join(lines))
-    full = [f"# {CFG['blog_name']} by {A['name']}: full text of all research notes", "",
+    full = [f"# {A['name']}: full text of all research notes and weekly AI posts", "",
             f"Author: {A['name']} ({', '.join(A.get('alternate_names', []))}), {A['title']}, {A['affiliation']}.",
             f"Site: {SITE}/ . Profile: {SITE}/profile.md . License: {CFG['license']['name']}.", "", "---", ""]
     for p in posts:
@@ -514,7 +521,9 @@ def build():
         p["apa"] = paper_apa(p)
         p["bibtex"] = paper_bibtex(p)
         p["posts"] = []
-    posts = load_posts()
+    notes = load_posts("posts")
+    weekly = load_posts("blog")
+    posts = sorted(notes + weekly, key=lambda p: (-p["date"].toordinal(), p["slug"]))
     for post in posts:
         for p in post["papers"]:
             p["posts"].append(post)
@@ -530,7 +539,7 @@ def build():
         {"@type": "ProfilePage", "@id": home_id, "url": home_id, "mainEntity": {"@id": f"{SITE}/#person"},
          "name": f"{AUTHOR['name']}, {AUTHOR['title']}, {AUTHOR['affiliation']}"},
         faq_ld(PROFILE["faq"], home_id)]}
-    render("home.html", "index.html", posts=posts, profile=PROFILE, selected=selected, layout="wide", nav="home",
+    render("home.html", "index.html", posts=notes, weekly=weekly, profile=PROFILE, selected=selected, layout="wide", nav="home",
            page_title=f"{AUTHOR['name']} | {AUTHOR['title']}, {AUTHOR['affiliation']}",
            description=f"{AUTHOR['name']} is {AUTHOR['title']} at {AUTHOR['affiliation']} and a visiting scholar at the "
                        f"Federal Reserve Bank of Atlanta. Research on real estate finance, housing and mortgage markets, "
@@ -538,16 +547,20 @@ def build():
            canonical=home_id, jsonld_obj=home_ld, md_twin="/profile.md")
 
     # research notes
-    render("posts.html", "posts/index.html", posts=posts, nav="posts",
+    render("posts.html", "posts/index.html", posts=notes, nav="posts", series=SERIES["posts"], kind="posts",
            page_title=f"{CFG['blog_name']} | {AUTHOR['name']}",
            description=CFG["blog_tagline"] + f". By {AUTHOR['name']}, {AUTHOR['affiliation']}.",
            canonical=f"{SITE}/posts/", md_twin="/llms-full.txt")
+    render("posts.html", "blog/index.html", posts=weekly, nav="blog", series=SERIES["blog"], kind="blog",
+           page_title=f"{CFG['weekly_name']} | {AUTHOR['name']}",
+           description=CFG["weekly_tagline"] + f". By {AUTHOR['name']}, {AUTHOR['affiliation']}.",
+           canonical=f"{SITE}/blog/", md_twin="/llms-full.txt")
     for post in posts:
-        render("post.html", f"posts/{post['slug']}/index.html", post=post, nav="posts",
+        render("post.html", f"{post['kind']}/{post['slug']}/index.html", post=post, nav=post["kind"],
                related=related_posts(post, posts), page_title=f"{post['title']} | {AUTHOR['name']}",
                description=post["description"], canonical=post["abs_url"], og_type="article",
                jsonld_obj=post_ld(post))
-        write(f"posts/{post['slug']}.md", markdown_copy(post))
+        write(f"{post['kind']}/{post['slug']}.md", markdown_copy(post))
 
     # research
     sections = [{"title": "Published articles", "entries": published},
@@ -647,10 +660,12 @@ def build():
     render("404.html", "404.html", page_title=f"Not found | {AUTHOR['name']}",
            description="Page not found.", canonical=f"{SITE}/404.html")
     build_feed(posts)
+    build_feed(notes, "posts/feed.xml", CFG["blog_name"], CFG["blog_tagline"])
+    build_feed(weekly, "blog/feed.xml", CFG["weekly_name"], CFG["weekly_tagline"])
     build_sitemap(posts, tags)
     build_robots()
     build_llms(posts)
-    print(f"built {len(posts)} posts, {len(PAPERS)} papers, {len(tags)} tags -> {OUT}")
+    print(f"built {len(notes)} research notes, {len(weekly)} weekly posts, {len(PAPERS)} papers, {len(tags)} tags -> {OUT}")
 
 
 if __name__ == "__main__":

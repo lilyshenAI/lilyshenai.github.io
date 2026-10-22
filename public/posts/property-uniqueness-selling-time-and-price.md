@@ -3,7 +3,7 @@
 Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/property-uniqueness-selling-time-and-price/
-Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 Summary: Summary of The Odd One Out? The Impact of Property Uniqueness on Selling Time and Selling Price, with Thomas M. Springer. Machine-learning measures of uniqueness from listing text show that a one-standard-deviation increase in market uniqueness raises sale prices by 13 percent ($48,490) while delaying sale by 1.7 days; universal uniqueness raises prices 11 percent ($41,030) at a 3-day delay.
