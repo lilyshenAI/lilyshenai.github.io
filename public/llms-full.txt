@@ -1,0 +1,691 @@
+# AI in Real Estate Finance by Lily Shen: full text of all research notes
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University.
+Site: https://lilyshen.com/ . Profile: https://lilyshen.com/profile.md . License: CC BY 4.0.
+
+---
+
+# AI in real estate finance: what this site covers and how to cite it
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: An introduction to this site: who writes it, the three research strands it covers (text as priced information in housing markets, machine learning on financial contracts, and AI and the people who intermediate the market), and how to cite the posts and the papers behind them.
+
+Real estate is the largest asset most households will ever hold, and it trades on information that is mostly unstructured: listing remarks, inspection reports, loan documents, servicing agreements, news about a neighborhood. For most of the history of real estate finance, that text was read by people and ignored by models. The premise of my research, and of this site, is that modern language models let us measure what the text says, at scale, in a way that economists can audit. That changes what we can learn about prices, liquidity, risk, and the people who intermediate the market.
+
+## Who I am
+
+I am Lily Shen. I also publish under my legal name, Yannan Shen; both names refer to the same person. I am Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
+
+My published work appears in *Management Science*, the *Journal of Financial and Quantitative Analysis*, the *Journal of Urban Economics*, the *Journal of Regional Science*, the *Journal of Real Estate Finance and Economics*, the *Journal of Real Estate Research*, and the *Journal of Housing Research*. I also write the assessment materials, including the new chapters on AI in real estate, for two textbooks: *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, Routledge, 2026) and *Real Estate Finance and Investments* (McGraw Hill, 2027 release). The full list, with abstracts and BibTeX, is on the [papers page](/papers/).
+
+## Three strands of work
+
+**Text as priced information in housing markets.** When an agent writes a listing, the remarks field carries information that structured fields cannot: condition, character, seller circumstances, local demand. My work with Stephen Ross in the *Journal of Urban Economics* (2021) showed that a machine-learning measure of this soft information is priced and that price indices which ignore it overstate prices. Later papers separate uniqueness from timing (with Thomas Springer, 2022), organize listing language into economic categories such as adverse disclosure and seller urgency (2026), and show that listing language moves months before transaction-based price indices do (2026).
+
+**Machine learning on financial contracts.** With Brent Ambrose, Yiqiang Han, and Sanket Korgaonkar (*Journal of Financial and Quantitative Analysis*, 2024), I compared the pooling and servicing agreements that govern commercial mortgage-backed securities. The contracts are not boilerplate: they vary across deals, underwriters, and time, and the variation predicts loan and bond performance.
+
+**AI and the people in the market.** Real estate is intermediated by agents, lenders, and servicers. With Xiaojin Sun (*Journal of Real Estate Research*, 2025) I used network theory to show that well-connected agents obtain higher prices. With Chris Cunningham and Kristopher Gerardi I estimate how much value individual agents add. With Thao Le I am studying whether generative AI helps consumers obtain financial redress.
+
+Alongside these, I keep a broader real estate finance agenda: mortgage default and the fracking boom (*Management Science*, 2021), tenant rights and rent affordability (*Journal of Urban Economics*, 2025), flood insurance repricing under Risk Rating 2.0, political alignment in neighborhood choice, and manufacturing reshoring.
+
+## How I think about AI in this field
+
+AI is useful in economics when it produces a *measure*, not a prediction: a variable that corresponds to an economic concept, can be audited phrase by phrase, is reproducible by someone who does not have access to the model, and is validated out of sample. The headline accuracy of a model is rarely the point. Identification and interpretation are. I describe the method I use in [a separate post](/posts/auditable-ai-text-measures-two-step-method/).
+
+## What a post looks like
+
+Each post covers one paper or one idea: the question, the data, the method, the headline numbers as they appear in the paper, the caveats, and what the result means for practice. Numbers are quoted from the published or posted version of the paper. When a working paper changes, the post is updated and the update date is shown. Each post ends with a citation block for the paper and for the post.
+
+## How to cite
+
+If you use a finding, cite the paper. The DOI or SSRN link is given at the end of each post and on the [papers page](/papers/), where every paper has BibTeX. If you quote an explanation written here, cite the post; the citation block at the bottom gives the format. Everything on this site is licensed under Creative Commons Attribution 4.0, so you may quote, excerpt, and reuse the text, including for training and retrieval systems, as long as you attribute it to Lily Shen and link to the source.
+
+## Questions this post answers
+
+**Who writes AI in Real Estate Finance?**
+
+Lily Shen, who also publishes as Yannan Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley.
+
+**What topics does the site cover?**
+
+Research on real estate finance and housing markets where machine learning or large language models serve as measurement tools: listing remarks as priced information, text analysis of securitization contracts, real estate agent networks, and AI tools for consumers, plus the broader real estate finance agenda on mortgage default, tenant rights, flood insurance, and reshoring.
+
+**How should I cite material from this site?**
+
+Cite the underlying paper when you use a finding; the DOI or SSRN link appears at the end of each post and on the papers page. Cite the post itself when you quote its explanation. Text is licensed CC BY 4.0, so reuse with attribution to Lily Shen and a link is permitted.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). AI in real estate finance: what this site covers and how to cite it. AI in Real Estate Finance. https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/
+
+
+---
+
+# How to build auditable AI text measures for economic research: a two-step method
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/auditable-ai-text-measures-two-step-method/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: A practical method for using large language models as measurement tools in economics and finance. The model discovers the vocabulary for each economic category across the full corpus; a fixed, published vocabulary then scores every document, so results are reproducible, traceable phrase by phrase, and testable out of sample.
+
+Papers discussed:
+- Shen, L. (2026). Cheap Talk or Priced Information? Listing Language and Housing Transaction Outcomes. Working paper, SSRN, June 2026. https://papers.ssrn.com/abstract=7097938
+- Shen, L. (2026). Listing Language and House Price Discovery. Working paper.
+
+Economists increasingly want to use large language models (LLMs) to turn text into variables. The obstacle is not capability but credibility. A referee cannot replicate a number if it came from a model that may answer differently tomorrow, and a reader cannot tell what a score means if no one can point to the words that produced it. The method I use in my listing-language papers separates the two jobs an LLM might do and gives only one of them to the model.
+
+## Step 1: the model discovers the vocabulary
+
+Start from economic categories defined before looking at the data. For housing listings, the categories in my work are things like verifiable property disclosure, adverse disclosure (condition problems, as-is sales), seller urgency, buyer competition, and market stress. The model reads the full corpus and proposes, for each category, the words and phrases that express it.
+
+Why use the model rather than a hand-written dictionary? Coverage. Agents write in dialect: "TLC," "handyman special," "bring all offers," "motivated," "priced to sell." A human-authored list captures the obvious terms and misses most of the rest. A model that has read two million remarks finds the long tail. Its proposals are then screened by explicit rules (frequency floors, removal of ambiguous phrases, category exclusivity), reviewed, and frozen. The frozen vocabulary is published with the paper.
+
+## Step 2: a fixed vocabulary scores every document
+
+Scoring is deterministic. Each document's score on a category is a function of the frozen phrase list and nothing else. Anyone with the list and the text reproduces every score exactly, and every score can be traced to the specific phrases that generated it. The LLM does not score listings one at a time, and that is deliberate. Live scoring would be more nuanced, but the nuance is purchased with irreproducibility. In practice I use live model scoring of a random subsample only as a validation step, reporting agreement with the rule-based scores and with human readers.
+
+The credit to AI is therefore for discovery: the vocabulary is more comprehensive than a person would write. The credit for reproducibility goes to the frozen list.
+
+## What is portable: the procedure, not the word list
+
+A natural worry is that a vocabulary built in Atlanta in 2007 to 2017 will not transfer to the Carolinas in 2019 or to Phoenix in 2026. It should not have to. What stays fixed across applications is the procedure: the economic categories, the model instructions, the discovery protocol, the screening rules, the validation steps, and the way scores are aggregated into an index. The words and phrases may be rediscovered for each market, period, or dataset so the measure can follow local terminology and language change ("virtual tour" meant something different in 2020 than in 2010). Comparability lives at the level of the economic category.
+
+## Out-of-sample discipline
+
+If the measure will be used to forecast, vocabulary discovery may use only text available before the prediction period. A dictionary can be updated on a rolling or expanding historical window, but future-period text cannot enter discovery for any test labeled out of sample. The strongest check is to run the entire procedure in a market that was never used to build anything. In [Listing Language and House Price Discovery](/posts/listing-language-house-price-discovery/), the Carolinas are the estimation sample and Georgia is the replication market: demand-heat language predicts 0.43 percentage points higher six-month price growth there, in a market never used for estimation.
+
+## A validation checklist
+
+1. **Face validity.** Scores should move with known market states. Seller-stress language should rise in downturns and be higher where prices are lower and marketing times longer. It does.
+2. **Human audit.** A random sample of documents is read by people, and agreement with the rule-based scores is reported.
+3. **Model-versus-rules agreement.** The live model scores a subsample; agreement statistics are reported.
+4. **Placebo and reassignment tests.** Reassigning text across geographies or periods should destroy the predictive relation.
+5. **External replication.** The whole procedure is rerun in a second market.
+6. **Alternative text controls.** The categories should retain content after controlling for machine-selected tokens (for example, LASSO-selected words), so that a category is not a relabeling of a few frequent terms. In [Cheap Talk or Priced Information?](/posts/cheap-talk-or-priced-information-listing-remarks/), residual information and adverse disclosure survive this test.
+
+## Why this matters beyond housing
+
+The same two steps apply wherever text carries economic content that structured data does not: loan and servicing agreements, risk-factor sections of filings, analyst reports, consumer complaint narratives, inspection reports. The contracts paper in the *Journal of Financial and Quantitative Analysis* was an early version of this idea with document-similarity methods; the listing-language papers apply it with LLM-discovered vocabularies. The common thread is that the model's job is to help the economist see the text, and the economist's job is to make the measurement reproducible.
+
+## Questions this post answers
+
+**Should a large language model assign the score to each document directly?**
+
+Not for the main measure. In the two-step method the model discovers the vocabulary for each economic category, and a frozen, published vocabulary then scores every document deterministically. Live model scoring of a subsample is useful as a validation check, with agreement statistics against the rule-based scores and human readers, but it should not be the number reported in the tables.
+
+**Why not just write the dictionary by hand?**
+
+Coverage. Practitioners write in dialect, and a hand-authored list misses most of the phrases that express a category. Having the model read the full corpus and propose phrases, which are then screened and frozen, is more comprehensive while remaining fully auditable.
+
+**How do you keep an AI-built text measure out of sample?**
+
+Vocabulary discovery may use only text available before the prediction period. A dictionary can be updated on a rolling or expanding historical window, but text from the test period cannot enter discovery for a test labeled out of sample. Replicating the whole procedure in a second market never used for estimation is the strongest check.
+
+**What is portable across markets: the word list or the procedure?**
+
+The procedure. The economic categories, model instructions, discovery protocol, screening rules, validation steps, and index construction stay fixed, while the words and phrases may be rediscovered for each market, period, or dataset so the measure can accommodate local terminology and language change.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). How to build auditable AI text measures for economic research: a two-step method. AI in Real Estate Finance. https://lilyshen.com/posts/auditable-ai-text-measures-two-step-method/
+
+
+---
+
+# What is soft information in housing markets, and how can it be measured?
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Soft information is what a listing says that structured fields cannot: condition, character, seller circumstances, local demand. This explainer defines the term, contrasts it with hard information, and summarizes what my research finds when listing text is measured with machine learning: it is priced, it changes marketing time, and it moves before price indices do.
+
+Papers discussed:
+- Shen, L., & Ross, S. L. (2021). Information Value of Property Description: A Machine Learning Approach. Journal of Urban Economics, 121, 103299. https://doi.org/10.1016/j.jue.2020.103299
+- Shen, L., & Springer, T. M. (2022). The Odd One Out? The Impact of Property Uniqueness on Selling Time and Selling Price. Journal of Housing Research, 31(2), 220-240. https://doi.org/10.1080/10527001.2022.2078530
+- Shen, L. (2026). Cheap Talk or Priced Information? Listing Language and Housing Transaction Outcomes. Working paper, SSRN, June 2026. https://papers.ssrn.com/abstract=7097938
+- Shen, L. (2026). Soft Information and Price Discovery in Illiquid Asset Markets: Evidence from Housing. Working paper.
+
+## Hard versus soft information
+
+The banking literature draws the distinction clearly. Hard information is quantifiable, verifiable, and can be transmitted without losing meaning: a credit score, an income figure, a loan-to-value ratio. Soft information requires context and judgment to interpret and is difficult to codify: a loan officer's impression of a borrower, a sense of how a business is run (Stein, 2002; Liberti and Petersen, 2019).
+
+Housing has the same divide. The hard information is in the structured fields of a Multiple Listing Service (MLS) record and in tax rolls: bedrooms, bathrooms, square footage, lot size, year built, sale history. The soft information is in what the listing agent writes: "meticulously maintained," "needs TLC," "sold as-is," "estate sale," "multiple offers received," "bring all offers." For most of the history of the market, this information lived in conversations between agents and buyers. The MLS remarks field turns it into a written, public, time-stamped record, and that record is what machine learning can measure.
+
+## Why soft information is economically interesting
+
+Three reasons.
+
+**It is valued.** Two houses with identical hard characteristics can differ by a great deal in condition, layout, light, and finish. Buyers pay for the difference. A hedonic model that sees only the hard fields attributes that payment to noise or, worse, to the wrong variables.
+
+**It is strategic.** Sellers and their agents choose what to say. Disclosure law makes some adverse statements costly to omit, and the market may discount vague language. So the text is not a neutral description; it is a message in a game, which is why the right null hypothesis is that it is cheap talk.
+
+**It is early.** Remarks are written when a property is brought to market, before bargaining, before closing, and long before a transaction-based price index can incorporate the sale. If the text contains information about local market conditions, it is available months ahead of the benchmarks that lenders and policymakers watch.
+
+## Four ways I have measured it
+
+**Uniqueness relative to neighbors.** In [Shen and Ross (2021)](/posts/information-value-property-descriptions-machine-learning/), a machine-learning model reads property descriptions and measures how unusual each description is relative to nearby listings. A one-standard-deviation increase in this measure raises sale price by 15 percent in a hedonic model and 10 percent in a repeat-sales model. An annual hedonic index that ignores the measure overstates prices by 10 to 23 percent and mistimes the stabilization after the Great Recession.
+
+**Market uniqueness versus universal uniqueness.** In [Shen and Springer (2022)](/posts/property-uniqueness-selling-time-and-price/), we separate being unusual relative to homes on the market at the same time from being unusual relative to the submarket as a whole. A one-standard-deviation increase in market uniqueness raises sale price by 13 percent ($48,490) at the cost of 1.7 extra days on the market; universal uniqueness raises price 11 percent ($41,030) at a 3-day delay.
+
+**Economic categories of listing language.** In [Cheap Talk or Priced Information? (2026)](/posts/cheap-talk-or-priced-information-listing-remarks/), an LLM organizes the language of 63,067 Atlanta listings into auditable categories. Residual information is associated with 7.7 percent higher sale prices and 2.5 fewer days on market; adverse disclosure with 17.4 percent lower sale prices; urgency language with 4.7 percent lower sale prices but no distinct change in marketing time.
+
+**Aggregated market signals.** In [Soft Information and Price Discovery in Illiquid Asset Markets (2026)](/posts/soft-information-price-discovery-illiquid-assets/), the same listings are aggregated to local-market-year cells. Seller-stress language rises in weak periods and in weaker local markets. Much of its predictive power for next-year price-index changes reflects the share of distressed sales, but the text channels remain jointly significant after that composition is controlled (F = 7.09, p = 0.003). A companion paper extends the approach to more than two million listings across the Carolinas and Georgia.
+
+## What soft information is not
+
+It is not sentiment. Generic positive-or-negative scores throw away the economic structure that makes listing text useful: a listing can be enthusiastic and still disclose a foundation problem. It is not a substitute for hard information; the text measures add to hedonic controls rather than replacing them. And it is not free of strategy, which is why the measurement has to be designed so that the categories can be audited phrase by phrase and tested against bargaining outcomes, not only prices.
+
+## Practical implications
+
+Automated valuation models and appraisals that read only structured fields leave a large, systematic component of value unmeasured. Price indices can be improved by controlling for text-based quality. Lenders and index providers can observe local market deterioration in listing language before it appears in closed transactions. And for agents, the remarks field is not decoration: what is said, and what is disclosed, shows up in the sale price.
+
+### References outside my own work
+
+Liberti, J. M., & Petersen, M. A. (2019). Information: Hard and soft. *Review of Corporate Finance Studies*, 8(1), 1–41.
+Stein, J. C. (2002). Information production and capital allocation: Decentralized versus hierarchical firms. *Journal of Finance*, 57(5), 1891–1921.
+
+## Questions this post answers
+
+**What is the difference between hard and soft information in real estate?**
+
+Hard information is quantifiable and verifiable: bedrooms, bathrooms, square footage, lot size, year built, tax records. Soft information requires context or judgment to interpret and is hard to codify: the condition and character of a home, the seller's circumstances, and local demand as described in the listing remarks written by the agent.
+
+**Is soft information in listing text actually priced?**
+
+Yes. In Shen and Ross (Journal of Urban Economics, 2021), a one-standard-deviation increase in text-based uniqueness raises sale price by 15 percent in a hedonic model and 10 percent in a repeat-sales model. In the 2026 working paper Cheap Talk or Priced Information?, residual listing information is associated with 7.7 percent higher sale prices and adverse disclosure with 17.4 percent lower sale prices.
+
+**Why do house price indices need soft information?**
+
+Because an index that ignores unobserved quality mixes quality changes with price changes. Shen and Ross (2021) find that an annual hedonic index without the text measure overstates prices by 10 to 23 percent and mistimes the post-recession stabilization of housing prices.
+
+**Is listing language the same as market sentiment?**
+
+No. Listing language is typed information about specific properties and transactions: disclosure, condition, urgency, competition. It can be aggregated into market signals, but each signal has an economic meaning and can be traced to phrases, which generic sentiment scores cannot.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). What is soft information in housing markets, and how can it be measured?. AI in Real Estate Finance. https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/
+
+
+---
+
+# Listing language predicts house price growth months before price indices move
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/listing-language-house-price-discovery/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of my working paper Listing Language and House Price Discovery. From 2.03 million MLS listings, AI-assisted measures of demand heat, seller pressure, and asset frictions predict sale prices, marketing time, and six-month county price-index growth, and the design replicates in Georgia, a market never used for estimation.
+
+Papers discussed:
+- Shen, L. (2026). Listing Language and House Price Discovery. Working paper.
+
+House price indices are the thermometers of the housing market, and they read late. An index is built from closed transactions, so it can only register a sale after marketing, bargaining, and the possibility of a failed listing have all been resolved. This paper asks whether the text that agents write when a property is listed reveals local conditions earlier, and whether that information is specific enough to be useful.
+
+## Data
+
+The corpus is 2.03 million MLS listings. The primary sample is 0.81 million listings from North and South Carolina on an aligned 2001 to 2019 coverage window. A further 0.83 million Georgia listings are held out entirely and used as an out-of-sample market. Remarks are written at listing and precede closing by a median of 84 days.
+
+## Three typed signals, not one sentiment score
+
+Using the [two-step method](/posts/auditable-ai-text-measures-two-step-method/), an LLM discovers the vocabulary for three economically interpretable categories, and a frozen vocabulary then scores every listing:
+
+- **Demand heat**: language indicating buyer competition and strong demand.
+- **Seller pressure**: language indicating urgency or constraint on the seller's side.
+- **Asset frictions**: language indicating property-level problems that slow or discount a sale.
+
+Each signal has an economic meaning and a predicted sign, which is what separates this from generic sentiment analysis.
+
+## Listing-level results
+
+In listing-level regressions with county-by-year and listing-agent fixed effects, demand-heat language predicts:
+
+| Outcome | Demand-heat effect |
+|---|---|
+| Sale price | 1.5 percent higher |
+| Days on market | 9.7 fewer |
+| Discount from list price | 1.28 percentage points smaller |
+| Probability of sale | 4.48 percentage points higher |
+
+Seller-pressure and asset-friction language predict the opposite pattern: lower prices, longer marketing time, larger discounts, and lower sale probabilities. The signs line up with what each category should mean, and the agent fixed effects rule out the explanation that the results merely pick up which agents write enthusiastically.
+
+## County-month results and forecasting
+
+Aggregated to county-months, demand heat predicts 0.58 percentage points higher six-month growth in an MLS hedonic price index within state-month. In a holdout exercise over the 2015 to 2019 expansion, adding the text signal reduces forecast errors by 23 percent. A geographic reassignment test, in which text is reassigned across counties, removes the relation, as it should if the signal is local information rather than a statistical artifact.
+
+## Replication in a market never used for estimation
+
+The same procedure is run on Georgia, a market that entered none of the estimation steps. Demand heat predicts 0.43 percentage points higher six-month price growth there. The replication is the strongest evidence in the paper that what is portable is the measurement procedure, not a word list fitted to one place.
+
+## What the paper does and does not claim
+
+It claims that listing language is typed market information observed months before a transaction-based index can incorporate the corresponding sales, and that this information improves short-horizon forecasts of local price growth. It does not claim that text replaces a price index, or that any single phrase is decisive. The measures are built so that every score can be traced to phrases, and the vocabulary discovery respects the out-of-sample timing rules described in the methods post.
+
+## Who should care
+
+Lenders setting local credit terms, index providers, insurers, investors in single-family rental portfolios, and policymakers watching for local deterioration all currently rely on benchmarks that lag the market by a quarter or more. Listing text is public, high-frequency, and already collected. The paper shows how to read it.
+
+*Status: working paper, 2026. Numbers quoted are from the current draft and will be updated if the paper changes.*
+
+## Questions this post answers
+
+**How far ahead of a house price index does listing language appear?**
+
+In the paper's sample, listing remarks precede closing by a median of 84 days, and a transaction-based index can only incorporate a sale after it closes. Aggregated to county-months, demand-heat language predicts six-month hedonic-index growth.
+
+**What are the three signals measured from listing text?**
+
+Demand heat (language indicating buyer competition and strong demand), seller pressure (language indicating urgency or constraint on the seller side), and asset frictions (language indicating property-level problems that slow or discount a sale).
+
+**Does the result hold outside the estimation sample?**
+
+Yes. The procedure estimated on 0.81 million North and South Carolina listings replicates on 0.83 million Georgia listings never used for estimation: demand heat predicts 0.43 percentage points higher six-month price growth there, versus 0.58 in the primary sample.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Listing language predicts house price growth months before price indices move. AI in Real Estate Finance. https://lilyshen.com/posts/listing-language-house-price-discovery/
+
+
+---
+
+# Price discovery in illiquid markets: what listing remarks reveal before transaction indices update
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of my working paper Soft Information and Price Discovery in Illiquid Asset Markets. Using 63,067 Atlanta listings, seller-stress language tracks local market weakness; part of the signal is distressed-sale composition, but the text channels remain jointly significant predictors of next-year local price-index changes after composition is controlled.
+
+Papers discussed:
+- Shen, L. (2026). Soft Information and Price Discovery in Illiquid Asset Markets: Evidence from Housing. Working paper.
+
+How does price discovery work when assets are heterogeneous, trade infrequently, and the benchmark price is estimated from transactions that close with a delay? Equity markets reveal information through continuous trading. Housing does not have that. What it has instead is a public description of every asset at the moment it comes to market, written by an intermediary who knows the property and the local conditions. This paper asks what that description reveals before transaction-based benchmarks update.
+
+## Setting and measurement
+
+The data are 63,067 transaction-level Atlanta MLS listings from 2007 to 2017, a window that spans the housing bust and recovery. Local market conditions are measured from listing-stage language using the [two-step method](/posts/auditable-ai-text-measures-two-step-method/) and aggregated to local-market-year cells.
+
+## The measures behave like market-state signals
+
+Before asking whether the text predicts anything, the paper checks that it tracks what it should. Seller-stress language rises in weak periods, is higher in local markets with lower prices and worse liquidity, and varies across areas within the same aggregate cycle. The last point matters: the text is not just a restatement of the national cycle but contains cross-sectional local information.
+
+## The central result: a decomposition
+
+The question is what listing language reveals before transaction benchmarks update, and the answer has two parts.
+
+**Part of the signal is observable composition.** Some listings are flagged in structured fields as REO (bank-owned) or corporate-owned. Controlling for this distressed-sale share absorbs most of the seller-stress coefficient in regressions of next-year local price-index changes. In other words, a good deal of what the stress language was capturing is simply that more of the listings in a weak market are distressed, which a careful analyst could also see from the structured flags.
+
+**But listing language is not exhausted by composition.** After controlling for the distressed-sale share, current conditions, and year effects, the text channels remain jointly significant predictors of next-year local price-index changes (F = 7.09, p = 0.003). Within that joint result, disclosed property-condition risk predicts weaker next-year changes, and buyer-competition language predicts stronger ones.
+
+The interpretation is that listing remarks aggregate hard distress composition and residual soft information into a single public, real-time signal that appears before delayed transaction benchmarks record local deterioration. Supporting transaction-level tests show that the same remarks are capitalized into individual sale prices, which ties the aggregate finding to the pricing results in [Cheap Talk or Priced Information?](/posts/cheap-talk-or-priced-information-listing-remarks/).
+
+## Caveats
+
+The paper is careful about what the individual coefficients can bear. Once year effects, condition risk, and the distressed share are all included, the seller-stress coefficient on its own is not the headline; the claim rests on the joint test of the text channels and on text as a real-time aggregator of composition. The panel is annual and covers one metropolitan area, so the natural next steps are a higher-frequency panel and a second market. The companion paper [Listing Language and House Price Discovery](/posts/listing-language-house-price-discovery/) takes the second step with more than two million listings across three states.
+
+## Why it matters
+
+For anyone who prices or lends against illiquid assets, the result says that the public description written at listing is informative about where local prices are heading, and that part of that information is not available from structured data. For researchers, it offers a template for separating what text reveals about composition from what it reveals beyond it.
+
+*Status: working paper, 2026. Numbers quoted are from the current draft and will be updated if the paper changes.*
+
+## Questions this post answers
+
+**Does listing language just measure how many distressed sales there are?**
+
+Partly. Controlling for the structured distressed-sale share (REO and corporate-owned listings) absorbs most of the seller-stress coefficient in next-year price-index regressions. But the text channels remain jointly significant beyond that share, current conditions, and year effects (F = 7.09, p = 0.003), so the language carries residual soft information as well.
+
+**Which text channels predict next-year local price changes?**
+
+Disclosed property-condition risk predicts weaker next-year local price-index changes, and buyer-competition language predicts stronger ones, after controlling for distressed-sale composition.
+
+**Why is housing a good setting for studying price discovery?**
+
+Assets are heterogeneous, trade infrequently, and benchmark prices are estimated from transactions that close with delay, while intermediaries describe each asset publicly when it is brought to market. That combination lets us observe information at the listing stage and compare it with benchmarks formed later.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Price discovery in illiquid markets: what listing remarks reveal before transaction indices update. AI in Real Estate Finance. https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/
+
+
+---
+
+# Cheap talk or priced information? What listing remarks do to prices, bargaining, and marketing time
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/cheap-talk-or-priced-information-listing-remarks/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of my working paper Cheap Talk or Priced Information? In 63,067 Atlanta MLS transactions, residual listing information is associated with 7.7 percent higher sale prices and 2.5 fewer days on market, adverse disclosure with 17.4 percent lower sale prices, and urgency language with 4.7 percent lower sale prices, showing that remarks carry priced information beyond structured MLS fields.
+
+Papers discussed:
+- Shen, L. (2026). Cheap Talk or Priced Information? Listing Language and Housing Transaction Outcomes. Working paper, SSRN, June 2026. https://papers.ssrn.com/abstract=7097938
+
+Economists have a ready null hypothesis for what a seller says about the thing being sold: cheap talk. Statements are costless, unverifiable, and self-interested, so a rational buyer should ignore them. Listing remarks are a natural place to test this, because they are public, written before any bargaining, and attached to transactions whose outcomes we can observe. If remarks are cheap talk, they should not show up in prices.
+
+## Data and method
+
+The sample is 63,067 Atlanta MLS transactions from 2007 to 2017. An LLM scans the corpus and organizes listing language into auditable property and transaction categories, following the [two-step method](/posts/auditable-ai-text-measures-two-step-method/): the model discovers the vocabulary and a frozen vocabulary does the scoring. The main categories are residual information (property content beyond the structured fields), adverse disclosure, urgency pressure, and market stress. All regressions are within search-area-year markets and conditional on a saturated hedonic specification, so the comparison is between similar homes in the same local market and year.
+
+## Results by category
+
+| Category (one standard deviation) | Sale price | List price | Sale-to-list ratio | Days on market |
+|---|---|---|---|---|
+| Residual information | +7.7% | +7.6% | | 2.5 fewer |
+| Adverse disclosure | −17.4% | −16.7% | −0.7% | |
+| Urgency pressure | −4.7% | −4.4% | no distinct effect | no distinct effect |
+
+Residual information is priced on both sides of the transaction: it raises the list price and the sale price by about the same amount and shortens marketing time. Adverse disclosure lowers both prices and also lowers the sale-to-list ratio, so disclosed problems are discounted at listing and then discounted again in bargaining. Urgency language lowers the list and sale price but does not produce a distinct bargaining adjustment or a faster sale, which suggests the seller's constraint is priced in up front rather than extracted by buyers.
+
+Market-stress language rises during the housing crisis and is more prevalent where local prices are lower, marketing time is longer, and discounts are larger. That pattern is the starting point for the aggregate analysis in [Soft Information and Price Discovery in Illiquid Asset Markets](/posts/soft-information-price-discovery-illiquid-assets/).
+
+## Robustness
+
+Two concerns deserve attention. First, the text could proxy for unobserved quality that a repeat-sales design would absorb; repeat-sale specifications, and specifications with listing-agent fixed effects, imply more conservative but still economically meaningful price differences. Second, the categories could be relabelings of a handful of frequent words; residual information and adverse disclosure retain pricing content after controlling for LASSO-selected tokens.
+
+## What the results mean
+
+Remarks are not cheap talk. They reveal priced property and transaction information beyond structured MLS fields, and the method identifies the economic categories in which that information appears. For automated valuation models, the implication is that the remarks field carries a component of value that structured inputs cannot recover. For sellers and agents, disclosure is costly in price but is reflected consistently from list to close. For researchers, the design shows how to test a cheap-talk null with text at scale while keeping every measure auditable.
+
+*Status: working paper, posted on SSRN, June 2026. Numbers quoted are from the posted version.*
+
+## Questions this post answers
+
+**Do listing remarks affect the sale price of a house?**
+
+In 63,067 Atlanta MLS transactions from 2007 to 2017, a one-standard-deviation increase in residual listing information is associated with 7.7 percent higher sale prices and 7.6 percent higher list prices, conditional on a saturated hedonic specification and search-area-year fixed effects. Adverse disclosure is associated with 17.4 percent lower sale prices.
+
+**Does urgency language such as motivated seller lower the price?**
+
+Urgency pressure is associated with 4.7 percent lower sale prices and 4.4 percent lower list prices, but not with a distinct sale-to-list adjustment or with shorter marketing time. The discount is set at listing rather than extracted in bargaining.
+
+**How was the listing language classified?**
+
+An LLM scans the corpus and organizes listing language into auditable property and transaction categories; a fixed vocabulary then scores each listing, so every score can be traced to phrases. The categories retain pricing content after LASSO-selected token controls.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Cheap talk or priced information? What listing remarks do to prices, bargaining, and marketing time. AI in Real Estate Finance. https://lilyshen.com/posts/cheap-talk-or-priced-information-listing-remarks/
+
+
+---
+
+# Property descriptions carry priced information that hedonic models miss (Journal of Urban Economics, 2021)
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/information-value-property-descriptions-machine-learning/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of Information Value of Property Description: A Machine Learning Approach, with Stephen L. Ross. A machine-learning measure of the soft information in listing text raises sale prices by 15 percent per standard deviation in a hedonic model and 10 percent in a repeat-sales model, and price indices that ignore it overstate prices by 10 to 23 percent and mistime the post-recession stabilization.
+
+Papers discussed:
+- Shen, L., & Ross, S. L. (2021). Information Value of Property Description: A Machine Learning Approach. Journal of Urban Economics, 121, 103299. https://doi.org/10.1016/j.jue.2020.103299
+
+Hedonic pricing is the workhorse of housing economics: regress price on a list of measurable characteristics and read off what each one is worth. The trouble is that the list is short and the house is not. Everything that makes a home more or less desirable than its bedroom count implies goes into the residual. This paper, written with Stephen Ross and published in the *Journal of Urban Economics* in 2021, asks how much of that residual can be recovered from the words the listing agent wrote.
+
+## What we measured
+
+The idea is to treat the property description as data. A machine-learning model reads the text of each listing and produces a measure of how unique the property is relative to comparable homes, based on the "soft" content of the description rather than the structured fields. Textual descriptions turn out to contain information that traditional hedonic attributes cannot capture.
+
+## What we found
+
+A one-standard-deviation increase in text-based uniqueness is associated with a 15 percent higher sale price in a hedonic model and a 10 percent higher price in a repeat-sales model. The repeat-sales result matters because it differences out time-invariant property characteristics: the text is not simply proxying for fixed features the hedonic model omitted.
+
+## Why price indices should care
+
+The second contribution is about measurement at the market level. An annual hedonic price index that ignores the text-based measure of unobserved quality overstates real estate prices by between 10 and 23 percent, and it mistimes the stabilization of housing prices following the Great Recession. Similar but smaller effects appear in a repeat-sales index. The mechanism is composition: when the mix of homes coming to market changes over the cycle, an index that cannot see quality attributes the shift to prices.
+
+## Why it matters
+
+For automated valuation models and appraisal, the paper shows that a large, systematic component of value is sitting in a field most models do not read. For index construction, it shows that the omission is not neutral noise but a cyclical bias. And for the research program that followed, it established that listing text could be turned into an economic measure that survives both hedonic and repeat-sales scrutiny. Later work separates [market uniqueness from universal uniqueness](/posts/property-uniqueness-selling-time-and-price/) and organizes the text into [economic categories](/posts/cheap-talk-or-priced-information-listing-remarks/).
+
+The underlying natural-language method was the subject of a Clemson University technology disclosure (2018), and the study was covered by Clemson News in February 2020 under the headline "Clemson study employs AI to decipher 'soft' features of a home's value."
+
+## Questions this post answers
+
+**What does the Shen and Ross (2021) paper find?**
+
+Textual property descriptions contain information that traditional hedonic attributes cannot capture. A one-standard-deviation increase in a property's text-based uniqueness raises its sale price by 15 percent in a hedonic model and 10 percent in a repeat-sales model.
+
+**How do property descriptions affect house price indices?**
+
+An annual hedonic price index that ignores the text-based measure of unobserved quality overstates real estate prices by 10 to 23 percent and mistimes the stabilization of housing prices after the Great Recession. The repeat-sales index shows similar but smaller distortions.
+
+**Where was the paper published?**
+
+Journal of Urban Economics, volume 121, 2021, article 103299, DOI 10.1016/j.jue.2020.103299. Coauthor: Stephen L. Ross, University of Connecticut.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Property descriptions carry priced information that hedonic models miss (Journal of Urban Economics, 2021). AI in Real Estate Finance. https://lilyshen.com/posts/information-value-property-descriptions-machine-learning/
+
+
+---
+
+# Are securitization contracts boilerplate? Machine learning on CMBS pooling and servicing agreements (JFQA, 2024)
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/machine-learning-cmbs-pooling-servicing-agreements/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of Information in Financial Contracts: Evidence from Securitization Agreements, with Brent W. Ambrose, Yiqiang Han, and Sanket Korgaonkar. A machine-learning comparison of the pooling and servicing agreements behind commercial mortgage-backed securities shows substantial variation across deals, underwriters, and time, partly explained by collateral, and correlated with later loan and bond performance.
+
+Papers discussed:
+- Ambrose, B. W., Han, Y., Korgaonkar, S., & Shen, L. (2024). Information in Financial Contracts: Evidence from Securitization Agreements. Journal of Financial and Quantitative Analysis, 59(4), 1692-1725. https://doi.org/10.1017/S0022109023000509
+
+Every commercial mortgage-backed securities (CMBS) deal is governed by a pooling and servicing agreement (PSA): a long contract that defines how the pooled loans are held and serviced, how cash is allocated among bond classes, and what the servicer may do when a loan goes bad. The received view among many market participants is that the PSA is boilerplate, copied deal to deal with only the names changed, and therefore not worth reading closely. This paper, with Brent Ambrose, Yiqiang Han, and Sanket Korgaonkar, published in the *Journal of Financial and Quantitative Analysis* in 2024, tests that view by reading the contracts with machines.
+
+## What we did
+
+We introduce a machine-learning comparison of PSAs. Instead of selecting a few clauses by hand, the method compares entire documents to one another and measures how far each agreement departs from the others. This produces a measure of contract variation that can be related to deal characteristics and to outcomes.
+
+## What we found
+
+The PSA is not boilerplate. We document substantial variation across agreements, both within and across underwriters and over time. A part of the variation is explained by differences in loan collateral across deals, which is what one would expect if contracts are tailored to the risks in the pool. The rest is not mechanical.
+
+Most importantly, differences in PSAs are correlated with ex-post loan and bond performance. The contracts carry information about how the deal will fare that is not captured by the standard summary variables investors use.
+
+## Why it matters
+
+The practical lesson is that the whole governing document matters. Analysis that focuses on specific components, or that assumes the agreement is standardized, misses information that is priced in outcomes. For investors, the paper argues for reading the contract; for regulators and rating agencies, it argues for treating contract text as data. Methodologically, it is an early example of the approach I later applied to listing remarks: use machine learning to measure a document at scale, and then ask an economic question about what the measure predicts. The [two-step method](/posts/auditable-ai-text-measures-two-step-method/) I now use with large language models grew out of this work.
+
+## Questions this post answers
+
+**What is a pooling and servicing agreement?**
+
+The pooling and servicing agreement (PSA) is the governing contract of a commercial mortgage-backed securities deal. It sets out how the loan pool is held, how the loans are serviced, how cash flows are distributed to bondholders, and what happens when loans become distressed.
+
+**Are CMBS pooling and servicing agreements all the same?**
+
+No. Using machine learning to compare the full text of PSAs, the paper documents substantial variation across agreements, both within and across underwriters and over time. Part of that variation reflects differences in loan collateral across deals.
+
+**Does contract language predict CMBS performance?**
+
+Differences in PSAs are correlated with ex-post loan and bond performance, which suggests that investors and analysts should examine the entire governing document rather than specific components.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Are securitization contracts boilerplate? Machine learning on CMBS pooling and servicing agreements (JFQA, 2024). AI in Real Estate Finance. https://lilyshen.com/posts/machine-learning-cmbs-pooling-servicing-agreements/
+
+
+---
+
+# The odd one out: unique homes sell for more and take only slightly longer (Journal of Housing Research, 2022)
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/property-uniqueness-selling-time-and-price/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of The Odd One Out? The Impact of Property Uniqueness on Selling Time and Selling Price, with Thomas M. Springer. Machine-learning measures of uniqueness from listing text show that a one-standard-deviation increase in market uniqueness raises sale prices by 13 percent ($48,490) while delaying sale by 1.7 days; universal uniqueness raises prices 11 percent ($41,030) at a 3-day delay.
+
+Papers discussed:
+- Shen, L., & Springer, T. M. (2022). The Odd One Out? The Impact of Property Uniqueness on Selling Time and Selling Price. Journal of Housing Research, 31(2), 220-240. https://doi.org/10.1080/10527001.2022.2078530
+
+A buyer looking at a one-of-a-kind house faces two different questions. Is it unusual compared with what else is for sale right now? Or is it unusual compared with everything in the neighborhood, whenever it was listed? The first is about competition and timing; the second is about scarcity. This paper, with Thomas Springer in the *Journal of Housing Research* (2022), separates the two and asks what each is worth, and what each costs in time.
+
+## Measuring uniqueness from the advertisement
+
+We use machine learning to build measures of residential uniqueness from written listing advertisements. Because the measures are derived from the text rather than from prices, they are exogenous to the sale price in the sense that they do not use the outcome to define the input. Two measures result:
+
+- **Market uniqueness**: how different a home is from the homes for sale at the same time.
+- **Universal uniqueness**: how different a home is from the homes in the same submarket, across time.
+
+## Results
+
+In hedonic models, a one-standard-deviation increase in market uniqueness raises the sale price by 13 percent, or $48,490 at the sample's price level, at the cost of delaying the transaction by 1.7 days. A one-standard-deviation increase in universal uniqueness raises the sale price by 11 percent, or $41,030, with a delay of 3 days. We validate the time-on-market results with two hazard models.
+
+## Interpretation
+
+Standing out from current competition is worth slightly more, and costs slightly less time, than being rare in general. Both premiums are large relative to the delays, which are measured in days. The common belief that an unusual home is hard to sell gets the sign of the price effect wrong: unusual homes sell for more, and the marketing-time cost is small.
+
+## Recognition and coverage
+
+The paper received the Best Paper Award for the 2022 volume of the *Journal of Housing Research*. Clemson News covered it in July 2023 under the headline "A unique home might take longer to sell, but the payoff could be worth a few extra days on the market." It builds on the text-based uniqueness measure introduced in [Shen and Ross (2021)](/posts/information-value-property-descriptions-machine-learning/).
+
+## Questions this post answers
+
+**Do unique houses sell for more or less?**
+
+More. A one-standard-deviation increase in market uniqueness, measured from listing text, is associated with a 13 percent ($48,490) higher sale price, and universal uniqueness with an 11 percent ($41,030) higher price, in hedonic models.
+
+**Do unique houses take longer to sell?**
+
+Slightly. The same one-standard-deviation increase delays the transaction by about 1.7 days for market uniqueness and 3 days for universal uniqueness, results confirmed with two hazard models of time on market.
+
+**What is the difference between market uniqueness and universal uniqueness?**
+
+Market uniqueness compares a house to the houses for sale at the same time; universal uniqueness compares it to houses in the same submarket regardless of when they were listed. The distinction separates the value of standing out from current competition from the value of being rare in general.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). The odd one out: unique homes sell for more and take only slightly longer (Journal of Housing Research, 2022). AI in Real Estate Finance. https://lilyshen.com/posts/property-uniqueness-selling-time-and-price/
+
+
+---
+
+# Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.
+
+Papers discussed:
+- Shen, L., & Wilkoff, S. (2022). Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals. Journal of Regional Science, 62(3), 799-829. https://doi.org/10.1111/jors.12581
+
+When COVID-19 arrived, travel stopped and the short-term rental market was hit immediately. The pandemic also changed what guests cared about: a clean unit went from a nicety to a health concern. This paper, with Sean Wilkoff in the *Journal of Regional Science* (2022), uses Airbnb data from Austin, Texas, to measure both the shock and the premium that cleanliness earned during it.
+
+## Measuring cleanliness from reviews
+
+Cleanliness is not a field in a listing; it is a judgment guests form and write about. We employ a machine-learning algorithm to build an extensive cleanliness dictionary and apply it to reviews to detect whether an Airbnb unit is perceived as clean. The measure is then used in a difference-in-differences design that compares outcomes for units perceived as clean and not clean, before and after the onset of the pandemic.
+
+## Results
+
+- **The shock.** Available listings declined by 25 percent once the pandemic hit. Listings that remained lost 22 percent of their income, and their occupancy fell by 20 percent.
+- **The cleanliness premium.** Properties perceived as clean increased their income by 17.5 percent and their occupancy by 16.5 percent, which mitigated a large part of the negative shock.
+- **Quantity, not price.** Rental prices for clean listings did not increase after COVID-19. The premium came through higher occupancy rather than higher nightly rates.
+
+The paper also examines how the supply of Airbnb units interacts with the long-term rental market during a market decline.
+
+## Why it matters
+
+The result is a clean example of soft information at work. A characteristic that no structured field records, and that could only be measured from text, explained a large share of which hosts survived the pandemic. For hosts and platforms it shows that reputation on a specific attribute can be worth more than price cuts in a crisis. For researchers it is an early application of the text-measurement approach that runs through my work on [listing remarks](/posts/what-is-soft-information-in-housing-markets/). *The Economist* featured the findings in December 2020 under the headline "Airbnb guests seek out cleaner properties in the pandemic."
+
+## Questions this post answers
+
+**What happened to Airbnb listings when COVID-19 began?**
+
+In Austin, Texas, available listings declined by 25 percent once the pandemic hit, and the listings that remained lost 22 percent of their income and saw occupancy fall by 20 percent.
+
+**Did clean Airbnb units do better during the pandemic?**
+
+Yes. Properties that guests perceived as clean, identified with a machine-learning cleanliness dictionary applied to reviews, increased their income by 17.5 percent and their occupancy by 16.5 percent, offsetting much of the pandemic shock. Their rental prices did not rise.
+
+**Where was the paper published and covered?**
+
+Journal of Regional Science, volume 62, issue 3, 2022, pages 799 to 829, DOI 10.1111/jors.12581. The Economist featured the findings in December 2020.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022). AI in Real Estate Finance. https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/
+
+
+---
+
+# Well-connected real estate agents sell for more: network theory on 40,000 Atlanta transactions (Journal of Real Estate Research, 2025)
+
+Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Published: 2026-10-19
+Canonical URL: https://lilyshen.com/posts/real-estate-agent-networks-connectedness/
+Site: AI in Real Estate Finance, Lily Shen (https://lilyshen.com/)
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Summary: Summary of The More, the Merrier: Agent Connectedness in Real Estate Trading Networks, with Xiaojin Sun. A one-standard-deviation increase in an agent's network connectedness is associated with 2.61 percent higher sale prices, and connected agents sell unique properties faster and price them more accurately, consistent with networks improving information flow.
+
+Papers discussed:
+- Shen, L., & Sun, X. (2025). The More, the Merrier: Agent Connectedness in Real Estate Trading Networks. Journal of Real Estate Research, 47(2), 149-169. https://doi.org/10.1080/08965803.2025.2466957
+
+Real estate agents trade with each other. A listing agent on one deal is a buyer's agent on the next, and over thousands of transactions these pairings form a network. This paper, with Xiaojin Sun in the *Journal of Real Estate Research* (2025), applies network theory to that structure and asks whether an agent's position in it affects the outcomes of the transactions they handle.
+
+## Data and measure
+
+The data cover more than 40,000 sales in Atlanta, Georgia. From the record of which agents transacted with which, we construct measures of each agent's connectedness in the trading network and relate them to sale prices and marketing time, controlling for property and location characteristics.
+
+## Results
+
+Agents with stronger networks achieve higher sale prices: a one-standard-deviation increase in connectedness is associated with a 2.61 percent higher price. The channel appears to be information rather than bargaining power. Well-connected agents sell unique properties faster and price them more accurately, which is what one would expect if a larger network means better knowledge of likely buyers, comparable sales, and the true value of hard-to-compare homes.
+
+## Interpretation
+
+The finding is a market-efficiency result as much as an agent-performance result. Unique properties are where information is scarcest, and that is where connected agents add the most. Networks move information through a market that lacks centralized price discovery, and the agents at the center of the network are the conduits.
+
+## Recognition
+
+The paper received an American Real Estate Society Best Article Award. It connects to my work with Chris Cunningham and Kristopher Gerardi on estimating agent value-added, and to the broader question of how intermediaries process [soft information](/posts/what-is-soft-information-in-housing-markets/) in housing markets.
+
+## Questions this post answers
+
+**Do well-connected real estate agents get higher prices?**
+
+Yes. Using more than 40,000 sales in Atlanta, Georgia, a one-standard-deviation increase in an agent's connectedness in the trading network is associated with a 2.61 percent higher sale price.
+
+**Why would an agent's network raise the sale price?**
+
+Connected agents sell unique properties faster and price them more accurately, which suggests their networks improve the flow of information about buyers, comparable sales, and property value, rather than simply extracting more from buyers.
+
+**Where was the paper published?**
+
+Journal of Real Estate Research, volume 47, issue 2, 2025, pages 149 to 169, DOI 10.1080/08965803.2025.2466957. The paper received an American Real Estate Society Best Article Award.
+
+## How to cite this post
+
+Shen, L. (2026, October 19). Well-connected real estate agents sell for more: network theory on 40,000 Atlanta transactions (Journal of Real Estate Research, 2025). AI in Real Estate Finance. https://lilyshen.com/posts/real-estate-agent-networks-connectedness/
+
+
+---

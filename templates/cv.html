@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Curriculum vitae</h1>
+<p class="intro">{{ cfg.author.name }} ({{ cfg.author.alternate_names[0] }}). <a class="btn" href="{{ cfg.author.cv_pdf }}">Download the full CV (PDF)</a></p>
+<h2>Positions</h2>
+<ul>{% for p in profile.positions %}<li><strong>{{ p.role }}</strong>, {{ p.org }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.note %} ({{ p.note }}){% endif %}</li>{% endfor %}</ul>
+<h2>Education</h2>
+<ul>{% for e in profile.education %}<li><strong>{{ e.degree }}</strong>, {{ e.org }}, {{ e.year }}. {{ e.note }}</li>{% endfor %}</ul>
+<h2>Publications</h2>
+<ol>{% for p in published %}<li>{{ p.apa }}{% if p.abdc %} [ABDC {{ p.abdc }}]{% endif %}{% if p.award %} {{ p.award }}.{% endif %}</li>{% endfor %}</ol>
+<h2>Papers under revision and working papers</h2>
+<ol>{% for p in working %}<li>{{ p.apa }}</li>{% endfor %}</ol>
+<h2>Textbooks</h2>
+<ul>{% for b in profile.textbooks %}<li>{{ b.authors|join(', ') }} ({{ b.year }}). <em>{{ b.title }}</em>{% if b.edition %}, {{ b.edition }}{% endif %}. {{ b.publisher }}.</li>{% endfor %}</ul>
+<h2>Honors and grants</h2>
+<ul>{% for a in profile.awards %}<li>{{ a.year }} · {{ a.text }}</li>{% endfor %}</ul>
+<h2>Editorial and professional affiliations</h2>
+<ul>{% for a in profile.affiliations %}<li>{{ a }}</li>{% endfor %}</ul>
+<h2>Teaching</h2>
+<ul>{% for c in profile.courses %}<li>{{ c.name }}, {{ c.org }}, {{ c.years }}</li>{% endfor %}</ul>
+<h2>Service</h2>
+<ul>{% for s in profile.service %}<li>{{ s }}</li>{% endfor %}</ul>
+<h2>Skills and data</h2>
+<p>{{ profile.skills }}</p>
+<p class="meta"><a href="/cv.md">Plain-text version</a> · <a href="/profile.md">Full machine-readable profile</a></p>
+{% endblock %}

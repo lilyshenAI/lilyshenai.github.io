@@ -1,0 +1,36 @@
+# Site configuration. Edit this file, then run: python3 build.py
+site_name: Lily Shen
+site_tagline: Real estate finance, housing and mortgage markets, and AI as a measurement tool
+blog_name: AI in Real Estate Finance
+blog_tagline: Research notes on AI, text analytics, housing, mortgages, and real estate finance
+# IMPORTANT: set to the final public URL before deploying (no trailing slash).
+site_url: https://lilyshen.com
+language: en
+site_intro: >
+  I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the
+  Federal Reserve Bank of Atlanta. I study how information moves real estate and mortgage markets, and I
+  use machine learning and large language models as measurement tools: turning listing remarks,
+  securitization contracts, and other text into auditable economic measures. I coauthor two of the
+  field's standard textbooks and have applied AI to real estate since 2018, well before large language
+  models became widely available.
+author:
+  name: Lily Shen
+  alternate_names:
+    - Yannan Shen
+  title: Associate Professor of Finance
+  affiliation: Clemson University
+  affiliation_unit: Department of Finance, Wilbur O. and Ann Powers College of Business
+  other_affiliation: Visiting Scholar, Federal Reserve Bank of Atlanta
+  clemson_profile: https://www.clemson.edu/business/about/profiles/yannans
+  google_scholar: https://scholar.google.com/citations?user=HWr0OQQAAAAJ
+  homepage: https://sites.google.com/g.clemson.edu/lily-shen/home
+  crebook: https://crebook.net/
+  podcast: https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk
+  ssrn_author: ""        # add SSRN author-page URL when known
+  orcid: ""              # add ORCID URL (https://orcid.org/....) when known
+  linkedin: ""
+  cv_pdf: /static/Lily_Shen_CV.pdf
+  photo: /static/lily-shen.jpg
+license:
+  name: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/

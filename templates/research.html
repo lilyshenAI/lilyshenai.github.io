@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Research</h1>
+<p class="intro">I study how information moves real estate and mortgage markets. Much of my recent work uses machine learning and large language models as measurement tools: turning listing remarks, securitization contracts, and other unstructured text into auditable economic measures, then asking what those measures reveal about prices, liquidity, risk, and the intermediaries who connect buyers, sellers, and lenders. Other work covers mortgage default, tenant rights and rent affordability, flood-insurance repricing, political alignment in neighborhood choice, real estate agents, and manufacturing reshoring.</p>
+<p class="meta">Bracketed ratings are from the 2025 ABDC Journal Quality List. <a href="/papers.bib">Download all BibTeX</a> · <a href="/research.md">Plain-text version</a> · <a href="{{ cfg.author.google_scholar }}">Google Scholar</a></p>
+{% for section in sections %}
+{% if section.entries %}
+<h2>{{ section.title }}</h2>
+{% for p in section.entries %}
+<article class="paper" id="{{ p.key }}">
+  <h3>{{ p.title }}</h3>
+  <p class="meta">{{ p.authors|join(', ') }}{% if p.journal %} · <em>{{ p.journal }}</em>{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.issue %}({{ p.issue }}){% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% endif %} · {{ p.year }}{% if p.abdc %} · [ABDC {{ p.abdc }}]{% endif %}{% if p.note %} · {{ p.note }}{% endif %}{% if p.award %} · <strong>{{ p.award }}</strong>{% endif %}{% if p.media %} · {{ p.media }}{% endif %}</p>
+  {% if p.abstract %}<p class="abstract">{{ p.abstract }}</p>{% endif %}
+  <p class="links">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">Publisher (DOI: {{ p.doi }})</a>{% endif %}{% if p.ssrn %}<a href="https://papers.ssrn.com/abstract={{ p.ssrn }}">SSRN</a>{% endif %}{% if p.url %}<a href="{{ p.url }}">Working paper</a>{% endif %}{% for post in p.posts %}<a href="{{ post.url }}">Research note: {{ post.title }}</a>{% endfor %}</p>
+  {% if p.status != 'progress' %}<details><summary>Cite</summary><p class="apa">{{ p.apa }}</p><pre>{{ p.bibtex|e }}</pre></details>{% endif %}
+</article>
+{% endfor %}
+{% endif %}
+{% endfor %}
+<h2>Grants and research awards</h2>
+<ul>
+{% for a in profile.awards %}<li>{{ a.year }} · {{ a.text }}</li>
+{% endfor %}
+</ul>
+<h2>Copyright</h2>
+<p>"A Natural Language Processing Model for House Price Forecasting Using Text Analysis from House Description," Shen and Han, Clemson University technology disclosure 2018-034 (copyright 2018).</p>
+{% endblock %}

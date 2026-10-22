@@ -1,0 +1,37 @@
+---
+title: "About Lily Shen"
+description: "Lily Shen (Yannan Shen) is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools."
+---
+I am Lily Shen, Associate Professor of Finance in the Department of Finance at the Wilbur O. and Ann Powers College of Business, Clemson University, and a visiting scholar at the Federal Reserve Bank of Atlanta. I also publish under my legal name, Yannan Shen. Both names refer to the same person, and citations under either name should be attributed to me.
+
+## Research
+
+I study how information moves real estate and mortgage markets. Much of my recent work uses machine learning and large language models as measurement tools: turning listing remarks, securitization contracts, and other unstructured text into auditable economic measures, then asking what those measures reveal about prices, liquidity, risk, and the intermediaries who connect buyers, sellers, and lenders. Other work covers mortgage default, tenant rights and rent affordability, flood insurance repricing, political alignment in neighborhood choice, and manufacturing reshoring. The complete list, with abstracts, DOIs, and BibTeX, is on the [papers page](/papers/).
+
+My articles have appeared in *Management Science*, the *Journal of Financial and Quantitative Analysis*, the *Journal of Urban Economics*, the *Journal of Regional Science*, the *Journal of Real Estate Finance and Economics*, the *Journal of Real Estate Research*, and the *Journal of Housing Research*. The work has been covered by *The Economist*, *The Washington Post*, the Federal Reserve Bank of Atlanta's Policy Hub, South Carolina Public Radio, and others.
+
+## Background
+
+- Ph.D., Business Administration, the Pennsylvania State University, 2016. Dissertation: *The Role of Information in the Real Estate Market*, advised by Brent W. Ambrose.
+- B.A., Financial Mathematics, University of California, Berkeley, 2010.
+- Assistant Professor (2016–2023) and Associate Professor (2023–present), Clemson University.
+- Visiting Scholar, Federal Reserve Bank of Atlanta (2017–present); previously at the Federal Reserve Banks of Cleveland (2018) and Minneapolis (2015), and at the University of Cambridge, Department of Land Economy (2023).
+
+## Service and recognition
+
+- Editorial boards: *Journal of Housing Research* (2022–) and *Journal of Real Estate Literature* (2023–).
+- Board Director, International Real Estate Society (2024–).
+- Homer Hoyt Institute, Weimer School of Advanced Studies in Real Estate, Post-Doctoral Honoree (selected 2025).
+- Best Paper Award, *Journal of Housing Research* (2022 volume); American Real Estate Society Best Article Award (for the 2025 *Journal of Real Estate Research* paper); Best Paper Award, AREUEA International Conference, Dublin (2022).
+
+## Teaching and textbooks
+
+I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contemporary Issues in Real Estate Markets at Clemson. I write the assessment materials, including the new chapters on AI in real estate, for *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, with David Geltner, Norman Miller, Alex van de Minne, Piet Eichholtz, and Thies Lindenthal; Routledge, 2026) and *Real Estate Finance and Investments* (with Jeffrey Fisher, Jacob Sagi, and Stephanie Yates; McGraw Hill, 2027 release).
+
+## Profiles and contact
+
+- [Clemson University faculty profile](https://www.clemson.edu/business/about/profiles/yannans)
+- [Google Scholar](https://scholar.google.com/citations?user=HWr0OQQAAAAJ)
+- [Personal homepage](https://sites.google.com/g.clemson.edu/lily-shen/home)
+
+Email and office details are on the Clemson profile page.

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <img class="headshot" src="{{ cfg.author.photo }}" alt="Portrait of {{ cfg.author.name }}" width="220" height="220">
+  <div class="hero-text">
+    <p class="kicker">Real estate finance · Housing &amp; mortgages · AI as measurement</p>
+    <h1>{{ cfg.author.name }}</h1>
+    <p class="lede">{{ profile.positioning }}</p>
+    <p class="cta"><a class="btn" href="/research/">Research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">Download CV</a> <a class="btn ghost" href="{{ cfg.author.google_scholar }}">Google Scholar</a></p>
+  </div>
+</section>
+
+<section class="proof">
+  {% for p in profile.proof_points %}
+  <div class="stat"><div class="n">{{ p.n }}</div><div class="l">{{ p.label }}</div><div class="d">{{ p.detail }}</div></div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Selected work</h2>
+  <div class="cards">
+  {% for p in selected %}
+  <article class="card">
+    <p class="meta">{% if p.journal %}<em>{{ p.journal }}</em>, {{ p.year }}{% else %}{{ p.note or 'Working paper' }}, {{ p.year }}{% endif %}{% if p.award %} · {{ p.award }}{% endif %}</p>
+    <h3><a href="/research/#{{ p.key }}">{{ p.title }}</a></h3>
+    <p class="who">{{ p.authors|join(', ') }}</p>
+    <p class="blurb">{{ p.blurb or (p.abstract|truncate(230, True)) }}</p>
+  </article>
+  {% endfor %}
+  </div>
+  <p class="meta">All papers, with abstracts, DOIs, and BibTeX, on the <a href="/research/">research page</a>.</p>
+</section>
+
+<section class="two-col">
+  <div>
+    <h2>News</h2>
+    <ul class="news">
+    {% for n in profile.news %}<li><span class="date">{{ n.date|shortdate }}</span> {{ n.text }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2>Research notes</h2>
+    <p class="meta">Plain-language notes on one paper or one idea each, from the <a href="/posts/">{{ cfg.blog_name }}</a> series.</p>
+    <ul class="notes">
+    {% for post in posts[:5] %}<li><a href="{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date|shortdate }}</span></li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Questions people ask</h2>
+  {% for f in profile.faq %}
+  <details{% if loop.first %} open{% endif %}><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+  {% endfor %}
+</section>
+{% endblock %}

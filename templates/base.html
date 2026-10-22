@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ cfg.language }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title|e }}</title>
+<meta name="description" content="{{ description|e }}">
+<meta name="author" content="{{ cfg.author.name|e }}">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="{{ canonical }}">
+<link rel="alternate" type="application/rss+xml" title="{{ cfg.blog_name|e }}" href="{{ site }}/feed.xml">
+{% if md_twin %}<link rel="alternate" type="text/markdown" title="Markdown version" href="{{ site }}{{ md_twin }}">
+{% endif %}
+{% block head %}{% endblock %}
+<meta property="og:site_name" content="{{ cfg.site_name|e }}">
+<meta property="og:title" content="{{ page_title|e }}">
+<meta property="og:description" content="{{ description|e }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:type" content="{{ og_type|default('website') }}">
+<meta property="og:image" content="{{ site }}{{ cfg.author.photo }}">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">
+{{ jsonld }}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">{{ cfg.site_name }}</a>
+    <nav>
+      <a href="/research/"{% if nav == 'research' %} class="on"{% endif %}>Research</a>
+      <a href="/teaching/"{% if nav == 'teaching' %} class="on"{% endif %}>Teaching</a>
+      <a href="/talks/"{% if nav == 'talks' %} class="on"{% endif %}>Talks &amp; media</a>
+      <a href="/posts/"{% if nav == 'posts' %} class="on"{% endif %}>Notes</a>
+      <a href="/cv/"{% if nav == 'cv' %} class="on"{% endif %}>CV</a>
+    </nav>
+  </div>
+</header>
+<main class="{{ layout|default('narrow') }}">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+  <p><strong>{{ cfg.author.name }}</strong> ({{ cfg.author.alternate_names[0] }}), {{ cfg.author.title }}, {{ cfg.author.affiliation }}; {{ cfg.author.other_affiliation }}.
+  <a href="{{ cfg.author.clemson_profile }}">Clemson profile</a> · <a href="{{ cfg.author.google_scholar }}">Google Scholar</a> · <a href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> · <a href="{{ cfg.author.crebook }}">CREBook.net</a> · <a href="{{ cfg.author.podcast }}">CRE Explained podcast</a></p>
+  <p>Text on this site is licensed under <a href="{{ cfg.license.url }}" rel="license">{{ cfg.license.name }}</a>: reuse and quote freely with attribution to {{ cfg.author.name }} and a link to the source page. Machine-readable versions: <a href="/profile.md">profile.md</a>, <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a>, <a href="/feed.xml">RSS</a>, <a href="/sitemap.xml">sitemap</a>, <a href="/papers.bib">BibTeX</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

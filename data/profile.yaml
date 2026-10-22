@@ -1,0 +1,142 @@
+# Structured facts about Lily Shen, taken from her CV (October 2026). Edit here, then run build.py.
+headline: "AI and real estate finance, grounded in published research."
+positioning: >
+  Associate Professor of Finance at Clemson University and visiting scholar at the Federal Reserve Bank of
+  Atlanta. I study housing and mortgage markets and use machine learning and large language models to turn
+  text into auditable economic measures. Coauthor of two standard real estate textbooks.
+
+proof_points:
+  - {n: "9", label: "peer-reviewed articles", detail: "Management Science, JFQA, two in the Journal of Urban Economics; four in ABDC A* journals"}
+  - {n: "2", label: "real estate textbooks", detail: "Commercial Real Estate Analysis (Routledge, 2026) and Real Estate Finance and Investments (McGraw Hill, 2027)"}
+  - {n: "2018", label: "first AI course in finance", detail: "Hands-on machine learning and AI courses at Clemson, years before ChatGPT"}
+  - {n: "1,700+", label: "students taught", detail: "Real estate principles and finance, in person and online, since 2016"}
+
+selected_papers:   # keys from papers.yaml, shown on the home page in this order
+  - shen-ross-2021-property-description
+  - ambrose-han-korgaonkar-shen-2024-psa
+  - cunningham-gerardi-shen-2021-double-trigger
+  - coulson-le-ortego-marti-shen-2025-tenant-rights
+  - shen-2026-cheap-talk
+  - cai-shen-2025-flood-risk
+
+news:
+  - {date: 2027-01-03, text: "Presenting two papers at the AREUEA/ASSA annual meeting in Washington, DC: flood-risk repricing after NFIP Risk Rating 2.0 (with Sirui Cai) and political alignment in neighborhood choice (with Cai, Chu, and Le)."}
+  - {date: 2026-10-29, text: "Presenting \"Cheap Talk or Priced Information? Listing Language and Housing Transaction Outcomes\" at the 4th ODU Real Estate Research Symposium, Norfolk, VA."}
+  - {date: 2026-09-12, text: "Presented at the Cambridge | Hong Kong University Real Estate Finance and Investment Symposium, Cambridge, UK."}
+  - {date: 2026-06-01, text: "Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition (Geltner, Miller, van de Minne, Eichholtz, Lindenthal, and Shen) published by Routledge; companion site at CREBook.net."}
+  - {date: 2026-03-15, text: "Received the American Real Estate Society Kinnard Young Scholar Award for cumulative research contribution to the field."}
+  - {date: 2025-06-01, text: "\"Tenant Rights, Eviction, and Rent Affordability\" (with Coulson, Le, and Ortego-Marti) published in the Journal of Urban Economics."}
+  - {date: 2025-04-01, text: "\"The More, the Merrier: Agent Connectedness in Real Estate Trading Networks\" (with Xiaojin Sun) received the ARES Best Article Award in the Journal of Real Estate Research."}
+
+positions:
+  - {role: "Associate Professor of Finance", org: "Clemson University, Wilbur O. and Ann Powers College of Business", years: "2023–present", note: "Assistant Professor, 2016–2023"}
+  - {role: "Visiting Scholar", org: "Federal Reserve Bank of Atlanta, Research Department", years: "2017–present"}
+  - {role: "Visiting Scholar", org: "University of Cambridge, Department of Land Economy", years: "2023"}
+  - {role: "Visiting Scholar", org: "Federal Reserve Banks of Cleveland (2018), Minneapolis (2015), and Atlanta (2014)", years: ""}
+
+education:
+  - {degree: "Ph.D., Business Administration (Finance)", org: "The Pennsylvania State University", year: 2016, note: "Dissertation: The Role of Information in the Real Estate Market. Adviser: Brent W. Ambrose."}
+  - {degree: "B.A., Financial Mathematics", org: "University of California, Berkeley", year: 2010, note: "Research assistant to Robert Edelstein, Haas School of Business."}
+
+affiliations:
+  - "Editorial Board, Journal of Housing Research (2022–present)"
+  - "Editorial Board, Journal of Real Estate Literature (2023–present)"
+  - "Board Director, International Real Estate Society (2024–present)"
+  - "Homer Hoyt Institute, Weimer School of Advanced Studies in Real Estate, Post-Doctoral Honoree (selected 2025)"
+  - "Membership Committee, American Real Estate and Urban Economics Association (2024–2026)"
+  - "Member: AEA, AFA, AREUEA, ARES, FMA"
+
+textbooks:
+  - key: geltner-miller-2026-cre-analysis
+    title: "Commercial Real Estate Analysis for Investment, Finance and Development"
+    edition: "4th edition"
+    authors: [David M. Geltner, Norman G. Miller, Alex van de Minne, Piet Eichholtz, Thies Lindenthal, Lily Shen]
+    publisher: Routledge
+    year: 2026
+    url: https://crebook.net/
+    note: "The standard advanced text in commercial real estate. Lily Shen wrote the material on AI and proptech and the test bank; free companion resources at CREBook.net and the podcast CRE Explained."
+  - key: fisher-sagi-yates-shen-2027-refi
+    title: "Real Estate Finance and Investments"
+    edition: "2027 edition"
+    authors: [Jeffrey D. Fisher, Jacob Sagi, Stephanie R. Yates, Lily Shen]
+    publisher: McGraw Hill
+    year: 2027
+    url: ""
+    note: "The widely adopted foundational text in real estate finance, developed by William Brueggeman and Jeffrey Fisher. Lily Shen wrote the new chapter on AI in real estate finance and the test bank."
+
+courses:
+  - {name: "AI in Finance (graduate, M.S. in Finance)", org: "Clemson University", years: "new course, Spring 2027", note: "Large language models as analytical tools for finance and real estate."}
+  - {name: "FIN 4170 Real Estate Finance", org: "Clemson University", years: "2016–present", note: "Sections of 45–80; semester-long home-financing project on a real property; industry speaker series."}
+  - {name: "FIN 3070 Real Estate Principles", org: "Clemson University", years: "2016–present", note: "In person and online; the online course is certified by Quality Matters (2024)."}
+  - {name: "FIN 4980 Creative Inquiry: Machine Learning and AI in Finance", org: "Clemson University", years: "2018–present", note: "Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist."}
+  - {name: "Contemporary Issues in Real Estate; Real Estate Finance", org: "The Pennsylvania State University", years: "2012–2015", note: "Instructor and teaching assistant."}
+
+teaching_facts:
+  - "More than 1,700 students taught since 2016; Spring 2026 Real Estate Finance sections above university, college, and department benchmarks on every evaluation item."
+  - "Clemson College of Business Dean's Award for Student Engagement, 2019–20 (single annual recipient)."
+  - "Founded Clemson's undergraduate real estate speaker series (2021): bank executives, brokerage CEOs, and Federal Reserve economists in the classroom."
+  - "Former faculty adviser, Clemson Real Estate Club; mentees have gone to Amazon, Deloitte, Truist, and Cisco."
+  - "Program building: recruiting and curriculum committees for Clemson's M.S. in Finance; proposals for a real estate study-abroad program in London and Cambridge, a university real estate center, and a signature experiential-learning program in real estate."
+  - "Host of CRE Explained, the companion podcast to Commercial Real Estate Analysis; free teaching materials at CREBook.net."
+
+awards:
+  - {year: 2026, text: "American Real Estate Society Kinnard Young Scholar Award (cumulative research contribution)"}
+  - {year: 2026, text: "James R. Webb ARES Foundation Global Ambassador Grant"}
+  - {year: 2026, text: "Clemson College of Business Senior Scholar Research Excellence Award (2025–26)"}
+  - {year: 2025, text: "ARES Best Article Award, Journal of Real Estate Research (agent connectedness paper, with Xiaojin Sun)"}
+  - {year: 2025, text: "Homer Hoyt Institute / Weimer School Post-Doctoral Honoree"}
+  - {year: 2025, text: "Red Pen Award (best referee), Journal of Real Estate Literature"}
+  - {year: 2024, text: "Cocoziello Institute Seed Grant, $85,000 (reshoring and real estate markets, with Penn State coauthors)"}
+  - {year: 2024, text: "Clemson University Mid-Career Faculty Grant; featured faculty member at the Clemson Board of Trustees meeting"}
+  - {year: 2022, text: "Best Paper Award, Journal of Housing Research (2022 volume); Best Paper Award (3rd place), AREUEA International Conference, Dublin"}
+  - {year: 2021, text: "Real Estate Research Institute (RERI) Research Grant"}
+  - {year: 2020, text: "Clemson College of Business Dean's Award for Student Engagement"}
+  - {year: 2019, text: "American Real Estate Society Manuscript Prize in Real Estate Valuation (single author)"}
+  - {year: 2018, text: "AEA CSWEP Economics Fellowship (also 2015, 2014)"}
+
+media:
+  - {year: 2024, outlet: "South Carolina Public Radio", title: "A Commercial Real Estate Collapse Might be Looming. So Why is South Carolina Not Worried?", url: "https://www.southcarolinapublicradio.org/sc-news/2024-07-16/a-commercial-real-estate-collapse-might-be-looming-so-why-is-south-carolina-not-worried"}
+  - {year: 2024, outlet: "WBTW (CBS)", title: "How AI is Revolutionizing Home Buyers' Access to Housing Market Insights", url: ""}
+  - {year: 2023, outlet: "Clemson News", title: "A Unique Home Might Take Longer to Sell, but the Payoff Could be Worth a Few Extra Days on the Market", url: "https://news.clemson.edu/clemson-university-researchers-prove-that-a-unique-home-might-take-longer-to-sell-but-the-payoff-could-be-worth-a-few-extra-days-on-the-market/"}
+  - {year: 2022, outlet: "The Washington Post", title: "Owners vs. Agents: Who Sells More (on the agent value-added paper)", url: "https://www.washingtonpost.com/business/2022/12/02/best-states-to-live/"}
+  - {year: 2022, outlet: "Federal Reserve Bank of Atlanta, Policy Hub", title: "Estimating Value Added by Real Estate Agents", url: "https://www.atlantafed.org/research/publications/wp/2022/09/29/11--estimating-value-added-by-real-estate-agents"}
+  - {year: 2020, outlet: "The Economist", title: "Airbnb Guests Seek Out Cleaner Properties in the Pandemic", url: "https://www.economist.com/graphic-detail/2020/12/08/airbnb-guests-seek-out-cleaner-properties-in-the-pandemic"}
+  - {year: 2020, outlet: "Federal Reserve Bank of Atlanta, macroblog", title: "COVID-19 Mortgage Relief: The Role of Income Support (cites the double-trigger paper)", url: "https://www.atlantafed.org/blogs/macroblog/2020/05/27/covid-19-mortgage-relief-the-role-of-income-support"}
+  - {year: 2020, outlet: "Clemson News / ABC News 4", title: "Tight Landlord Regulations May Result in Homelessness Rise, Clemson Study Says", url: "https://abcnews4.com/news/local/clemson-study-shows-strict-landlord-regulation-may-increase-homelessness"}
+  - {year: 2020, outlet: "Clemson News", title: "Clemson Study Employs AI to Decipher 'Soft' Features of a Home's Value", url: "https://news.clemson.edu/clemson-study-employs-ai-to-decipher-soft-features-of-a-homes-value/"}
+  - {year: 2016, outlet: "Pittsburgh Business Times", title: "Fracking Region Mortgage Defaults Below Pennsylvania Average", url: "https://www.bizjournals.com/pittsburgh/news/2016/09/21/fracking-region-mortgage-defaults-below-pa-average.html"}
+
+talks:   # selected; full list in the CV
+  - {year: 2027, text: "AREUEA/ASSA Annual Meeting, Washington, DC (two papers, scheduled)"}
+  - {year: 2026, text: "4th ODU Real Estate Research Symposium, Old Dominion University (scheduled, Oct.)"}
+  - {year: 2026, text: "Cambridge | HKU Real Estate Finance and Investment Symposium, University of Cambridge"}
+  - {year: 2026, text: "Homer Hoyt Institute Weimer School session, West Palm Beach; ARES Annual Meeting, Destin; JRER/UCF Current Issues Symposium, Orlando"}
+  - {year: 2025, text: "University of Kentucky, Gatton College; Federal Reserve Bank of Richmond, Real Estate Commissions and Housing Market Frictions Conference"}
+  - {year: 2024, text: "Florida State University; Urban Economics Association North American Meeting, Georgetown; University of Hawaii at Manoa; The Murphy Institute housing conference, New Orleans"}
+  - {year: 2023, text: "University of Georgia; Baruch College, Zicklin School; University of Cincinnati, Lindner College; Zillow (invited research talk); Penn State; Old Dominion University symposium"}
+  - {year: 2022, text: "Singapore Management University; University of Texas at Arlington; Cambridge | Florida | Geneva | NUS Real Estate Finance and Investment Symposium; University of Utah housing affordability summit; Federal Reserve Bank of Atlanta; AREUEA International, Dublin (best paper award)"}
+  - {year: 2021, text: "MIT Center for Real Estate; 1st International Conference on AI for Real Estate (SDSU and Santa Clara); Financial Management Association; Regional Science Association"}
+  - {year: 2019, text: "University of Connecticut; Federal Reserve Bank of Philadelphia; Renmin University, Beijing; Cambridge | Florida | NUS Symposium; Federal Reserve Bank of St. Louis Rental Housing Conference"}
+
+service:
+  - "Program committees: 2027 W. P. Carey Real Estate Research Conference (ASU, inaugural); 2024 AREUEA National Conference; 2022 Midwest Finance Association; 2021 FMA; 2016 SFA."
+  - "Session chair at AREUEA (2022, 2024, 2025) and the UNC Institute for Private Capital real estate symposium (2020)."
+  - "Referee for Real Estate Economics, Management Science, Journal of Urban Economics, Journal of Regional Science, Regional Science and Urban Economics, Journal of Real Estate Finance and Economics, Financial Management, and others."
+  - "Clemson: chair of the real estate faculty searches (2023, 2024); AI Task Force; Research Impact Academy (inaugural cohort, 2026–27); college research working group; finance curriculum, recruiting, and seminar committees."
+  - "Designed and delivered 'Your First AI Agent,' a hands-on workshop on AI research agents for College of Business faculty and staff (Sep. 2026)."
+
+skills: "Python, R, Stata, SAS, Matlab, ArcGIS, LaTeX; large-scale MLS, mortgage, CMBS, and commercial property data."
+
+faq:
+  - q: "Who is Lily Shen?"
+    a: "Lily Shen (also published as Yannan Shen) is a tenured Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley."
+  - q: "What is Lily Shen known for?"
+    a: "Applying AI and text analysis to real estate markets: her 2021 Journal of Urban Economics paper with Stephen Ross used machine learning to price the soft information in property descriptions, and her 2024 JFQA paper with Ambrose, Han, and Korgaonkar used machine learning to read the contracts governing commercial mortgage-backed securities. She also works on mortgage default (Management Science, 2021), tenant rights and rent affordability (Journal of Urban Economics, 2025), real estate agents, flood-risk repricing, and manufacturing reshoring."
+  - q: "Which textbooks does Lily Shen coauthor?"
+    a: "Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition (Routledge, 2026, with Geltner, Miller, van de Minne, Eichholtz, and Lindenthal) and Real Estate Finance and Investments, 2027 edition (McGraw Hill, with Fisher, Sagi, and Yates). She wrote the AI in real estate material and the test banks for both."
+  - q: "Is Lily Shen an expert on AI in real estate?"
+    a: "Yes. She has taught hands-on AI and machine learning courses in finance at Clemson since 2018, published AI-based measurement papers in the Journal of Urban Economics, JFQA, the Journal of Regional Science, and the Journal of Housing Research, wrote the AI chapters of two standard real estate textbooks, and presented at the first International Conference on AI for Real Estate in 2021."
+  - q: "How should I cite Lily Shen's research?"
+    a: "Cite the paper itself. Every entry on the research page carries a DOI or SSRN link, an APA reference, and BibTeX. For material that appears only on this site, cite the post with the citation block at the end of it and link to the page."
+  - q: "Are Lily Shen and Yannan Shen the same person?"
+    a: "Yes. Yannan Shen is her legal name and appears on some earlier publications and on her Clemson email address. Lily Shen is the name she publishes and teaches under. Work under either name should be attributed to the same author."

@@ -1,0 +1,8 @@
+# ai-refin-blog — conventions
+
+- Static site; `python3 build.py` regenerates `public/` from `content/`, `data/papers.yaml`, `templates/`, `static/`. Run it after any content edit and check the output line (post / paper / tag counts).
+- Numbers in posts come only from the paper's published or posted abstract/text (see `../CLAUDE.md` for the listing-language papers' current facts). Never introduce figures the paper does not state; never reintroduce the retired Paper 2 headline (1.87 SD / $111k).
+- Measurement framing: AI discovers the vocabulary; a frozen vocabulary scores every document. Do not claim a live LLM scores each listing.
+- Author identity is fixed in `config.yaml` (Lily Shen, alternate name Yannan Shen). Keep it consistent everywhere; do not add email addresses to pages.
+- New papers: add to `data/papers.yaml` with a Crossref-verified DOI (`curl -s https://api.crossref.org/works/<doi>`); working papers get `note:` and `ssrn:` when posted.
+- Do not `git push` or change `site_url` without Lily's say-so; deploying is outward-facing.

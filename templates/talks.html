@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Talks and media</h1>
+<h2>In the press</h2>
+<ul class="media">
+{% for m in profile.media %}<li>{{ m.year }} · <strong>{{ m.outlet }}</strong>: {% if m.url %}<a href="{{ m.url }}">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %}</li>
+{% endfor %}
+</ul>
+<h2>Selected talks and seminars</h2>
+<p class="meta">Presentations by me or a coauthor; the full list is in the <a href="{{ cfg.author.cv_pdf }}">CV</a>.</p>
+<ul>
+{% for t in profile.talks %}<li>{{ t.year }} · {{ t.text }}</li>
+{% endfor %}
+</ul>
+<h2>Professional service</h2>
+<ul>
+{% for s in profile.service %}<li>{{ s }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

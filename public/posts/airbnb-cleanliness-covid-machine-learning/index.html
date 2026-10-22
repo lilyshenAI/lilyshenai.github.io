@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022) | Lily Shen</title>
+<meta name="description" content="Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.">
+<meta name="author" content="Lily Shen">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/">
+<link rel="alternate" type="application/rss+xml" title="AI in Real Estate Finance" href="https://lilyshen.com/feed.xml">
+<link rel="alternate" type="text/markdown" title="Markdown version" href="https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning.md">
+<meta property="article:published_time" content="2026-10-19">
+<meta property="article:modified_time" content="2026-10-19">
+<meta property="article:author" content="https://lilyshen.com/about/">
+<meta property="article:tag" content="short-term rentals">
+<meta property="article:tag" content="Airbnb">
+<meta property="article:tag" content="COVID-19">
+<meta property="article:tag" content="text analysis">
+<meta property="article:tag" content="machine learning">
+<meta property="og:site_name" content="Lily Shen">
+<meta property="og:title" content="Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022) | Lily Shen">
+<meta property="og:description" content="Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.">
+<meta property="og:url" content="https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://lilyshen.com/static/lily-shen.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/static/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://lilyshen.com/#website",
+   "url": "https://lilyshen.com/",
+   "name": "Lily Shen",
+   "alternateName": "AI in Real Estate Finance",
+   "description": "Real estate finance, housing and mortgage markets, and AI as a measurement tool",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://lilyshen.com/#person"
+   },
+   "publisher": {
+    "@id": "https://lilyshen.com/#person"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://lilyshen.com/#person",
+   "name": "Lily Shen",
+   "givenName": "Lily",
+   "familyName": "Shen",
+   "alternateName": [
+    "Yannan Shen"
+   ],
+   "url": "https://lilyshen.com/",
+   "image": "https://lilyshen.com/static/lily-shen.jpg",
+   "jobTitle": "Associate Professor of Finance",
+   "affiliation": [
+    {
+     "@type": "CollegeOrUniversity",
+     "name": "Clemson University",
+     "department": {
+      "@type": "Organization",
+      "name": "Department of Finance, Wilbur O. and Ann Powers College of Business"
+     }
+    },
+    {
+     "@type": "Organization",
+     "name": "Federal Reserve Bank of Atlanta"
+    }
+   ],
+   "sameAs": [
+    "https://www.clemson.edu/business/about/profiles/yannans",
+    "https://scholar.google.com/citations?user=HWr0OQQAAAAJ",
+    "https://sites.google.com/g.clemson.edu/lily-shen/home",
+    "https://crebook.net/",
+    "https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk"
+   ]
+  },
+  {
+   "@type": "BlogPosting",
+   "@id": "https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/#post",
+   "headline": "Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)",
+   "description": "Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.",
+   "url": "https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/",
+   "mainEntityOfPage": "https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/",
+   "datePublished": "2026-10-19",
+   "dateModified": "2026-10-19",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://lilyshen.com/#person"
+   },
+   "publisher": {
+    "@id": "https://lilyshen.com/#person"
+   },
+   "isPartOf": {
+    "@id": "https://lilyshen.com/#website"
+   },
+   "keywords": [
+    "short-term rentals",
+    "Airbnb",
+    "COVID-19",
+    "text analysis",
+    "machine learning"
+   ],
+   "wordCount": 357,
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "citation": [
+    {
+     "@type": "ScholarlyArticle",
+     "headline": "Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals",
+     "author": [
+      {
+       "@type": "Person",
+       "name": "Lily Shen"
+      },
+      {
+       "@type": "Person",
+       "name": "Sean Wilkoff"
+      }
+     ],
+     "datePublished": "2022",
+     "isPartOf": {
+      "@type": "Periodical",
+      "name": "Journal of Regional Science"
+     },
+     "sameAs": "https://doi.org/10.1111/jors.12581",
+     "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.1111/jors.12581"
+     },
+     "abstract": "We use Airbnb data from Austin, Texas to empirically investigate the impact of the onset of COVID-19 on the short-term rental market. Specifically, we employ a machine learning algorithm to create an extensive cleanliness dictionary to detect whether an Airbnb unit is clean. We use a difference-in-difference specification to value the change in income related to reviewer-perceived cleanliness during the COVID-19 pandemic. We find the following results: First, available listings declined by 25% once the pandemic hit and those that remained lost 22% of their income and had occupancy decrease by 20%. Second, properties that were perceived to be clean increased their income by 17.5% and their occupancy by 16.5%, mitigating the negative shock due to COVID-19. Third, rental prices for clean Airbnb listings did not increase after COVID-19. In addition, we study the interaction of Airbnb supply on the long-term rental market during a market decline."
+    }
+   ],
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What happened to Airbnb listings when COVID-19 began?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In Austin, Texas, available listings declined by 25 percent once the pandemic hit, and the listings that remained lost 22 percent of their income and saw occupancy fall by 20 percent."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Did clean Airbnb units do better during the pandemic?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Properties that guests perceived as clean, identified with a machine-learning cleanliness dictionary applied to reviews, increased their income by 17.5 percent and their occupancy by 16.5 percent, offsetting much of the pandemic shock. Their rental prices did not rise."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where was the paper published and covered?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Journal of Regional Science, volume 62, issue 3, 2022, pages 799 to 829, DOI 10.1111/jors.12581. The Economist featured the findings in December 2020."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Lily Shen</a>
+    <nav>
+      <a href="/research/">Research</a>
+      <a href="/teaching/">Teaching</a>
+      <a href="/talks/">Talks &amp; media</a>
+      <a href="/posts/" class="on">Notes</a>
+      <a href="/cv/">CV</a>
+    </nav>
+  </div>
+</header>
+<main class="narrow">
+<article class="post">
+<header>
+  <h1>Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)</h1>
+  <p class="byline">By <a href="/about/" rel="author">Lily Shen</a>, Associate Professor of Finance, Clemson University · <time datetime="2026-10-19">October 19, 2026</time> · 2 min read</p>
+  <p class="summary">Summary of Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals, with Sean Wilkoff. In Austin, Texas, Airbnb listings fell 25 percent at the onset of COVID-19 and surviving listings lost 22 percent of income, but units reviewers perceived as clean, measured with a machine-learning cleanliness dictionary, gained 17.5 percent in income and 16.5 percent in occupancy.</p>
+</header>
+<div class="body">
+<p>When COVID-19 arrived, travel stopped and the short-term rental market was hit immediately. The pandemic also changed what guests cared about: a clean unit went from a nicety to a health concern. This paper, with Sean Wilkoff in the <em>Journal of Regional Science</em> (2022), uses Airbnb data from Austin, Texas, to measure both the shock and the premium that cleanliness earned during it.</p>
+<h2 id="measuring-cleanliness-from-reviews">Measuring cleanliness from reviews</h2>
+<p>Cleanliness is not a field in a listing; it is a judgment guests form and write about. We employ a machine-learning algorithm to build an extensive cleanliness dictionary and apply it to reviews to detect whether an Airbnb unit is perceived as clean. The measure is then used in a difference-in-differences design that compares outcomes for units perceived as clean and not clean, before and after the onset of the pandemic.</p>
+<h2 id="results">Results</h2>
+<ul>
+<li><strong>The shock.</strong> Available listings declined by 25 percent once the pandemic hit. Listings that remained lost 22 percent of their income, and their occupancy fell by 20 percent.</li>
+<li><strong>The cleanliness premium.</strong> Properties perceived as clean increased their income by 17.5 percent and their occupancy by 16.5 percent, which mitigated a large part of the negative shock.</li>
+<li><strong>Quantity, not price.</strong> Rental prices for clean listings did not increase after COVID-19. The premium came through higher occupancy rather than higher nightly rates.</li>
+</ul>
+<p>The paper also examines how the supply of Airbnb units interacts with the long-term rental market during a market decline.</p>
+<h2 id="why-it-matters">Why it matters</h2>
+<p>The result is a clean example of soft information at work. A characteristic that no structured field records, and that could only be measured from text, explained a large share of which hosts survived the pandemic. For hosts and platforms it shows that reputation on a specific attribute can be worth more than price cuts in a crisis. For researchers it is an early application of the text-measurement approach that runs through my work on <a href="/posts/what-is-soft-information-in-housing-markets/">listing remarks</a>. <em>The Economist</em> featured the findings in December 2020 under the headline "Airbnb guests seek out cleaner properties in the pandemic."</p>
+</div>
+<section class="faq">
+<h2>Questions this post answers</h2>
+<h3>What happened to Airbnb listings when COVID-19 began?</h3>
+<p>In Austin, Texas, available listings declined by 25 percent once the pandemic hit, and the listings that remained lost 22 percent of their income and saw occupancy fall by 20 percent.</p>
+<h3>Did clean Airbnb units do better during the pandemic?</h3>
+<p>Yes. Properties that guests perceived as clean, identified with a machine-learning cleanliness dictionary applied to reviews, increased their income by 17.5 percent and their occupancy by 16.5 percent, offsetting much of the pandemic shock. Their rental prices did not rise.</p>
+<h3>Where was the paper published and covered?</h3>
+<p>Journal of Regional Science, volume 62, issue 3, 2022, pages 799 to 829, DOI 10.1111/jors.12581. The Economist featured the findings in December 2020.</p>
+</section>
+<section class="papers-cited">
+<h2>Paper discussed in this post</h2>
+<div class="paper">
+  <p class="apa">Shen, L., & Wilkoff, S. (2022). Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals. <em>Journal of Regional Science</em>, <em>62</em>(3), 799-829. https://doi.org/10.1111/jors.12581</p>
+  <p class="links"><a href="https://doi.org/10.1111/jors.12581">Publisher (DOI)</a><a href="/research/#shen-wilkoff-2022-airbnb-cleanliness">Abstract</a></p>
+  <details><summary>BibTeX</summary><pre>@article{shen2022cleanliness,
+  author = {Lily Shen and Sean Wilkoff},
+  title = {Cleanliness is Next to Income: The Impact of COVID-19 on Short-Term Rentals},
+  journal = {Journal of Regional Science},
+  year = {2022},
+  volume = {62},
+  number = {3},
+  pages = {799--829},
+  doi = {10.1111/jors.12581}
+}</pre></details>
+</div>
+</section>
+<section class="cite">
+<h2>How to cite this post</h2>
+<p>Shen, L. (2026, October 19). Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022). <em>AI in Real Estate Finance</em>. https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/</p>
+<details><summary>BibTeX</summary><pre>@misc{shen2026post_cleanliness_is,
+  author = {Lily Shen},
+  title = {Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)},
+  howpublished = {AI in Real Estate Finance, https://lilyshen.com},
+  year = {2026},
+  month = {oct},
+  url = {https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/},
+  note = {Accessed 2026-10-22}
+}</pre></details>
+</section>
+<footer class="post-footer">
+<p class="meta">Tags: <a href="/tags/short-term-rentals/">short-term rentals</a>, <a href="/tags/airbnb/">Airbnb</a>, <a href="/tags/covid-19/">COVID-19</a>, <a href="/tags/text-analysis/">text analysis</a>, <a href="/tags/machine-learning/">machine learning</a></p>  <p class="meta"><a href="/posts/airbnb-cleanliness-covid-machine-learning.md">Plain-text (Markdown) version of this post</a> · <a href="/posts/">All notes</a></p>
+</footer>
+<section class="related">
+<h2>Related posts</h2>
+<ul><li><a href="/posts/machine-learning-cmbs-pooling-servicing-agreements/">Are securitization contracts boilerplate? Machine learning on CMBS pooling and servicing agreements (JFQA, 2024)</a></li><li><a href="/posts/auditable-ai-text-measures-two-step-method/">How to build auditable AI text measures for economic research: a two-step method</a></li><li><a href="/posts/information-value-property-descriptions-machine-learning/">Property descriptions carry priced information that hedonic models miss (Journal of Urban Economics, 2021)</a></li><li><a href="/posts/property-uniqueness-selling-time-and-price/">The odd one out: unique homes sell for more and take only slightly longer (Journal of Housing Research, 2022)</a></li></ul>
+</section>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+  <p><strong>Lily Shen</strong> (Yannan Shen), Associate Professor of Finance, Clemson University; Visiting Scholar, Federal Reserve Bank of Atlanta.
+  <a href="https://www.clemson.edu/business/about/profiles/yannans">Clemson profile</a> · <a href="https://scholar.google.com/citations?user=HWr0OQQAAAAJ">Google Scholar</a> · <a href="/static/Lily_Shen_CV.pdf">CV (PDF)</a> · <a href="https://crebook.net/">CREBook.net</a> · <a href="https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk">CRE Explained podcast</a></p>
+  <p>Text on this site is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>: reuse and quote freely with attribution to Lily Shen and a link to the source page. Machine-readable versions: <a href="/profile.md">profile.md</a>, <a href="/llms.txt">llms.txt</a>, <a href="/llms-full.txt">llms-full.txt</a>, <a href="/feed.xml">RSS</a>, <a href="/sitemap.xml">sitemap</a>, <a href="/papers.bib">BibTeX</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

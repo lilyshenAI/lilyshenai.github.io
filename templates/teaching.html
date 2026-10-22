@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Teaching and textbooks</h1>
+<p class="intro">I have taught real estate at Clemson since 2016, in person and online, and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard textbooks in the field and write the test banks for both.</p>
+<h2>Textbooks</h2>
+{% for b in profile.textbooks %}
+<article class="paper" id="{{ b.key }}">
+  <h3>{{ b.title }}{% if b.edition %}, {{ b.edition }}{% endif %}</h3>
+  <p class="meta">{{ b.authors|join(', ') }} · {{ b.publisher }}, {{ b.year }}</p>
+  <p class="abstract">{{ b.note }}</p>
+  {% if b.url %}<p class="links"><a href="{{ b.url }}">Companion site</a></p>{% endif %}
+</article>
+{% endfor %}
+<p class="meta">Free companion resources: <a href="{{ cfg.author.crebook }}">CREBook.net</a> (slides, spreadsheets, exercises) and the podcast <a href="{{ cfg.author.podcast }}">CRE Explained</a>.</p>
+<h2>Courses</h2>
+<table>
+<thead><tr><th>Course</th><th>Institution</th><th>Years</th><th>Notes</th></tr></thead>
+<tbody>
+{% for c in profile.courses %}<tr><td>{{ c.name }}</td><td>{{ c.org }}</td><td>{{ c.years }}</td><td>{{ c.note }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+<h2>How I teach</h2>
+<ul>
+{% for t in profile.teaching_facts %}<li>{{ t }}</li>
+{% endfor %}
+</ul>
+<p class="meta"><a href="/teaching.md">Plain-text version of this page</a></p>
+{% endblock %}
