@@ -38,12 +38,15 @@
   <p class="meta">{{ profile.teaching_blurb }}</p>
   <div class="cards">
   {% for b in profile.textbooks %}
-  <article class="card">
+  <article class="card{% if b.cover %} has-cover{% endif %}">
+    {% if b.cover %}<a class="cover" href="{{ b.url or '/teaching/#' ~ b.key }}"><img src="{{ b.cover }}" alt="Cover of {{ b.title }}" loading="lazy"></a>{% endif %}
+    <div class="card-body">
     <p class="meta">{{ b.publisher }}, {{ b.year }}{% if b.edition %} · {{ b.edition }}{% endif %}</p>
     <h3>{% if b.url %}<a href="{{ b.url }}">{{ b.title }}</a>{% else %}{{ b.title }}{% endif %}</h3>
     <p class="who">{{ b.authors|join(', ') }}</p>
     <p class="blurb">{{ b.note }}</p>
     {% if b.url %}<p class="meta"><a href="{{ b.url }}">Book website: CREBook.net</a> (this book only)</p>{% endif %}
+    </div>
   </article>
   {% endfor %}
   <article class="card">

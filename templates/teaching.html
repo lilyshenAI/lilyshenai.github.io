@@ -3,11 +3,14 @@
 <h1>Textbooks</h1>
 <p class="intro">I have taught real estate at Clemson since 2016, in person and online, and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard textbooks in the field, and I wrote the new chapter on artificial intelligence in real estate finance and investment for <em>Real Estate Finance and Investments</em>.</p>
 {% for b in profile.textbooks %}
-<article class="paper" id="{{ b.key }}">
+<article class="paper book" id="{{ b.key }}">
+  {% if b.cover %}<img class="book-cover" src="{{ b.cover }}" alt="Cover of {{ b.title }}" loading="lazy">{% endif %}
+  <div>
   <h3>{{ b.title }}{% if b.edition %}, {{ b.edition }}{% endif %}</h3>
   <p class="meta">{{ b.authors|join(', ') }} · {{ b.publisher }}, {{ b.year }}</p>
   <p class="abstract">{{ b.note }}</p>
-  {% if b.url %}<p class="links"><a href="{{ b.url }}">Companion site</a></p>{% endif %}
+  {% if b.url %}<p class="links"><a href="{{ b.url }}">Book website</a></p>{% endif %}
+  </div>
 </article>
 {% endfor %}
 <p class="meta"><a href="{{ cfg.author.crebook }}">CREBook.net</a> is the website for <em>Commercial Real Estate Analysis</em>: chapter overviews, slides, exercises, spreadsheet models (DCF, development, mortgage and finance, portfolio, valuation), a glossary, and career resources. The podcast below is its audio companion.</p>

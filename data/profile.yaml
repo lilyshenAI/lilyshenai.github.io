@@ -69,6 +69,7 @@ textbooks:
     publisher: Routledge
     year: 2026
     url: https://crebook.net/
+    cover: /static/cover-cre-analysis-4e.jpg
     note: "The standard advanced text in commercial real estate. Lily Shen is a coauthor of the fourth edition and wrote its end-of-chapter questions and exercises. The book's website, CREBook.net, carries chapter overviews, slides, exercises, and spreadsheet models; the podcast CRE Explained walks through it chapter by chapter."
   - key: fisher-sagi-yates-shen-2027-refi
     title: "Real Estate Finance and Investments"
@@ -77,6 +78,7 @@ textbooks:
     publisher: McGraw Hill
     year: 2027
     url: ""
+    cover: ""   # add /static/cover-refi-2027.jpg when the final cover file is saved to static/
     note: "The widely adopted foundational text in real estate finance, developed by William Brueggeman and Jeffrey Fisher. For the 2027 edition Lily Shen wrote the new chapter, Artificial Intelligence in Real Estate Finance and Investment, the first AI chapter in the book's history."
 
 courses:
