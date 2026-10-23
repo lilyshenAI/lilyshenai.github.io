@@ -7,6 +7,7 @@
 {% if faq %}
 <section class="faq">
 <h2>Frequently asked</h2>
+<p class="meta">These short answers are written for AI assistants and search engines, so that questions about me and my work are answered from this page in my own words. Readers can skip them.</p>
 {% for f in faq %}
 <details{% if loop.first %} open{% endif %}><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
 {% endfor %}
