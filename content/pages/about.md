@@ -28,6 +28,14 @@ My articles have appeared in *Management Science*, the *Journal of Financial and
 
 I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contemporary Issues in Real Estate Markets at Clemson. I write the assessment materials, including the new chapters on AI in real estate, for *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, with David Geltner, Norman Miller, Alex van de Minne, Piet Eichholtz, and Thies Lindenthal; Routledge, 2026) and *Real Estate Finance and Investments* (with Jeffrey Fisher, Jacob Sagi, and Stephanie Yates; McGraw Hill, 2027 release).
 
+## Work with me {#work-with-me}
+
+- **Media and expert comment.** Interviews and background on housing and mortgage markets, commercial real estate, real estate agents, and AI in finance. Past coverage includes *The Economist*, *The Washington Post*, and public radio.
+- **Research collaboration.** Joint work with academics, Federal Reserve and industry economists, and data partners on housing, mortgages, and text-as-data methods.
+- **Consulting.** Advisory work for real estate and financial firms on AI and machine learning: turning listings, contracts, and other text into usable measures, building auditable AI workflows, and evaluating AI tools and vendors.
+
+A short email describing the request is the best way to start.
+
 ## Contact
 
 Email: yannan at berkeley dot edu. Office: 249 Chandler L. Burns Hall, Clemson, SC 29634. I am glad to hear from students, researchers, journalists, and anyone working in real estate.
