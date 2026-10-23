@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Talks and media</h1>
-<p class="intro">For interviews or expert comment on housing and mortgage markets, commercial real estate, or AI in finance, email <span class="email">{{ cfg.author.email_text }}</span>. I also take on consulting on AI and machine learning for real estate and financial firms; see <a href="/about/#work-with-me">work with me</a>.</p>
+<p class="intro">For media inquiries, collaboration, and consulting, reach me at <span class="email">{{ cfg.author.email_text }}</span>. I also take on consulting on AI and machine learning for real estate and financial firms; see <a href="/about/#work-with-me">work with me</a>.</p>
 <h2>In the press</h2>
 <ul class="media">
 {% for m in profile.media %}<li>{{ m.year }} · <strong>{{ m.outlet }}</strong>: {% if m.url %}<a href="{{ m.url }}">{{ m.title }}</a>{% else %}{{ m.title }}{% endif %}</li>

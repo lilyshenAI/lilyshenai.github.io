@@ -35,7 +35,8 @@ main.wide{max-width:64rem}
 .lede{font-size:1.14rem;line-height:1.6;max-width:38rem;margin:0}
 .lede+.lede{margin-top:.6rem}
 .headshot{width:220px;height:220px;border-radius:50%;object-fit:cover;justify-self:end;border:4px solid var(--card);box-shadow:0 2px 14px rgba(0,0,0,.10)}
-.cta{margin:1.3rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center}
+.reach{margin:.9rem 0 0;font-size:1rem;color:var(--ink)}
+.cta{margin:1rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:center}
 .btn{display:inline-block;text-decoration:none;border-radius:999px;padding:.5rem 1.15rem;font-weight:600;font-size:.93rem;background:var(--accent);color:#fff;border:1px solid var(--accent)}
 .btn:hover{background:var(--accent-ink);border-color:var(--accent-ink);color:#fff}
 .btn.ghost{background:transparent;color:var(--accent)}
