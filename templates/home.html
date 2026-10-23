@@ -7,7 +7,7 @@
     <p class="role">{{ cfg.author.title }}, {{ cfg.author.affiliation }} · {{ cfg.author.other_affiliation }}</p>
     <p class="lede">{{ profile.positioning }}</p>
     <p class="lede">{{ profile.warm_line }}</p>
-    <p class="cta"><a class="btn" href="/research/">Read my research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> <a class="quiet" href="{{ cfg.author.google_scholar }}">Google Scholar</a> <a class="quiet" href="{{ cfg.author.ssrn_author }}">SSRN</a> <a class="quiet" href="{{ cfg.author.linkedin }}">LinkedIn</a> <a class="quiet" href="{{ cfg.author.crebook }}">CREBook.net (our textbook site)</a> <a class="quiet" href="{{ cfg.author.podcast }}">Podcast</a></p>
+    <p class="cta"><a class="btn" href="/research/">Read my research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> <a class="quiet" href="{{ cfg.author.google_scholar }}">Google Scholar</a> <a class="quiet" href="{{ cfg.author.ssrn_author }}">SSRN</a> <a class="quiet" href="{{ cfg.author.linkedin }}">LinkedIn</a> <a class="quiet" href="{{ cfg.author.crebook }}">CREBook.net (Commercial Real Estate Analysis book site)</a> <a class="quiet" href="{{ cfg.author.podcast }}">Podcast</a></p>
   </div>
   <img class="headshot" src="{{ cfg.author.photo }}" alt="Portrait of {{ cfg.author.name }}" width="220" height="220">
 </section>
@@ -42,7 +42,7 @@
     <h3>{% if b.url %}<a href="{{ b.url }}">{{ b.title }}</a>{% else %}{{ b.title }}{% endif %}</h3>
     <p class="who">{{ b.authors|join(', ') }}</p>
     <p class="blurb">{{ b.note }}</p>
-    {% if b.url %}<p class="meta"><a href="{{ b.url }}">Book website: CREBook.net</a></p>{% endif %}
+    {% if b.url %}<p class="meta"><a href="{{ b.url }}">Book website: CREBook.net</a> (this book only)</p>{% endif %}
   </article>
   {% endfor %}
   <article class="card">
