@@ -30,7 +30,7 @@ I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contempo
 
 ## Contact
 
-Email: yannan at berkeley dot edu. Office: 145 Business Building, Clemson, SC 29634. I am glad to hear from students, researchers, journalists, and anyone working in real estate.
+Email: yannan at berkeley dot edu. Office: 249 Chandler L. Burns Hall, Clemson, SC 29634. I am glad to hear from students, researchers, journalists, and anyone working in real estate.
 
 ## Profiles
 
