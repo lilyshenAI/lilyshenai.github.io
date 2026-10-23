@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Textbooks</h1>
-<p class="intro">I have taught real estate at Clemson since 2016, in person and online, and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard textbooks in the field and write the test banks for both.</p>
+<p class="intro">I have taught real estate at Clemson since 2016, in person and online, and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard textbooks in the field and wrote their new chapters on AI in real estate and real estate finance.</p>
 {% for b in profile.textbooks %}
 <article class="paper" id="{{ b.key }}">
   <h3>{{ b.title }}{% if b.edition %}, {{ b.edition }}{% endif %}</h3>

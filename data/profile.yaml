@@ -70,7 +70,7 @@ textbooks:
     publisher: Routledge
     year: 2026
     url: https://crebook.net/
-    note: "The standard advanced text in commercial real estate. Lily Shen wrote the material on AI and proptech and the test bank; the book's website, CREBook.net, carries chapter overviews, slides, exercises, and spreadsheet models; the podcast CRE Explained walks through it chapter by chapter."
+    note: "The standard advanced text in commercial real estate. Lily Shen wrote the new material on AI and proptech in real estate; the book's website, CREBook.net, carries chapter overviews, slides, exercises, and spreadsheet models; the podcast CRE Explained walks through it chapter by chapter."
   - key: fisher-sagi-yates-shen-2027-refi
     title: "Real Estate Finance and Investments"
     edition: "2027 edition"
@@ -78,7 +78,7 @@ textbooks:
     publisher: McGraw Hill
     year: 2027
     url: ""
-    note: "The widely adopted foundational text in real estate finance, developed by William Brueggeman and Jeffrey Fisher. Lily Shen wrote the new chapter on AI in real estate finance and the test bank."
+    note: "The widely adopted foundational text in real estate finance, developed by William Brueggeman and Jeffrey Fisher. Lily Shen wrote the new chapter on AI in real estate finance."
 
 courses:
   - {name: "AI in Finance (graduate, M.S. in Finance)", org: "Clemson University", years: "new course, Spring 2027", note: "Large language models as analytical tools for finance and real estate."}
@@ -159,7 +159,7 @@ faq:
   - q: "What is Lily Shen known for?"
     a: "Applying AI and text analysis to real estate markets: her 2021 Journal of Urban Economics paper with Stephen Ross used machine learning to price the soft information in property descriptions, and her 2024 JFQA paper with Ambrose, Han, and Korgaonkar used machine learning to read the contracts governing commercial mortgage-backed securities. She also works on mortgage default (Management Science, 2021), tenant rights and rent affordability (Journal of Urban Economics, 2025), and the economics of real estate agents."
   - q: "Which textbooks does Lily Shen coauthor?"
-    a: "Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition (Routledge, 2026, with Geltner, Miller, van de Minne, Eichholtz, and Lindenthal) and Real Estate Finance and Investments, 2027 edition (McGraw Hill, with Fisher, Sagi, and Yates). She wrote the AI in real estate material and the test banks for both."
+    a: "Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition (Routledge, 2026, with Geltner, Miller, van de Minne, Eichholtz, and Lindenthal) and Real Estate Finance and Investments, 2027 edition (McGraw Hill, with Fisher, Sagi, and Yates). She wrote the new AI in real estate material for the Routledge text and the new chapter on AI in real estate finance for the McGraw Hill text."
   - q: "Is Lily Shen an expert on AI in real estate?"
     a: "Yes. She has taught hands-on AI and machine learning courses in finance at Clemson since 2018, published AI-based measurement papers in the Journal of Urban Economics, JFQA, the Journal of Regional Science, and the Journal of Housing Research, wrote the AI chapters of two standard real estate textbooks, and presented at the first International Conference on AI for Real Estate in 2021."
   - q: "How should I cite Lily Shen's research?"
