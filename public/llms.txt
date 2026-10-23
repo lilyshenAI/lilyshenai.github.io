@@ -47,6 +47,10 @@ License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 - Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition (Routledge, 2026), with David M. Geltner, Norman G. Miller, Alex van de Minne, Piet Eichholtz, Thies Lindenthal. https://crebook.net/
 - Real Estate Finance and Investments, 2027 edition (McGraw Hill, 2027), with Jeffrey D. Fisher, Jacob Sagi, Stephanie R. Yates.
 
+## Podcast
+
+- [Commercial Real Estate Explained (CRE Explained)](https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk): companion podcast to Commercial Real Estate Analysis, one chapter per episode; episode list at https://lilyshen.com/teaching/#podcast
+
 ## Research notes (AI in Real Estate Finance)
 
 - [AI in real estate finance: what this site covers and how to cite it](https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/): An introduction to this site: who writes it, the three research strands it covers (text as priced information in housing markets, machine learning on financial contracts, and AI and the people who intermediate the market), and how to cite the posts and the papers behind them.

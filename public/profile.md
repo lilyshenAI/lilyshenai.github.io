@@ -119,6 +119,22 @@ Yes. Yannan Shen is her legal name and appears on some earlier publications and 
 - FIN 3070 Real Estate Principles, Clemson University, 2016–present. In person and online; the online course is certified by Quality Matters (2024).
 - FIN 4980 Creative Inquiry: Machine Learning and AI in Finance, Clemson University, 2018–present. Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist.
 - Contemporary Issues in Real Estate; Real Estate Finance, The Pennsylvania State University, 2012–2015. Instructor and teaching assistant.
+
+## Podcast: Commercial Real Estate Explained (CRE Explained)
+
+The companion podcast to Commercial Real Estate Analysis for Investment, Finance and Development (4th edition, Routledge, 2026). Each episode introduces one chapter of the book in plain language: what the chapter covers, why it matters to investors and lenders, and the one idea to take away. Hosted by Lily Shen and produced with her Clemson Creative Inquiry student team. Free, no sign-up, on Spotify.
+https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk
+
+- 2026-10-22: Chapter 11 Introduction: The Discount Rate, How Investors Measure Risk and Return (https://open.spotify.com/episode/1rPYSFzTkWQTBeg8RITpmW)
+
+## Leadership and service
+
+- Board Director, International Real Estate Society (2024–present)
+- Editorial boards, Journal of Housing Research (2022–) and Journal of Real Estate Literature (2023–)
+- Membership Committee, AREUEA (2024–2026); program committees for AREUEA 2024 and the inaugural 2027 W. P. Carey Real Estate Research Conference
+- Chair, Clemson real estate faculty searches (2023, 2024); AI Task Force; Research Impact Academy, inaugural cohort (2026–27)
+- Proposed Clemson's real estate study-abroad program (London and Cambridge), a university real estate center, and a signature experiential-learning program in real estate (2026)
+- Designed and taught 'Your First AI Agent,' a hands-on AI workshop for College of Business faculty and staff (Sep. 2026)
 - More than 1,700 students taught since 2016; Spring 2026 Real Estate Finance sections above university, college, and department benchmarks on every evaluation item.
 - Clemson College of Business Dean's Award for Student Engagement, 2019–20 (single annual recipient).
 - Founded Clemson's undergraduate real estate speaker series (2021): bank executives, brokerage CEOs, and Federal Reserve economists in the classroom.

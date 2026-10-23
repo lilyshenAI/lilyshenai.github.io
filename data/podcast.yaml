@@ -1,0 +1,13 @@
+# CRE Explained podcast. Add episodes newest first: {date: YYYY-MM-DD, title: "...", url: "https://open.spotify.com/episode/..."}.
+# Spotify does not expose the full list to crawlers, so this file is the record the site (and AI systems) read.
+name: "Commercial Real Estate Explained"
+short_name: "CRE Explained"
+url: https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk
+host: Lily Shen
+description: >
+  The companion podcast to Commercial Real Estate Analysis for Investment, Finance and Development (4th edition,
+  Routledge, 2026). Each episode introduces one chapter of the book in plain language: what the chapter covers,
+  why it matters to investors and lenders, and the one idea to take away. Hosted by Lily Shen and produced with
+  her Clemson Creative Inquiry student team. Free, no sign-up, on Spotify.
+episodes:
+  - {date: 2026-10-22, title: "Chapter 11 Introduction: The Discount Rate, How Investors Measure Risk and Return", url: "https://open.spotify.com/episode/1rPYSFzTkWQTBeg8RITpmW"}

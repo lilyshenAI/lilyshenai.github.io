@@ -63,6 +63,25 @@
   </div>
 </section>
 
+<section class="two-col">
+  <div>
+    <h2>Leadership and service</h2>
+    <ul class="news">
+    {% for x in profile.leadership %}<li>{{ x }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2>Podcast: {{ podcast.short_name }}</h2>
+    <p class="meta">{{ podcast.description|truncate(260, True) }}</p>
+    <ul class="notes">
+    {% for e in podcast.episodes[:4] %}<li>{% if e.url %}<a href="{{ e.url }}">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %} <span class="date">{{ e.date|shortdate }}</span></li>
+    {% endfor %}
+    </ul>
+    <p class="meta"><a href="{{ podcast.url }}">Listen on Spotify</a> · <a href="/teaching/#podcast">All episodes</a></p>
+  </div>
+</section>
+
 <section class="faq">
   <h2>Questions people ask</h2>
   {% for f in profile.faq %}

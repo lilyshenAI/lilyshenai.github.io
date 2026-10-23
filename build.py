@@ -42,6 +42,7 @@ AUTHOR = CFG["author"]
 PAPERS = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text())
 PAPERS_BY_KEY = {p["key"]: p for p in PAPERS}
 PROFILE = yaml.safe_load((ROOT / "data" / "profile.yaml").read_text())
+PODCAST = yaml.safe_load((ROOT / "data" / "podcast.yaml").read_text())
 MD_EXT = ["extra", "toc", "sane_lists"]
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.S)
 
@@ -205,6 +206,15 @@ def book_ld(b):
     if b.get("url"):
         d["url"] = b["url"]
     return d
+
+
+def podcast_ld():
+    return {"@type": "PodcastSeries", "@id": f"{SITE}/teaching/#podcast", "name": PODCAST["name"],
+            "alternateName": PODCAST["short_name"], "url": PODCAST["url"], "webFeed": PODCAST["url"],
+            "description": " ".join(PODCAST["description"].split()), "inLanguage": "en",
+            "author": {"@id": f"{SITE}/#person"}, "publisher": {"@id": f"{SITE}/#person"},
+            "hasPart": [{"@type": "PodcastEpisode", "name": e["title"], "datePublished": str(e["date"]),
+                         **({"url": e["url"]} if e.get("url") else {})} for e in PODCAST["episodes"]]}
 
 
 def faq_ld(items, page_id):
@@ -451,6 +461,9 @@ def profile_markdown(posts):
                                       (f" {b['note']}" if b.get('note') else "") + (f" {b['url']}" if b.get('url') else "")
                                       for b in P["textbooks"]]
     L += ["", "## Teaching", ""] + [f"- {c['name']}, {c['org']}, {c['years']}. {c['note']}" for c in P["courses"]]
+    L += ["", f"## Podcast: {PODCAST['name']} ({PODCAST['short_name']})", "", " ".join(PODCAST["description"].split()), PODCAST["url"], ""]
+    L += [f"- {e['date']}: {e['title']}" + (f" ({e['url']})" if e.get('url') else "") for e in PODCAST["episodes"]]
+    L += ["", "## Leadership and service", ""] + [f"- {x}" for x in P["leadership"]]
     L += [f"- {t}" for t in P["teaching_facts"]]
     L += ["", "## Honors, awards, and grants", ""] + [f"- {a['year']}: {a['text']}" for a in P["awards"]]
     L += ["", "## Press coverage", ""] + [f"- {m['year']}, {m['outlet']}: {m['title']}" + (f" ({m['url']})" if m.get('url') else "") for m in P["media"]]
@@ -490,6 +503,7 @@ def build_llms(posts):
                 link = paper_link(p) or f"{SITE}/research/#{p['key']}"
                 lines.append(f"- [{p['title']}]({link}): {', '.join(p['authors'])}. {p.get('note', '')} ({p['year']}).")
     lines += ["", "## Textbooks", ""] + [f"- {b['title']}, {b.get('edition','')} ({b['publisher']}, {b['year']}), with {', '.join(a for a in b['authors'] if a != A['name'])}." + (f" {b['url']}" if b.get('url') else "") for b in PROFILE["textbooks"]]
+    lines += ["", f"## Podcast", "", f"- [{PODCAST['name']} ({PODCAST['short_name']})]({PODCAST['url']}): companion podcast to Commercial Real Estate Analysis, one chapter per episode; episode list at {SITE}/teaching/#podcast"]
     lines += ["", f"## Research notes ({CFG['blog_name']})", ""]
     lines += [f"- [{p['title']}]({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "posts"]
     lines += ["", f"## {CFG['weekly_name']} (weekly blog on AI)", ""]
@@ -539,7 +553,7 @@ def build():
         {"@type": "ProfilePage", "@id": home_id, "url": home_id, "mainEntity": {"@id": f"{SITE}/#person"},
          "name": f"{AUTHOR['name']}, {AUTHOR['title']}, {AUTHOR['affiliation']}"},
         faq_ld(PROFILE["faq"], home_id)]}
-    render("home.html", "index.html", posts=notes, weekly=weekly, profile=PROFILE, selected=selected, layout="wide", nav="home",
+    render("home.html", "index.html", posts=notes, weekly=weekly, profile=PROFILE, podcast=PODCAST, selected=selected, layout="wide", nav="home",
            page_title=f"{AUTHOR['name']} | {AUTHOR['title']}, {AUTHOR['affiliation']}",
            description=f"{AUTHOR['name']} is {AUTHOR['title']} at {AUTHOR['affiliation']} and a visiting scholar at the "
                        f"Federal Reserve Bank of Atlanta. Research on real estate finance, housing and mortgage markets, "
@@ -597,11 +611,11 @@ def build():
 
     # teaching
     teaching_ld = {"@context": "https://schema.org", "@graph": [website_ld(), person_ld(False)] +
-                   [book_ld(b) for b in PROFILE["textbooks"]] +
+                   [book_ld(b) for b in PROFILE["textbooks"]] + [podcast_ld()] +
                    [{"@type": "Course", "name": c["name"], "description": c["note"],
                      "provider": {"@type": "CollegeOrUniversity", "name": c["org"]},
                      "instructor": {"@id": f"{SITE}/#person"}} for c in PROFILE["courses"]]}
-    render("teaching.html", "teaching/index.html", profile=PROFILE, nav="teaching",
+    render("teaching.html", "teaching/index.html", profile=PROFILE, podcast=PODCAST, nav="teaching",
            page_title=f"Teaching and textbooks | {AUTHOR['name']}",
            description=f"{AUTHOR['name']} coauthors Commercial Real Estate Analysis (Routledge, 2026) and Real Estate "
                        f"Finance and Investments (McGraw Hill, 2027) and has taught real estate and AI in finance at "
@@ -609,6 +623,8 @@ def build():
            canonical=f"{SITE}/teaching/", jsonld_obj=teaching_ld, md_twin="/teaching.md")
     tl = [f"# Teaching and textbooks: {AUTHOR['name']}", "", f"Canonical: {SITE}/teaching/", "", "## Textbooks", ""]
     tl += [f"- {', '.join(b['authors'])} ({b['year']}). {b['title']}, {b.get('edition','')}. {b['publisher']}. {b.get('note','')}" for b in PROFILE["textbooks"]]
+    tl += ["", f"## Podcast: {PODCAST['name']} ({PODCAST['short_name']})", "", " ".join(PODCAST["description"].split()), PODCAST["url"], ""]
+    tl += [f"- {e['date']}: {e['title']}" + (f" ({e['url']})" if e.get('url') else "") for e in PODCAST["episodes"]]
     tl += ["", "## Courses", ""] + [f"- {c['name']}, {c['org']}, {c['years']}. {c['note']}" for c in PROFILE["courses"]]
     tl += ["", "## Teaching record", ""] + [f"- {t}" for t in PROFILE["teaching_facts"]]
     write("teaching.md", "\n".join(tl) + "\n")

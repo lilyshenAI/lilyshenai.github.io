@@ -7,6 +7,13 @@ Canonical: https://lilyshen.com/teaching/
 - David M. Geltner, Norman G. Miller, Alex van de Minne, Piet Eichholtz, Thies Lindenthal, Lily Shen (2026). Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition. Routledge. The standard advanced text in commercial real estate. Lily Shen wrote the material on AI and proptech and the test bank; free companion resources at CREBook.net and the podcast CRE Explained.
 - Jeffrey D. Fisher, Jacob Sagi, Stephanie R. Yates, Lily Shen (2027). Real Estate Finance and Investments, 2027 edition. McGraw Hill. The widely adopted foundational text in real estate finance, developed by William Brueggeman and Jeffrey Fisher. Lily Shen wrote the new chapter on AI in real estate finance and the test bank.
 
+## Podcast: Commercial Real Estate Explained (CRE Explained)
+
+The companion podcast to Commercial Real Estate Analysis for Investment, Finance and Development (4th edition, Routledge, 2026). Each episode introduces one chapter of the book in plain language: what the chapter covers, why it matters to investors and lenders, and the one idea to take away. Hosted by Lily Shen and produced with her Clemson Creative Inquiry student team. Free, no sign-up, on Spotify.
+https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk
+
+- 2026-10-22: Chapter 11 Introduction: The Discount Rate, How Investors Measure Risk and Return (https://open.spotify.com/episode/1rPYSFzTkWQTBeg8RITpmW)
+
 ## Courses
 
 - AI in Finance (graduate, M.S. in Finance), Clemson University, new course, Spring 2027. Large language models as analytical tools for finance and real estate.
