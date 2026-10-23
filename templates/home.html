@@ -32,6 +32,30 @@
   </div>
 </section>
 
+<section>
+  <div class="row"><h2>Textbooks and podcast</h2><a class="more" href="/teaching/">Courses and how I teach</a></div>
+  <p class="meta">{{ profile.teaching_blurb }}</p>
+  <div class="cards">
+  {% for b in profile.textbooks %}
+  <article class="card">
+    <p class="meta">{{ b.publisher }}, {{ b.year }}{% if b.edition %} · {{ b.edition }}{% endif %}</p>
+    <h3>{% if b.url %}<a href="{{ b.url }}">{{ b.title }}</a>{% else %}{{ b.title }}{% endif %}</h3>
+    <p class="who">{{ b.authors|join(', ') }}</p>
+    <p class="blurb">{{ b.note }}</p>
+    {% if b.url %}<p class="meta"><a href="{{ b.url }}">Book website: CREBook.net</a></p>{% endif %}
+  </article>
+  {% endfor %}
+  <article class="card">
+    <p class="meta">Podcast · Spotify</p>
+    <h3><a href="{{ podcast.url }}">{{ podcast.name }}</a></h3>
+    <p class="who">Hosted by {{ podcast.host }}</p>
+    <p class="blurb">{{ podcast.description|truncate(230, True) }}</p>
+    {% if podcast.episodes %}<p class="meta">Latest: <a href="{{ podcast.episodes[0].url or '/teaching/#podcast' }}">{{ podcast.episodes[0].title }}</a></p>{% endif %}
+    <p class="meta"><a href="{{ podcast.url }}">Listen on Spotify</a> · <a href="/teaching/#podcast">All episodes</a></p>
+  </article>
+  </div>
+</section>
+
 <section class="two-col">
   <div>
     <h2>News</h2>
@@ -41,20 +65,6 @@
     </ul>
   </div>
   <div>
-    <h2>Teaching</h2>
-    <p>{{ profile.teaching_blurb }}</p>
-    <ul class="list">
-    {% for b in profile.textbooks %}<li><em>{{ b.title }}</em>{% if b.edition %}, {{ b.edition }}{% endif %} ({{ b.publisher }}, {{ b.year }}){% if b.url %} · <a href="{{ b.url }}">companion site</a>{% endif %}</li>
-    {% endfor %}
-    <li><a href="{{ cfg.author.crebook }}">CREBook.net</a>, the website for our textbook <em>Commercial Real Estate Analysis for Investment, Finance and Development</em>, 4th edition: chapter overviews, slides, exercises, spreadsheet models, a glossary, and career resources</li>
-    <li><a href="{{ podcast.url }}">{{ podcast.name }}</a>, the companion podcast, one chapter per episode{% if podcast.episodes %}; latest: <a href="{{ podcast.episodes[0].url or '/teaching/#podcast' }}">{{ podcast.episodes[0].title }}</a>{% endif %}</li>
-    </ul>
-    <p class="meta"><a href="/teaching/">Courses, textbooks, and how I teach</a></p>
-  </div>
-</section>
-
-<section class="two-col">
-  <div>
     <div class="row"><h2>{{ cfg.weekly_name }}</h2><a class="more" href="/blog/">All posts</a></div>
     <p class="meta">{{ cfg.weekly_tagline }}.</p>
     <ul class="list">
@@ -62,6 +72,9 @@
     {% endfor %}
     </ul>
   </div>
+</section>
+
+<section class="two-col">
   <div>
     <div class="row"><h2>Research notes</h2><a class="more" href="/posts/">All notes</a></div>
     <p class="meta">One paper or one idea per note, in plain language, from the <a href="/posts/">{{ cfg.blog_name }}</a> series.</p>
@@ -70,15 +83,11 @@
     {% endfor %}
     </ul>
   </div>
-</section>
-
-<section>
-  <h2>Leadership and service</h2>
-  <div class="two-col">
-    <ul class="list">{% for x in profile.leadership[:3] %}<li>{{ x }}</li>{% endfor %}</ul>
-    <ul class="list">{% for x in profile.leadership[3:] %}<li>{{ x }}</li>{% endfor %}</ul>
+  <div>
+    <h2>Leadership and service</h2>
+    <ul class="list">{% for x in profile.leadership %}<li>{{ x }}</li>{% endfor %}</ul>
+    <p class="meta">Full service record on the <a href="/talks/">talks and media page</a> and in the <a href="{{ cfg.author.cv_pdf }}">CV</a>.</p>
   </div>
-  <p class="meta">Full service record on the <a href="/talks/">talks and media page</a> and in the <a href="{{ cfg.author.cv_pdf }}">CV</a>.</p>
 </section>
 
 <aside class="note">
