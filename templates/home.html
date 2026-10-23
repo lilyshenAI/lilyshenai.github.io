@@ -44,7 +44,7 @@
     <p class="meta">{{ b.publisher }}, {{ b.year }}{% if b.edition %} · {{ b.edition }}{% endif %}</p>
     <h3>{% if b.url %}<a href="{{ b.url }}">{{ b.title }}</a>{% else %}{{ b.title }}{% endif %}</h3>
     <p class="who">{{ b.authors|join(', ') }}</p>
-    <p class="blurb">{{ b.note }}</p>
+    <p class="blurb">{{ b.note|truncate(190, True) }}</p>
     {% if b.url %}<p class="meta"><a href="{{ b.url }}">Book website: CREBook.net</a> (this book only)</p>{% endif %}
     </div>
   </article>

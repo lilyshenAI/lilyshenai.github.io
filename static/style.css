@@ -52,13 +52,13 @@ main.wide{max-width:64rem}
 .row h2{flex:1 1 auto}
 .row .more{font-size:.9rem;white-space:nowrap}
 /* book covers */
-.card.has-cover{flex-direction:row;gap:1rem;align-items:flex-start}
-.card .cover{flex:0 0 96px}
-.card .cover img{width:96px;height:auto;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.18);display:block}
+.card.has-cover{gap:.6rem}
+.card .cover{display:block;width:150px;margin:.2rem 0 .4rem}
+.card .cover img{width:150px;height:auto;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.18);display:block}
 .card-body{display:flex;flex-direction:column;gap:.15rem;min-width:0}
 .paper.book{display:flex;gap:1.3rem;align-items:flex-start}
 .book-cover{width:130px;flex:0 0 130px;height:auto;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,.18)}
-@media (max-width:560px){.card.has-cover{flex-direction:column}.paper.book{flex-direction:column}}
+@media (max-width:560px){.paper.book{flex-direction:column}}
 /* cards */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1rem;margin-top:.4rem}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem 1.05rem;display:flex;flex-direction:column;gap:.15rem}
