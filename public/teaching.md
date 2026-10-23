@@ -19,7 +19,7 @@ https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk
 - AI in Finance (graduate, M.S. in Finance), Clemson University, new course, Spring 2027. Large language models as analytical tools for finance and real estate.
 - FIN 4170 Real Estate Finance, Clemson University, 2016–present. Sections of 45–80; semester-long home-financing project on a real property; industry speaker series.
 - FIN 3070 Real Estate Principles, Clemson University, 2016–present. In person and online; the online course is certified by Quality Matters (2024).
-- FIN 4980 Creative Inquiry: Machine Learning and AI in Finance, Clemson University, 2018–present. Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist.
+- FIN 4980 Creative Inquiry: Machine Learning and AI in Finance, Clemson University, 2018–present. Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist. Lab site: https://eisheim6.wixsite.com/aiinfinance
 - Contemporary Issues in Real Estate; Real Estate Finance, The Pennsylvania State University, 2012–2015. Instructor and teaching assistant.
 
 ## Teaching record

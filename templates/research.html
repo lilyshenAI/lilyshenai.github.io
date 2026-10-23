@@ -11,7 +11,7 @@
   <h3>{{ p.title }}</h3>
   <p class="meta">{{ p.authors|join(', ') }}{% if p.journal %} · <em>{{ p.journal }}</em>{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.issue %}({{ p.issue }}){% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% endif %} · {{ p.year }}{% if p.abdc %} · [ABDC {{ p.abdc }}]{% endif %}{% if p.note %} · {{ p.note }}{% endif %}{% if p.award %} · <strong>{{ p.award }}</strong>{% endif %}{% if p.media %} · {{ p.media }}{% endif %}</p>
   {% if p.abstract %}<p class="abstract">{{ p.abstract }}</p>{% endif %}
-  <p class="links">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">Publisher (DOI: {{ p.doi }})</a>{% endif %}{% if p.ssrn %}<a href="https://papers.ssrn.com/abstract={{ p.ssrn }}">SSRN</a>{% endif %}{% if p.url %}<a href="{{ p.url }}">Working paper</a>{% endif %}{% for post in p.posts %}<a href="{{ post.url }}">Research note: {{ post.title }}</a>{% endfor %}</p>
+  <p class="links">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">Publisher (DOI: {{ p.doi }})</a>{% endif %}{% if p.ssrn %}<a href="https://papers.ssrn.com/abstract={{ p.ssrn }}">SSRN</a>{% endif %}{% if p.url %}<a href="{{ p.url }}">Working paper</a>{% endif %}{% if p.appendix %}<a href="{{ p.appendix }}">Online appendix</a>{% endif %}{% for post in p.posts %}<a href="{{ post.url }}">Research note: {{ post.title }}</a>{% endfor %}</p>
   {% if p.status != 'progress' %}<details><summary>Cite</summary><p class="apa">{{ p.apa }}</p><pre>{{ p.bibtex|e }}</pre></details>{% endif %}
 </article>
 {% endfor %}

@@ -7,7 +7,7 @@
     <p class="role">{{ cfg.author.title }}, {{ cfg.author.affiliation }} · {{ cfg.author.other_affiliation }}</p>
     <p class="lede">{{ profile.positioning }}</p>
     <p class="lede">{{ profile.warm_line }}</p>
-    <p class="cta"><a class="btn" href="/research/">Read my research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> <a class="quiet" href="{{ cfg.author.google_scholar }}">Google Scholar</a> <a class="quiet" href="/about/">About me</a></p>
+    <p class="cta"><a class="btn" href="/research/">Read my research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> <a class="quiet" href="{{ cfg.author.google_scholar }}">Google Scholar</a> <a class="quiet" href="{{ cfg.author.ssrn_author }}">SSRN</a> <a class="quiet" href="{{ cfg.author.linkedin }}">LinkedIn</a></p>
   </div>
   <img class="headshot" src="{{ cfg.author.photo }}" alt="Portrait of {{ cfg.author.name }}" width="220" height="220">
 </section>
@@ -81,6 +81,6 @@
 </section>
 
 <aside class="note">
-  <p>{{ profile.contact_line|replace('Clemson faculty profile', '<a href="' ~ cfg.author.clemson_profile ~ '">Clemson faculty profile</a>')|safe }}</p>
+  <p>{{ profile.contact_line|replace('EMAIL', '<span class="email">' ~ cfg.author.email_text ~ '</span>')|replace('OFFICE', cfg.author.office)|safe }}</p>
 </aside>
 {% endblock %}

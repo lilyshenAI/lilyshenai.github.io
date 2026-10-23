@@ -24,7 +24,7 @@
 <table>
 <thead><tr><th>Course</th><th>Institution</th><th>Years</th><th>Notes</th></tr></thead>
 <tbody>
-{% for c in profile.courses %}<tr><td>{{ c.name }}</td><td>{{ c.org }}</td><td>{{ c.years }}</td><td>{{ c.note }}</td></tr>
+{% for c in profile.courses %}<tr><td>{{ c.name }}</td><td>{{ c.org }}</td><td>{{ c.years }}</td><td>{{ c.note|replace('Lab site: ' ~ cfg.author.ci_site, '<a href="' ~ cfg.author.ci_site ~ '">Lab site</a>')|safe }}</td></tr>
 {% endfor %}
 </tbody>
 </table>

@@ -13,8 +13,8 @@ teaching_blurb: >
   textbooks in the field.
 contact_line: >
   I am glad to hear from students, researchers, journalists, and anyone working in real estate. The easiest
-  way to reach me is through my Clemson faculty profile, which has my email and office details. I am also
-  happy to share data, code, or slides for any paper on this site.
+  way to reach me is email: EMAIL. My office is OFFICE. I am also happy to share data, code, or slides
+  for any paper on this site.
 
 proof_points:
   - {n: "9", label: "peer-reviewed articles", detail: "Management Science, JFQA, two in the Journal of Urban Economics; four in ABDC A* journals"}
@@ -79,7 +79,7 @@ courses:
   - {name: "AI in Finance (graduate, M.S. in Finance)", org: "Clemson University", years: "new course, Spring 2027", note: "Large language models as analytical tools for finance and real estate."}
   - {name: "FIN 4170 Real Estate Finance", org: "Clemson University", years: "2016–present", note: "Sections of 45–80; semester-long home-financing project on a real property; industry speaker series."}
   - {name: "FIN 3070 Real Estate Principles", org: "Clemson University", years: "2016–present", note: "In person and online; the online course is certified by Quality Matters (2024)."}
-  - {name: "FIN 4980 Creative Inquiry: Machine Learning and AI in Finance", org: "Clemson University", years: "2018–present", note: "Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist."}
+  - {name: "FIN 4980 Creative Inquiry: Machine Learning and AI in Finance", org: "Clemson University", years: "2018–present", note: "Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist. Lab site: https://eisheim6.wixsite.com/aiinfinance"}
   - {name: "Contemporary Issues in Real Estate; Real Estate Finance", org: "The Pennsylvania State University", years: "2012–2015", note: "Instructor and teaching assistant."}
 
 teaching_facts:

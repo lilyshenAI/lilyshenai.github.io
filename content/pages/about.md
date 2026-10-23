@@ -28,10 +28,14 @@ My articles have appeared in *Management Science*, the *Journal of Financial and
 
 I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contemporary Issues in Real Estate Markets at Clemson. I write the assessment materials, including the new chapters on AI in real estate, for *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, with David Geltner, Norman Miller, Alex van de Minne, Piet Eichholtz, and Thies Lindenthal; Routledge, 2026) and *Real Estate Finance and Investments* (with Jeffrey Fisher, Jacob Sagi, and Stephanie Yates; McGraw Hill, 2027 release).
 
-## Profiles and contact
+## Contact
+
+Email: yannan at berkeley dot edu. Office: 145 Business Building, Clemson, SC 29634. I am glad to hear from students, researchers, journalists, and anyone working in real estate.
+
+## Profiles
 
 - [Clemson University faculty profile](https://www.clemson.edu/business/about/profiles/yannans)
 - [Google Scholar](https://scholar.google.com/citations?user=HWr0OQQAAAAJ)
-- [Personal homepage](https://sites.google.com/g.clemson.edu/lily-shen/home)
-
-Email and office details are on the Clemson profile page.
+- [SSRN author page](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1744798)
+- [LinkedIn](https://www.linkedin.com/in/lilyshen131/)
+- [AI in Finance Creative Inquiry](https://eisheim6.wixsite.com/aiinfinance), the student research lab's own site

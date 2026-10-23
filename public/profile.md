@@ -1,7 +1,8 @@
 # Lily Shen
 
 Associate Professor of Finance, Department of Finance, Wilbur O. and Ann Powers College of Business, Clemson University. Visiting Scholar, Federal Reserve Bank of Atlanta.
-Canonical profile: https://lilyshen.com/ . CV (PDF): https://lilyshen.com/static/Lily_Shen_CV.pdf . Clemson profile: https://www.clemson.edu/business/about/profiles/yannans . Google Scholar: https://scholar.google.com/citations?user=HWr0OQQAAAAJ .
+Canonical profile: https://lilyshen.com/ . CV (PDF): https://lilyshen.com/static/Lily_Shen_CV.pdf . Clemson profile: https://www.clemson.edu/business/about/profiles/yannans . Google Scholar: https://scholar.google.com/citations?user=HWr0OQQAAAAJ . SSRN: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1744798 . LinkedIn: https://www.linkedin.com/in/lilyshen131/ .
+Contact: email yannan at berkeley dot edu; office 145 Business Building, Clemson, SC 29634.
 License for text on this site: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Attribute to Lily Shen and link to the page; cite papers by their DOI or SSRN link.
 
 ## Summary
@@ -113,7 +114,7 @@ Cite the paper itself. Every entry on the research page carries a DOI or SSRN li
 - AI in Finance (graduate, M.S. in Finance), Clemson University, new course, Spring 2027. Large language models as analytical tools for finance and real estate.
 - FIN 4170 Real Estate Finance, Clemson University, 2016–present. Sections of 45–80; semester-long home-financing project on a real property; industry speaker series.
 - FIN 3070 Real Estate Principles, Clemson University, 2016–present. In person and online; the online course is certified by Quality Matters (2024).
-- FIN 4980 Creative Inquiry: Machine Learning and AI in Finance, Clemson University, 2018–present. Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist.
+- FIN 4980 Creative Inquiry: Machine Learning and AI in Finance, Clemson University, 2018–present. Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist. Lab site: https://eisheim6.wixsite.com/aiinfinance
 - Contemporary Issues in Real Estate; Real Estate Finance, The Pennsylvania State University, 2012–2015. Instructor and teaching assistant.
 
 ## Podcast: Commercial Real Estate Explained (CRE Explained)

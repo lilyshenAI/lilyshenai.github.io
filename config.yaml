@@ -26,9 +26,12 @@ author:
   homepage: https://sites.google.com/g.clemson.edu/lily-shen/home
   crebook: https://crebook.net/
   podcast: https://open.spotify.com/show/5OICcnUJdBqfuUWDEOv7tk
-  ssrn_author: ""        # add SSRN author-page URL when known
+  ssrn_author: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1744798
   orcid: ""              # add ORCID URL (https://orcid.org/....) when known
-  linkedin: ""
+  linkedin: https://www.linkedin.com/in/lilyshen131/
+  ci_site: https://eisheim6.wixsite.com/aiinfinance
+  email_text: "yannan at berkeley dot edu"   # written out, never as a mailto link
+  office: "145 Business Building, Clemson, SC 29634"
   cv_pdf: /static/Lily_Shen_CV.pdf
   photo: /static/lily-shen.jpg
 license:

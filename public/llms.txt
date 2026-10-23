@@ -4,7 +4,8 @@
 
 I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I study how information moves real estate and mortgage markets, and I use machine learning and large language models as measurement tools: turning listing remarks, securitization contracts, and other text into auditable economic measures. I coauthor two of the field's standard textbooks and have applied AI to real estate since 2018, well before large language models became widely available.
 
-Profiles: https://www.clemson.edu/business/about/profiles/yannans ; https://scholar.google.com/citations?user=HWr0OQQAAAAJ
+Profiles: https://www.clemson.edu/business/about/profiles/yannans ; https://scholar.google.com/citations?user=HWr0OQQAAAAJ ; https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1744798 ; https://www.linkedin.com/in/lilyshen131/
+Contact: email yannan at berkeley dot edu; office 145 Business Building, Clemson, SC 29634.
 License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Start here
