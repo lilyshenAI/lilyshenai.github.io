@@ -256,6 +256,8 @@ def post_ld(post):
          "isPartOf": {"@id": f"{SITE}/#website"}, "keywords": post["tags"],
          "wordCount": post["words"], "isAccessibleForFree": True,
          "license": CFG["license"]["url"]}
+    if post.get("image_abs"):
+        b["image"] = post["image_abs"]
     if post["papers"]:
         b["citation"] = [article_ld(p) for p in post["papers"]]
         b["about"] = [{"@type": "Thing", "name": p["title"]} for p in post["papers"]]
@@ -273,6 +275,31 @@ def dump_ld(obj):
 
 
 # ----------------------------------------------------------------- content
+def post_image(meta, path):
+    """Optional post photo: `image:` (file in static/posts/, or a /static/... path), required `image_alt:`, optional `image_caption:`."""
+    none = dict(image=None, image_abs=None, image_alt=None, image_caption=None, image_w=None, image_h=None)
+    img = meta.get("image")
+    if not img:
+        return none
+    rel = img if str(img).startswith("/") else f"/static/posts/{img}"
+    f = ROOT / rel.lstrip("/")
+    if not f.exists():
+        sys.exit(f"{path.name}: image not found: {rel} (run tools/prep_image.py first)")
+    alt = " ".join(str(meta.get("image_alt") or "").split())
+    if not alt:
+        sys.exit(f"{path.name}: image_alt is required with image (one plain sentence saying what is in the photo)")
+    w = h = None
+    try:
+        from PIL import Image
+        with Image.open(f) as im:
+            w, h = im.size
+    except Exception:
+        pass
+    cap = meta.get("image_caption")
+    return dict(image=rel, image_abs=SITE + rel, image_alt=alt, image_caption=" ".join(str(cap).split()) if cap else None,
+                image_w=w, image_h=h)
+
+
 def load_posts(kind="posts"):
     posts = []
     for path in sorted((ROOT / "content" / SERIES[kind]["dir"]).glob("*.md")):
@@ -293,6 +320,7 @@ def load_posts(kind="posts"):
                     title=meta["title"], description=" ".join(meta["description"].split()),
                     date=date, updated=as_date(meta.get("updated", date)),
                     tags=as_list(meta.get("tags")), papers=papers, faq=meta.get("faq") or [],
+                    **post_image(meta, path),
                     html=html, markdown=body.strip(), words=words,
                     reading=max(1, round(words / 220)), source=path.name, meta=meta)
         post["cite_apa"] = post_cite_apa(post)
@@ -336,6 +364,8 @@ def markdown_copy(post):
             f"Series: {post['series']}. Site: {CFG['site_name']} ({SITE}/)",
             f"License: {CFG['license']['name']} ({CFG['license']['url']})", "",
             f"Summary: {post['description']}", ""]
+    if post.get("image_abs"):
+        head += [f"Image: {post['image_abs']} ({post['image_alt']})" + (f" Caption: {post['image_caption']}" if post["image_caption"] else ""), ""]
     if post["papers"]:
         head.append("Papers discussed:")
         for p in post["papers"]:
@@ -574,6 +604,7 @@ def build():
         render("post.html", f"{post['kind']}/{post['slug']}/index.html", post=post, nav=post["kind"],
                related=related_posts(post, posts), page_title=f"{post['title']} | {AUTHOR['name']}",
                description=post["description"], canonical=post["abs_url"], og_type="article",
+               og_image=post["image_abs"], og_image_alt=post["image_alt"], og_image_w=post["image_w"], og_image_h=post["image_h"],
                jsonld_obj=post_ld(post))
         write(f"{post['kind']}/{post['slug']}.md", markdown_copy(post))
 

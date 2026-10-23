@@ -109,3 +109,4 @@ footer.site-footer p{margin:.35rem 0}
 .tag a{color:var(--sub)}
 img{max-width:100%;height:auto}
 @media (max-width:760px){html{font-size:16px}h1{font-size:1.7rem}.hero{grid-template-columns:1fr;gap:1.2rem}.headshot{width:150px;height:150px;justify-self:start;order:-1}.hero h1{font-size:2.2rem}.glance{grid-template-columns:1fr 1fr;gap:.9rem 1.2rem}.two-col{grid-template-columns:1fr}.site-header nav{gap:.1rem .8rem}.site-header nav a{font-size:.88rem}}
+.post-image{margin:0 0 1.7rem}.post-image img{display:block;width:100%;height:auto;border-radius:8px}.post-image figcaption{font-size:.88rem;color:var(--sub);margin-top:.5rem}

@@ -20,7 +20,7 @@ data/papers.yaml     bibliography (abstracts, DOIs, SSRN ids, ABDC ratings); ref
 content/posts/*.md   posts: YAML front matter + Markdown
 content/pages/*.md   about page (and any other static page)
 templates/*.html     Jinja2 templates
-static/               style.css, lily-shen.jpg (headshot), Lily_Shen_CV.pdf (replace when the CV changes)
+static/               style.css, lily-shen.jpg (headshot), Lily_Shen_CV.pdf (replace when the CV changes), posts/ (post photos from tools/prep_image.py)
 build.py             generator
 public/              OUTPUT — deploy this folder
 ```

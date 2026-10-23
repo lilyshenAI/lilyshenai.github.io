@@ -16,7 +16,8 @@
   <p class="byline">By <a href="/about/" rel="author">{{ cfg.author.name }}</a>, {{ cfg.author.title }}, {{ cfg.author.affiliation }} · <time datetime="{{ post.date }}">{{ post.date|longdate }}</time>{% if post.updated != post.date %} · Updated <time datetime="{{ post.updated }}">{{ post.updated|longdate }}</time>{% endif %} · {{ post.reading }} min read</p>
   <p class="summary">{{ post.description }}</p>
 </header>
-<div class="body">
+{% if post.image %}<figure class="post-image"><img src="{{ post.image }}" alt="{{ post.image_alt|e }}"{% if post.image_w %} width="{{ post.image_w }}" height="{{ post.image_h }}"{% endif %}>{% if post.image_caption %}<figcaption>{{ post.image_caption }}</figcaption>{% endif %}</figure>
+{% endif %}<div class="body">
 {{ post.html }}
 </div>
 {% if post.faq %}
