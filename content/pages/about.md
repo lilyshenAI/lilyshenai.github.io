@@ -26,7 +26,7 @@ My articles have appeared in *Management Science*, the *Journal of Financial and
 
 ## Teaching and textbooks
 
-I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contemporary Issues in Real Estate Markets at Clemson. I am a coauthor of *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, with David Geltner, Norman Miller, Alex van de Minne, Piet Eichholtz, and Thies Lindenthal; Routledge, 2026) and of *Real Estate Finance and Investments* (with Jeffrey Fisher, Jacob Sagi, and Stephanie Yates; McGraw Hill, 2027 release), for which I wrote the new chapter on artificial intelligence in real estate finance and investment.
+I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contemporary Issues in Real Estate Markets at Clemson. I am a coauthor of *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, with David Geltner, Norman Miller, Alex van de Minne, Piet Eichholtz, and Thies Lindenthal; Routledge, 2026) and of *Real Estate Finance and Investments* (with Jeffrey Fisher, Jacob Sagi, and Stephanie Yates; McGraw Hill, 2027 release), for which I wrote the new chapter on artificial intelligence in real estate finance and investment. For both books I wrote the assessment materials for the entire text.
 
 ## Work with me {#work-with-me}
 
