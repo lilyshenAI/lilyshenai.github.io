@@ -491,7 +491,7 @@ def build_llms(posts):
              "## Start here", "",
              f"- [Full plain-text profile: positions, papers with abstracts, textbooks, courses, awards, press]({SITE}/profile.md)",
              f"- [Research page with abstracts, ABDC ratings, DOIs, and BibTeX]({SITE}/research/) ([plain text]({SITE}/research.md))",
-             f"- [Teaching and textbooks]({SITE}/teaching/) ([plain text]({SITE}/teaching.md))",
+             f"- [Textbooks and teaching]({SITE}/teaching/) ([plain text]({SITE}/teaching.md))",
              f"- [Talks and media]({SITE}/talks/)",
              f"- [CV]({SITE}/cv/) ([plain text]({SITE}/cv.md), [PDF]({SITE}{A['cv_pdf']}))",
              f"- [All BibTeX]({SITE}/papers.bib)", "",
@@ -618,12 +618,12 @@ def build():
                      "provider": {"@type": "CollegeOrUniversity", "name": c["org"]},
                      "instructor": {"@id": f"{SITE}/#person"}} for c in PROFILE["courses"]]}
     render("teaching.html", "teaching/index.html", profile=PROFILE, podcast=PODCAST, nav="teaching",
-           page_title=f"Teaching and textbooks | {AUTHOR['name']}",
+           page_title=f"Textbooks | {AUTHOR['name']}",
            description=f"{AUTHOR['name']} coauthors Commercial Real Estate Analysis (Routledge, 2026) and Real Estate "
                        f"Finance and Investments (McGraw Hill, 2027) and has taught real estate and AI in finance at "
                        f"Clemson University since 2016.",
            canonical=f"{SITE}/teaching/", jsonld_obj=teaching_ld, md_twin="/teaching.md")
-    tl = [f"# Teaching and textbooks: {AUTHOR['name']}", "", f"Canonical: {SITE}/teaching/", "", "## Textbooks", ""]
+    tl = [f"# Textbooks and teaching: {AUTHOR['name']}", "", f"Canonical: {SITE}/teaching/", "", "## Textbooks", ""]
     tl += [f"- {', '.join(b['authors'])} ({b['year']}). {b['title']}, {b.get('edition','')}. {b['publisher']}. {b.get('note','')}" for b in PROFILE["textbooks"]]
     tl += ["", f"## Podcast: {PODCAST['name']} ({PODCAST['short_name']})", "", " ".join(PODCAST["description"].split()), PODCAST["url"], ""]
     tl += [f"- {e['date']}: {e['title']}" + (f" ({e['url']})" if e.get('url') else "") for e in PODCAST["episodes"]]
