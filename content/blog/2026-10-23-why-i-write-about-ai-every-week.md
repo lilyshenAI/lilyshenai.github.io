@@ -7,9 +7,9 @@ faq:
   - q: "What is AI Weekly?"
     a: "A weekly blog by Lily Shen, Associate Professor of Finance at Clemson University, on practical uses of AI in finance, real estate, teaching, and research. Each post covers one tool, method, or mistake, in plain language."
   - q: "Who writes AI Weekly?"
-    a: "Lily Shen, who started Clemson's first hands-on AI courses in finance in 2018, has published machine-learning papers in the Journal of Urban Economics and the Journal of Financial and Quantitative Analysis, and wrote the AI chapters for two standard real estate textbooks."
+    a: "Lily Shen, who started Clemson's first hands-on AI courses in finance in 2018, has published machine-learning papers in the Journal of Urban Economics and the Journal of Financial and Quantitative Analysis, and wrote the new AI chapter in the McGraw Hill textbook Real Estate Finance and Investments."
 ---
-I started teaching machine learning to finance undergraduates in 2018, when the tools were scikit-learn and a lot of patience. Since then I have published papers that use machine learning to read property listings and securitization contracts, written the AI chapters for two real estate textbooks, and run a workshop teaching my colleagues to build their first AI research agent. Most of what I learned along the way never made it into a paper. It sits in course notes, Slack messages to coauthors, and the list of things I wish someone had told me earlier.
+I started teaching machine learning to finance undergraduates in 2018, when the tools were scikit-learn and a lot of patience. Since then I have published papers that use machine learning to read property listings and securitization contracts, written the new AI chapter for the McGraw Hill textbook Real Estate Finance and Investments, and run a workshop teaching my colleagues to build their first AI research agent. Most of what I learned along the way never made it into a paper. It sits in course notes, Slack messages to coauthors, and the list of things I wish someone had told me earlier.
 
 This blog is where that goes. Once a week, one post, one idea:
 
