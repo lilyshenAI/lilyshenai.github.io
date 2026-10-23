@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lilyshen.com/</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://lilyshen.com/research/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://lilyshen.com/teaching/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://lilyshen.com/talks/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://lilyshen.com/cv/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lilyshen.com/</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://lilyshen.com/research/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lilyshen.com/teaching/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lilyshen.com/talks/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lilyshen.com/cv/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://lilyshen.com/posts/</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://lilyshen.com/blog/</loc><lastmod>2026-10-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://lilyshen.com/about/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://lilyshen.com/tags/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/blog/</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://lilyshen.com/about/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://lilyshen.com/tags/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://lilyshen.com/blog/why-i-write-about-ai-every-week/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -21,38 +21,38 @@
   <url><loc>https://lilyshen.com/posts/real-estate-agent-networks-connectedness/</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://lilyshen.com/tags/ai-weekly/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/ai-in-finance/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/teaching-with-ai/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/about-this-site/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/ai-in-real-estate-finance/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/citation/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/short-term-rentals/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/airbnb/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/covid-19/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/text-analysis/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/machine-learning/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/methods/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/large-language-models/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/reproducibility/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/listing-remarks/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/disclosure/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/bargaining/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/housing-markets/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/soft-information/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/hedonic-pricing/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/house-price-index/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/price-discovery/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/forecasting/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/cmbs/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/securitization/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/financial-contracts/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/property-uniqueness/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/time-on-market/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/real-estate-agents/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/networks/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/intermediaries/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/illiquid-assets/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/distressed-sales/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://lilyshen.com/tags/explainer/</loc><lastmod>2026-10-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/ai-weekly/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/ai-in-finance/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/teaching-with-ai/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/about-this-site/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/ai-in-real-estate-finance/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/citation/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/short-term-rentals/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/airbnb/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/covid-19/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/text-analysis/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/machine-learning/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/methods/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/large-language-models/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/reproducibility/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/listing-remarks/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/disclosure/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/bargaining/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/housing-markets/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/soft-information/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/hedonic-pricing/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/house-price-index/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/price-discovery/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/forecasting/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/cmbs/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/securitization/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/financial-contracts/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/property-uniqueness/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/time-on-market/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/real-estate-agents/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/networks/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/intermediaries/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/illiquid-assets/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/distressed-sales/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://lilyshen.com/tags/explainer/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>

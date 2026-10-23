@@ -1,6 +1,6 @@
 # How to build auditable AI text measures for economic research: a two-step method
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/auditable-ai-text-measures-two-step-method/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

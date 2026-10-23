@@ -1,6 +1,6 @@
 # Cheap talk or priced information? What listing remarks do to prices, bargaining, and marketing time
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/cheap-talk-or-priced-information-listing-remarks/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

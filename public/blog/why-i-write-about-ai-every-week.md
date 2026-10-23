@@ -1,6 +1,6 @@
 # Why I write about AI every week
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-23
 Canonical URL: https://lilyshen.com/blog/why-i-write-about-ai-every-week/
 Series: AI Weekly. Site: Lily Shen (https://lilyshen.com/)

@@ -1,13 +1,13 @@
 # Lily Shen: full text of all research notes and weekly AI posts
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University.
+Author: Lily Shen, Associate Professor of Finance, Clemson University.
 Site: https://lilyshen.com/ . Profile: https://lilyshen.com/profile.md . License: CC BY 4.0.
 
 ---
 
 # Why I write about AI every week
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-23
 Canonical URL: https://lilyshen.com/blog/why-i-write-about-ai-every-week/
 Series: AI Weekly. Site: Lily Shen (https://lilyshen.com/)
@@ -48,7 +48,7 @@ Shen, L. (2026, October 23). Why I write about AI every week. AI Weekly. https:/
 
 # AI in real estate finance: what this site covers and how to cite it
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -60,7 +60,7 @@ Real estate is the largest asset most households will ever hold, and it trades o
 
 ## Who I am
 
-I am Lily Shen. I also publish under my legal name, Yannan Shen; both names refer to the same person. I am Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
+I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
 
 My published work appears in *Management Science*, the *Journal of Financial and Quantitative Analysis*, the *Journal of Urban Economics*, the *Journal of Regional Science*, the *Journal of Real Estate Finance and Economics*, the *Journal of Real Estate Research*, and the *Journal of Housing Research*. I also write the assessment materials, including the new chapters on AI in real estate, for two textbooks: *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, Routledge, 2026) and *Real Estate Finance and Investments* (McGraw Hill, 2027 release). The full list, with abstracts and BibTeX, is on the [papers page](/papers/).
 
@@ -90,7 +90,7 @@ If you use a finding, cite the paper. The DOI or SSRN link is given at the end o
 
 **Who writes AI in Real Estate Finance?**
 
-Lily Shen, who also publishes as Yannan Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley.
+Lily Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley.
 
 **What topics does the site cover?**
 
@@ -109,7 +109,7 @@ Shen, L. (2026, October 19). AI in real estate finance: what this site covers an
 
 # Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -161,7 +161,7 @@ Shen, L. (2026, October 19). Cleanliness is next to income: a machine-learning c
 
 # How to build auditable AI text measures for economic research: a two-step method
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/auditable-ai-text-measures-two-step-method/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -235,7 +235,7 @@ Shen, L. (2026, October 19). How to build auditable AI text measures for economi
 
 # Cheap talk or priced information? What listing remarks do to prices, bargaining, and marketing time
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/cheap-talk-or-priced-information-listing-remarks/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -297,7 +297,7 @@ Shen, L. (2026, October 19). Cheap talk or priced information? What listing rema
 
 # Property descriptions carry priced information that hedonic models miss (Journal of Urban Economics, 2021)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/information-value-property-descriptions-machine-learning/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -351,7 +351,7 @@ Shen, L. (2026, October 19). Property descriptions carry priced information that
 
 # Listing language predicts house price growth months before price indices move
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/listing-language-house-price-discovery/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -432,7 +432,7 @@ Shen, L. (2026, October 19). Listing language predicts house price growth months
 
 # Are securitization contracts boilerplate? Machine learning on CMBS pooling and servicing agreements (JFQA, 2024)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/machine-learning-cmbs-pooling-servicing-agreements/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -482,7 +482,7 @@ Shen, L. (2026, October 19). Are securitization contracts boilerplate? Machine l
 
 # The odd one out: unique homes sell for more and take only slightly longer (Journal of Housing Research, 2022)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/property-uniqueness-selling-time-and-price/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -537,7 +537,7 @@ Shen, L. (2026, October 19). The odd one out: unique homes sell for more and tak
 
 # Well-connected real estate agents sell for more: network theory on 40,000 Atlanta transactions (Journal of Real Estate Research, 2025)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/real-estate-agent-networks-connectedness/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -589,7 +589,7 @@ Shen, L. (2026, October 19). Well-connected real estate agents sell for more: ne
 
 # Price discovery in illiquid markets: what listing remarks reveal before transaction indices update
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -653,7 +653,7 @@ Shen, L. (2026, October 19). Price discovery in illiquid markets: what listing r
 
 # What is soft information in housing markets, and how can it be measured?
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/what-is-soft-information-in-housing-markets/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

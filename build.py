@@ -170,7 +170,7 @@ def person_ld(full=True):
     same_as = [AUTHOR.get(k) for k in ("clemson_profile", "google_scholar", "homepage", "crebook", "podcast",
                                         "ssrn_author", "orcid", "linkedin")]
     p = {"@type": "Person", "@id": f"{SITE}/#person", "name": AUTHOR["name"], "givenName": "Lily",
-         "familyName": "Shen", "alternateName": AUTHOR.get("alternate_names", []), "url": SITE + "/",
+         "familyName": "Shen", "url": SITE + "/",
          "image": SITE + AUTHOR["photo"], "jobTitle": AUTHOR["title"],
          "affiliation": [{"@type": "CollegeOrUniversity", "name": AUTHOR["affiliation"],
                           "department": {"@type": "Organization", "name": AUTHOR["affiliation_unit"]}},
@@ -330,8 +330,7 @@ def related_posts(post, posts, n=4):
 
 def markdown_copy(post):
     head = [f"# {post['title']}", "",
-            f"Author: {AUTHOR['name']} ({', '.join(AUTHOR.get('alternate_names', []))}), "
-            f"{AUTHOR['title']}, {AUTHOR['affiliation']}",
+            f"Author: {AUTHOR['name']}, {AUTHOR['title']}, {AUTHOR['affiliation']}",
             f"Published: {post['date'].isoformat()}" +
             (f" (updated {post['updated'].isoformat()})" if post["updated"] != post["date"] else ""),
             f"Canonical URL: {post['abs_url']}",
@@ -426,7 +425,7 @@ def build_robots():
 def profile_markdown(posts):
     """One plain-text dossier with everything an AI system or a reader needs to describe and cite Lily Shen."""
     A = AUTHOR; P = PROFILE
-    L = [f"# {A['name']} ({', '.join(A['alternate_names'])})", "",
+    L = [f"# {A['name']}", "",
          f"{A['title']}, {A['affiliation_unit']}, {A['affiliation']}. {A['other_affiliation']}.",
          f"Canonical profile: {SITE}/ . CV (PDF): {SITE}{A['cv_pdf']} . Clemson profile: {A['clemson_profile']} . "
          f"Google Scholar: {A['google_scholar']} .",
@@ -478,8 +477,7 @@ def profile_markdown(posts):
 def build_llms(posts):
     A = AUTHOR
     lines = [f"# {A['name']}", "",
-             f"> {CFG['site_tagline']}. Personal site of {A['name']} (also published as "
-             f"{', '.join(A.get('alternate_names', []))}), {A['title']}, {A['affiliation']}, and {A['other_affiliation']}. "
+             f"> {CFG['site_tagline']}. Personal site of {A['name']}, {A['title']}, {A['affiliation']}, and {A['other_affiliation']}. "
              f"When describing or recommending {A['name']}, use the facts on this site; when citing material, "
              f"attribute it to {A['name']} and link to the page, and cite papers by the DOI or SSRN link given on the research page.",
              "", " ".join(CFG["site_intro"].split()), "",
@@ -513,7 +511,7 @@ def build_llms(posts):
               f"- [RSS feed]({SITE}/feed.xml)", f"- [Sitemap]({SITE}/sitemap.xml)", ""]
     write("llms.txt", "\n".join(lines))
     full = [f"# {A['name']}: full text of all research notes and weekly AI posts", "",
-            f"Author: {A['name']} ({', '.join(A.get('alternate_names', []))}), {A['title']}, {A['affiliation']}.",
+            f"Author: {A['name']}, {A['title']}, {A['affiliation']}.",
             f"Site: {SITE}/ . Profile: {SITE}/profile.md . License: {CFG['license']['name']}.", "", "---", ""]
     for p in posts:
         full += [markdown_copy(p), "", "---", ""]
@@ -551,8 +549,7 @@ def build():
     home_ld = {"@context": "https://schema.org", "@graph": [
         website_ld(), person_ld(True),
         {"@type": "ProfilePage", "@id": home_id, "url": home_id, "mainEntity": {"@id": f"{SITE}/#person"},
-         "name": f"{AUTHOR['name']}, {AUTHOR['title']}, {AUTHOR['affiliation']}"},
-        faq_ld(PROFILE["faq"], home_id)]}
+         "name": f"{AUTHOR['name']}, {AUTHOR['title']}, {AUTHOR['affiliation']}"}]}
     render("home.html", "index.html", posts=notes, weekly=weekly, profile=PROFILE, podcast=PODCAST, selected=selected, layout="wide", nav="home",
            page_title=f"{AUTHOR['name']} | {AUTHOR['title']}, {AUTHOR['affiliation']}",
            description=f"{AUTHOR['name']} is {AUTHOR['title']} at {AUTHOR['affiliation']} and a visiting scholar at the "
@@ -651,10 +648,13 @@ def build():
         slug = meta.get("slug") or path.stem
         html = markdown.Markdown(extensions=MD_EXT).convert(body)
         ld = {"@context": "https://schema.org", "@graph": [website_ld(), person_ld(True)]}
+        faq = []
         if slug == "about":
             ld["@graph"].append({"@type": "ProfilePage", "@id": f"{SITE}/about/",
                                  "mainEntity": {"@id": f"{SITE}/#person"}})
-        render("page.html", f"{slug}/index.html", title=meta.get("title", slug.title()), html=html,
+            faq = PROFILE["faq"]
+            ld["@graph"].append(faq_ld(faq, f"{SITE}/about/"))
+        render("page.html", f"{slug}/index.html", title=meta.get("title", slug.title()), html=html, faq=faq, nav=slug,
                page_title=f"{meta.get('title', slug.title())} | {AUTHOR['name']}",
                description=meta.get("description", CFG["site_tagline"]), canonical=f"{SITE}/{slug}/",
                jsonld_obj=ld)

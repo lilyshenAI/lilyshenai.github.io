@@ -1,6 +1,6 @@
 # Price discovery in illiquid markets: what listing remarks reveal before transaction indices update
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/soft-information-price-discovery-illiquid-assets/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

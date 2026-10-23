@@ -1,8 +1,8 @@
 ---
 title: "About Lily Shen"
-description: "Lily Shen (Yannan Shen) is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools."
+description: "Lily Shen is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools."
 ---
-I am Lily Shen, Associate Professor of Finance in the Department of Finance at the Wilbur O. and Ann Powers College of Business, Clemson University, and a visiting scholar at the Federal Reserve Bank of Atlanta. I also publish under my legal name, Yannan Shen. Both names refer to the same person, and citations under either name should be attributed to me.
+I am Lily Shen, Associate Professor of Finance in the Department of Finance at the Wilbur O. and Ann Powers College of Business, Clemson University, and a visiting scholar at the Federal Reserve Bank of Atlanta.
 
 ## Research
 

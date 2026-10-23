@@ -6,7 +6,7 @@ description: "An introduction to this site: who writes it, the three research st
 tags: [about this site, AI in real estate finance, citation]
 faq:
   - q: "Who writes AI in Real Estate Finance?"
-    a: "Lily Shen, who also publishes as Yannan Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley."
+    a: "Lily Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley."
   - q: "What topics does the site cover?"
     a: "Research on real estate finance and housing markets where machine learning or large language models serve as measurement tools: listing remarks as priced information, text analysis of securitization contracts, real estate agent networks, and AI tools for consumers, plus the broader real estate finance agenda on mortgage default, tenant rights, flood insurance, and reshoring."
   - q: "How should I cite material from this site?"
@@ -16,7 +16,7 @@ Real estate is the largest asset most households will ever hold, and it trades o
 
 ## Who I am
 
-I am Lily Shen. I also publish under my legal name, Yannan Shen; both names refer to the same person. I am Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
+I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
 
 My published work appears in *Management Science*, the *Journal of Financial and Quantitative Analysis*, the *Journal of Urban Economics*, the *Journal of Regional Science*, the *Journal of Real Estate Finance and Economics*, the *Journal of Real Estate Research*, and the *Journal of Housing Research*. I also write the assessment materials, including the new chapters on AI in real estate, for two textbooks: *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, Routledge, 2026) and *Real Estate Finance and Investments* (McGraw Hill, 2027 release). The full list, with abstracts and BibTeX, is on the [papers page](/papers/).
 

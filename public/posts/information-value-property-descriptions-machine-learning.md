@@ -1,6 +1,6 @@
 # Property descriptions carry priced information that hedonic models miss (Journal of Urban Economics, 2021)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/information-value-property-descriptions-machine-learning/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

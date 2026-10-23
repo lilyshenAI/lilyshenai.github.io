@@ -1,6 +1,6 @@
 # Listing language predicts house price growth months before price indices move
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/listing-language-house-price-discovery/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

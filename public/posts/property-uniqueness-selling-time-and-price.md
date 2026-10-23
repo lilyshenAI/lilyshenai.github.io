@@ -1,6 +1,6 @@
 # The odd one out: unique homes sell for more and take only slightly longer (Journal of Housing Research, 2022)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/property-uniqueness-selling-time-and-price/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

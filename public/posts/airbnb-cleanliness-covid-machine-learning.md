@@ -1,6 +1,6 @@
 # Cleanliness is next to income: a machine-learning cleanliness measure and Airbnb outcomes during COVID-19 (Journal of Regional Science, 2022)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/airbnb-cleanliness-covid-machine-learning/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

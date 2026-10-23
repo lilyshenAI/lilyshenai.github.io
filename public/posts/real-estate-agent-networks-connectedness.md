@@ -1,6 +1,6 @@
 # Well-connected real estate agents sell for more: network theory on 40,000 Atlanta transactions (Journal of Real Estate Research, 2025)
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/real-estate-agent-networks-connectedness/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)

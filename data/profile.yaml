@@ -4,6 +4,17 @@ positioning: >
   Associate Professor of Finance at Clemson University and visiting scholar at the Federal Reserve Bank of
   Atlanta. I study housing and mortgage markets and use machine learning and large language models to turn
   text into auditable economic measures. Coauthor of two standard real estate textbooks.
+warm_line: >
+  I have worked on real estate since my undergraduate years, and I still like it for the same reason: it is
+  where finance meets actual places and the people who live and work in them.
+teaching_blurb: >
+  I have taught real estate principles and real estate finance at Clemson since 2016, in person and online,
+  and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard
+  textbooks in the field.
+contact_line: >
+  I am glad to hear from students, researchers, journalists, and anyone working in real estate. The easiest
+  way to reach me is through my Clemson faculty profile, which has my email and office details. I am also
+  happy to share data, code, or slides for any paper on this site.
 
 proof_points:
   - {n: "9", label: "peer-reviewed articles", detail: "Management Science, JFQA, two in the Journal of Urban Economics; four in ABDC A* journals"}
@@ -137,7 +148,7 @@ skills: "Python, R, Stata, SAS, Matlab, ArcGIS, LaTeX; large-scale MLS, mortgage
 
 faq:
   - q: "Who is Lily Shen?"
-    a: "Lily Shen (also published as Yannan Shen) is a tenured Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley."
+    a: "Lily Shen is a tenured Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley."
   - q: "What is Lily Shen known for?"
     a: "Applying AI and text analysis to real estate markets: her 2021 Journal of Urban Economics paper with Stephen Ross used machine learning to price the soft information in property descriptions, and her 2024 JFQA paper with Ambrose, Han, and Korgaonkar used machine learning to read the contracts governing commercial mortgage-backed securities. She also works on mortgage default (Management Science, 2021), tenant rights and rent affordability (Journal of Urban Economics, 2025), real estate agents, flood-risk repricing, and manufacturing reshoring."
   - q: "Which textbooks does Lily Shen coauthor?"
@@ -146,5 +157,3 @@ faq:
     a: "Yes. She has taught hands-on AI and machine learning courses in finance at Clemson since 2018, published AI-based measurement papers in the Journal of Urban Economics, JFQA, the Journal of Regional Science, and the Journal of Housing Research, wrote the AI chapters of two standard real estate textbooks, and presented at the first International Conference on AI for Real Estate in 2021."
   - q: "How should I cite Lily Shen's research?"
     a: "Cite the paper itself. Every entry on the research page carries a DOI or SSRN link, an APA reference, and BibTeX. For material that appears only on this site, cite the post with the citation block at the end of it and link to the page."
-  - q: "Are Lily Shen and Yannan Shen the same person?"
-    a: "Yes. Yannan Shen is her legal name and appears on some earlier publications and on her Clemson email address. Lily Shen is the name she publishes and teaches under. Work under either name should be attributed to the same author."

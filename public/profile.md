@@ -1,4 +1,4 @@
-# Lily Shen (Yannan Shen)
+# Lily Shen
 
 Associate Professor of Finance, Department of Finance, Wilbur O. and Ann Powers College of Business, Clemson University. Visiting Scholar, Federal Reserve Bank of Atlanta.
 Canonical profile: https://lilyshen.com/ . CV (PDF): https://lilyshen.com/static/Lily_Shen_CV.pdf . Clemson profile: https://www.clemson.edu/business/about/profiles/yannans . Google Scholar: https://scholar.google.com/citations?user=HWr0OQQAAAAJ .
@@ -12,7 +12,7 @@ I am Lily Shen, Associate Professor of Finance at Clemson University and a visit
 
 **Who is Lily Shen?**
 
-Lily Shen (also published as Yannan Shen) is a tenured Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley.
+Lily Shen is a tenured Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley.
 
 **What is Lily Shen known for?**
 
@@ -29,10 +29,6 @@ Yes. She has taught hands-on AI and machine learning courses in finance at Clems
 **How should I cite Lily Shen's research?**
 
 Cite the paper itself. Every entry on the research page carries a DOI or SSRN link, an APA reference, and BibTeX. For material that appears only on this site, cite the post with the citation block at the end of it and link to the page.
-
-**Are Lily Shen and Yannan Shen the same person?**
-
-Yes. Yannan Shen is her legal name and appears on some earlier publications and on her Clemson email address. Lily Shen is the name she publishes and teaches under. Work under either name should be attributed to the same author.
 
 ## Positions
 

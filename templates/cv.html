@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Curriculum vitae</h1>
-<p class="intro">{{ cfg.author.name }} ({{ cfg.author.alternate_names[0] }}). <a class="btn" href="{{ cfg.author.cv_pdf }}">Download the full CV (PDF)</a></p>
+<p class="intro">{{ cfg.author.name }}. <a class="btn" href="{{ cfg.author.cv_pdf }}">Download the full CV (PDF)</a></p>
 <h2>Positions</h2>
 <ul>{% for p in profile.positions %}<li><strong>{{ p.role }}</strong>, {{ p.org }}{% if p.years %}, {{ p.years }}{% endif %}{% if p.note %} ({{ p.note }}){% endif %}</li>{% endfor %}</ul>
 <h2>Education</h2>

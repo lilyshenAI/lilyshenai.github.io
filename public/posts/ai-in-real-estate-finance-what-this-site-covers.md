@@ -1,6 +1,6 @@
 # AI in real estate finance: what this site covers and how to cite it
 
-Author: Lily Shen (Yannan Shen), Associate Professor of Finance, Clemson University
+Author: Lily Shen, Associate Professor of Finance, Clemson University
 Published: 2026-10-19
 Canonical URL: https://lilyshen.com/posts/ai-in-real-estate-finance-what-this-site-covers/
 Series: AI in Real Estate Finance. Site: Lily Shen (https://lilyshen.com/)
@@ -12,7 +12,7 @@ Real estate is the largest asset most households will ever hold, and it trades o
 
 ## Who I am
 
-I am Lily Shen. I also publish under my legal name, Yannan Shen; both names refer to the same person. I am Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
+I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. I earned my Ph.D. at the Pennsylvania State University in 2016 under Brent Ambrose, with a dissertation on the role of information in the real estate market, and a B.A. in financial mathematics from the University of California, Berkeley.
 
 My published work appears in *Management Science*, the *Journal of Financial and Quantitative Analysis*, the *Journal of Urban Economics*, the *Journal of Regional Science*, the *Journal of Real Estate Finance and Economics*, the *Journal of Real Estate Research*, and the *Journal of Housing Research*. I also write the assessment materials, including the new chapters on AI in real estate, for two textbooks: *Commercial Real Estate Analysis for Investment, Finance and Development* (4th edition, Routledge, 2026) and *Real Estate Finance and Investments* (McGraw Hill, 2027 release). The full list, with abstracts and BibTeX, is on the [papers page](/papers/).
 
@@ -42,7 +42,7 @@ If you use a finding, cite the paper. The DOI or SSRN link is given at the end o
 
 **Who writes AI in Real Estate Finance?**
 
-Lily Shen, who also publishes as Yannan Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley.
+Lily Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley.
 
 **What topics does the site cover?**
 
