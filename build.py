@@ -306,6 +306,9 @@ def load_posts(kind="posts"):
         meta, body = load_md(path)
         if meta.get("draft"):
             continue
+        if as_date(meta["date"]) > dt.date.today():
+            print(f"held back until {as_date(meta['date'])}: {path.name}")
+            continue
         slug = meta.get("slug") or re.sub(r"^\d{4}-\d{2}-\d{2}-", "", path.stem)
         md = markdown.Markdown(extensions=MD_EXT)
         html = md.convert(body)

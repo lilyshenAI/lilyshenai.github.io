@@ -1,8 +1,12 @@
-# Builds the site with build.py and publishes public/ to GitHub Pages on every push to main.
+# Builds the site with build.py and publishes public/ to GitHub Pages on every push to main,
+# and once a day at 13:00 UTC (9am Eastern in summer, 8am in winter) so that a post dated in the
+# future goes live on its date without a push.
 name: Build and deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: "0 13 * * *"
   workflow_dispatch:
 permissions:
   contents: read
