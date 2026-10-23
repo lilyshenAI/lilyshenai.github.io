@@ -31,7 +31,7 @@ I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contempo
 ## Work with me {#work-with-me}
 
 - **Media and expert comment.** Interviews and background on housing and mortgage markets, commercial real estate, real estate agents, and AI in finance. Past coverage includes *The Economist*, *The Washington Post*, and public radio.
-- **Research collaboration.** Joint work with academics, policy and industry economists, and data partners on housing, mortgages, and text-as-data methods.
+- **Research collaboration.** Joint work with academics, industry economists, and data partners on housing, mortgages, and text-as-data methods.
 - **Consulting.** Advisory work for real estate and financial firms on AI and machine learning: turning listings, contracts, and other text into usable measures, building auditable AI workflows, and evaluating AI tools and vendors.
 
 A short email describing the request is the best way to start.

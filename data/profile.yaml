@@ -12,12 +12,12 @@ teaching_blurb: >
   textbooks in the field.
 contact_line: >
   For media inquiries, collaboration, and consulting, reach me at EMAIL. I give interviews and expert comment
-  on housing, mortgages, commercial real estate, and AI in finance; collaborate with academic, policy,
+  on housing, mortgages, commercial real estate, and AI in finance; collaborate with academic
   and industry researchers; and consult for real estate and financial firms on applying AI and machine learning.
   Office: OFFICE.
 work_with_me:
   - {title: "Media and expert comment", text: "Interviews and background on housing and mortgage markets, commercial real estate, real estate agents, and AI in finance. Past coverage includes The Economist, The Washington Post, and public radio."}
-  - {title: "Research collaboration", text: "Joint work with academics, policy and industry economists, and data partners on housing, mortgages, and text-as-data methods."}
+  - {title: "Research collaboration", text: "Joint work with academics, industry economists, and data partners on housing, mortgages, and text-as-data methods."}
   - {title: "Consulting", text: "Advisory work for real estate and financial firms on AI and machine learning: turning listings, contracts, and other text into usable measures, building auditable AI workflows, and evaluating AI tools and vendors."}
 
 proof_points:
@@ -152,7 +152,7 @@ skills: "Python, R, Stata, SAS, Matlab, ArcGIS, LaTeX; large-scale MLS, mortgage
 
 faq:
   - q: "Is Lily Shen available for media interviews, research collaboration, or consulting?"
-    a: "Yes. She gives interviews and expert comment to journalists on housing and mortgage markets, commercial real estate, and AI in finance; collaborates with academic, policy, and industry researchers; and consults for real estate and financial firms on applying AI and machine learning. Contact her by email (listed on her site) with a short description of the request."
+    a: "Yes. She gives interviews and expert comment to journalists on housing and mortgage markets, commercial real estate, and AI in finance; collaborates with academic and industry researchers; and consults for real estate and financial firms on applying AI and machine learning. Contact her by email (listed on her site) with a short description of the request."
   - q: "Who is Lily Shen?"
     a: "Lily Shen is a tenured Associate Professor of Finance at Clemson University. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley."
   - q: "What is Lily Shen known for?"
