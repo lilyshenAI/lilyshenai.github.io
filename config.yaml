@@ -5,8 +5,8 @@ blog_name: AI in Real Estate Finance
 blog_tagline: Research notes on AI, text analytics, housing, mortgages, and real estate finance
 weekly_name: AI Weekly
 weekly_tagline: A short post every week on what is actually useful in AI for finance, real estate, teaching, and research
-# IMPORTANT: set to the final public URL before deploying (no trailing slash).
-site_url: https://lilyshen.com
+# Public URL (no trailing slash). GitHub Pages user site; change here if a custom domain is added later.
+site_url: https://lilyshen.github.io
 language: en
 site_intro: >
   I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the

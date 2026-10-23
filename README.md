@@ -96,3 +96,11 @@ python3 build.py --serve    # rebuild and preview at http://localhost:8000
 
 One post per new paper, revision, or dataset finding; one explainer per quarter on a concept
 (soft information, price discovery, disclosure, AVMs). Update `updated:` dates when numbers change.
+
+
+## Deploying (GitHub Pages)
+
+The site lives at https://lilyshen.github.io, served from the GitHub repository `lilyshen/lilyshen.github.io`.
+`.github/workflows/pages.yml` rebuilds and deploys on every push to `main`, so the workflow is:
+edit content or data, run `python3 build.py` locally to check, commit, `git push`. The `public/` folder is
+not committed; Actions regenerates it. Repository setting required once: Settings → Pages → Source = GitHub Actions.
