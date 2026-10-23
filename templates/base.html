@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page_title|e }}</title>
 <meta name="description" content="{{ description|e }}">
-<meta name="author" content="{{ cfg.author.name|e }}">
+{% if cfg.google_site_verification %}<meta name="google-site-verification" content="{{ cfg.google_site_verification }}">
+{% endif %}<meta name="author" content="{{ cfg.author.name|e }}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="{{ canonical }}">
 <link rel="alternate" type="application/rss+xml" title="{{ cfg.site_name|e }}: all posts" href="{{ site }}/feed.xml">
