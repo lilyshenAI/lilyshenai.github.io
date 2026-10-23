@@ -100,7 +100,7 @@ One post per new paper, revision, or dataset finding; one explainer per quarter 
 
 ## Deploying (GitHub Pages)
 
-The site lives at https://lilyshen.github.io, served from the GitHub repository `lilyshen/lilyshen.github.io`.
+The site lives at https://lilyshenai.github.io, served from the GitHub repository `lilyshenAI/lilyshenai.github.io`.
 `.github/workflows/pages.yml` rebuilds and deploys on every push to `main`, so the workflow is:
 edit content or data, run `python3 build.py` locally to check, commit, `git push`. The `public/` folder is
 not committed; Actions regenerates it. Repository setting required once: Settings → Pages → Source = GitHub Actions.
