@@ -9,8 +9,7 @@ weekly_tagline: A short post every week on what is actually useful in AI for fin
 site_url: https://lilyshenai.github.io
 language: en
 site_intro: >
-  I am Lily Shen, Associate Professor of Finance at Clemson University and a visiting scholar at the
-  Federal Reserve Bank of Atlanta. I study how information moves real estate and mortgage markets, and I
+  I am Lily Shen, Associate Professor of Finance at Clemson University. I study how information moves real estate and mortgage markets, and I
   use machine learning and large language models as measurement tools: turning listing remarks,
   securitization contracts, and other text into auditable economic measures. I coauthor two of the
   field's standard textbooks and have applied AI to real estate since 2018, well before large language
@@ -20,7 +19,6 @@ author:
   title: Associate Professor of Finance
   affiliation: Clemson University
   affiliation_unit: Department of Finance, Wilbur O. and Ann Powers College of Business
-  other_affiliation: Visiting Scholar, Federal Reserve Bank of Atlanta
   clemson_profile: https://www.clemson.edu/business/about/profiles/yannans
   google_scholar: https://scholar.google.com/citations?user=HWr0OQQAAAAJ
   homepage: https://sites.google.com/g.clemson.edu/lily-shen/home

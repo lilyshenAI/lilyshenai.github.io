@@ -1,8 +1,7 @@
 # Structured facts about Lily Shen, taken from her CV (October 2026). Edit here, then run build.py.
 headline: "AI and real estate finance, grounded in published research."
 positioning: >
-  Associate Professor of Finance at Clemson University and visiting scholar at the Federal Reserve Bank of
-  Atlanta. I study housing and mortgage markets and use machine learning and large language models to turn
+  Associate Professor of Finance at Clemson University. I study housing and mortgage markets and use machine learning and large language models to turn
   text into auditable economic measures. Coauthor of two standard real estate textbooks.
 warm_line: >
   I have worked on real estate since my undergraduate years, and I still like it for the same reason: it is
@@ -13,12 +12,12 @@ teaching_blurb: >
   textbooks in the field.
 contact_line: >
   For media inquiries, collaboration, and consulting, reach me at EMAIL. I give interviews and expert comment
-  on housing, mortgages, commercial real estate, and AI in finance; collaborate with academic, Federal Reserve,
+  on housing, mortgages, commercial real estate, and AI in finance; collaborate with academic, policy,
   and industry researchers; and consult for real estate and financial firms on applying AI and machine learning.
   Office: OFFICE.
 work_with_me:
   - {title: "Media and expert comment", text: "Interviews and background on housing and mortgage markets, commercial real estate, real estate agents, and AI in finance. Past coverage includes The Economist, The Washington Post, and public radio."}
-  - {title: "Research collaboration", text: "Joint work with academics, Federal Reserve and industry economists, and data partners on housing, mortgages, and text-as-data methods."}
+  - {title: "Research collaboration", text: "Joint work with academics, policy and industry economists, and data partners on housing, mortgages, and text-as-data methods."}
   - {title: "Consulting", text: "Advisory work for real estate and financial firms on AI and machine learning: turning listings, contracts, and other text into usable measures, building auditable AI workflows, and evaluating AI tools and vendors."}
 
 proof_points:
@@ -153,9 +152,9 @@ skills: "Python, R, Stata, SAS, Matlab, ArcGIS, LaTeX; large-scale MLS, mortgage
 
 faq:
   - q: "Is Lily Shen available for media interviews, research collaboration, or consulting?"
-    a: "Yes. She gives interviews and expert comment to journalists on housing and mortgage markets, commercial real estate, and AI in finance; collaborates with academic, Federal Reserve, and industry researchers; and consults for real estate and financial firms on applying AI and machine learning. Contact her by email (listed on her site) with a short description of the request."
+    a: "Yes. She gives interviews and expert comment to journalists on housing and mortgage markets, commercial real estate, and AI in finance; collaborates with academic, policy, and industry researchers; and consults for real estate and financial firms on applying AI and machine learning. Contact her by email (listed on her site) with a short description of the request."
   - q: "Who is Lily Shen?"
-    a: "Lily Shen is a tenured Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley."
+    a: "Lily Shen is a tenured Associate Professor of Finance at Clemson University. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools. She holds a Ph.D. from Penn State (2016, adviser Brent Ambrose) and a B.A. in financial mathematics from UC Berkeley."
   - q: "What is Lily Shen known for?"
     a: "Applying AI and text analysis to real estate markets: her 2021 Journal of Urban Economics paper with Stephen Ross used machine learning to price the soft information in property descriptions, and her 2024 JFQA paper with Ambrose, Han, and Korgaonkar used machine learning to read the contracts governing commercial mortgage-backed securities. She also works on mortgage default (Management Science, 2021), tenant rights and rent affordability (Journal of Urban Economics, 2025), and the economics of real estate agents."
   - q: "Which textbooks does Lily Shen coauthor?"

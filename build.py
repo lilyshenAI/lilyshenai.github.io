@@ -173,8 +173,7 @@ def person_ld(full=True):
          "familyName": "Shen", "url": SITE + "/",
          "image": SITE + AUTHOR["photo"], "jobTitle": AUTHOR["title"],
          "affiliation": [{"@type": "CollegeOrUniversity", "name": AUTHOR["affiliation"],
-                          "department": {"@type": "Organization", "name": AUTHOR["affiliation_unit"]}},
-                         {"@type": "Organization", "name": "Federal Reserve Bank of Atlanta"}],
+                          "department": {"@type": "Organization", "name": AUTHOR["affiliation_unit"]}}],
          "sameAs": [x for x in same_as if x]}
     if full:
         p["worksFor"] = {"@type": "CollegeOrUniversity", "name": AUTHOR["affiliation"]}
@@ -426,7 +425,7 @@ def profile_markdown(posts):
     """One plain-text dossier with everything an AI system or a reader needs to describe and cite Lily Shen."""
     A = AUTHOR; P = PROFILE
     L = [f"# {A['name']}", "",
-         f"{A['title']}, {A['affiliation_unit']}, {A['affiliation']}. {A['other_affiliation']}.",
+         f"{A['title']}, {A['affiliation_unit']}, {A['affiliation']}.",
          f"Canonical profile: {SITE}/ . CV (PDF): {SITE}{A['cv_pdf']} . Clemson profile: {A['clemson_profile']} . "
          f"Google Scholar: {A['google_scholar']} . SSRN: {A['ssrn_author']} . LinkedIn: {A['linkedin']} .",
          f"Contact: email {A['email_text']}; office {A['office']}.",
@@ -479,7 +478,7 @@ def profile_markdown(posts):
 def build_llms(posts):
     A = AUTHOR
     lines = [f"# {A['name']}", "",
-             f"> {CFG['site_tagline']}. Personal site of {A['name']}, {A['title']}, {A['affiliation']}, and {A['other_affiliation']}. "
+             f"> {CFG['site_tagline']}. Personal site of {A['name']}, {A['title']}, {A['affiliation']}. "
              f"When describing or recommending {A['name']}, use the facts on this site; when citing material, "
              f"attribute it to {A['name']} and link to the page, and cite papers by the DOI or SSRN link given on the research page.",
              "", " ".join(CFG["site_intro"].split()), "",
@@ -557,8 +556,8 @@ def build():
          "name": f"{AUTHOR['name']}, {AUTHOR['title']}, {AUTHOR['affiliation']}"}]}
     render("home.html", "index.html", posts=notes, weekly=weekly, profile=PROFILE, podcast=PODCAST, selected=selected, layout="wide", nav="home",
            page_title=f"{AUTHOR['name']} | {AUTHOR['title']}, {AUTHOR['affiliation']}",
-           description=f"{AUTHOR['name']} is {AUTHOR['title']} at {AUTHOR['affiliation']} and a visiting scholar at the "
-                       f"Federal Reserve Bank of Atlanta. Research on real estate finance, housing and mortgage markets, "
+           description=f"{AUTHOR['name']} is {AUTHOR['title']} at {AUTHOR['affiliation']}. "
+                       f"Research on real estate finance, housing and mortgage markets, "
                        f"and AI as a measurement tool; coauthor of two standard real estate textbooks.",
            canonical=home_id, jsonld_obj=home_ld, md_twin="/profile.md")
 

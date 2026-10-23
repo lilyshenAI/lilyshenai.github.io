@@ -1,8 +1,8 @@
 ---
 title: "About Lily Shen"
-description: "Lily Shen is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools."
+description: "Lily Shen is Associate Professor of Finance at Clemson University. She studies real estate finance, housing and mortgage markets, and the use of machine learning and large language models as measurement tools."
 ---
-I am Lily Shen, Associate Professor of Finance in the Department of Finance at the Wilbur O. and Ann Powers College of Business, Clemson University, and a visiting scholar at the Federal Reserve Bank of Atlanta.
+I am Lily Shen, Associate Professor of Finance in the Department of Finance at the Wilbur O. and Ann Powers College of Business, Clemson University.
 
 ## Research
 
@@ -15,7 +15,7 @@ My articles have appeared in *Management Science*, the *Journal of Financial and
 - Ph.D., Business Administration, the Pennsylvania State University, 2016. Dissertation: *The Role of Information in the Real Estate Market*, advised by Brent W. Ambrose.
 - B.A., Financial Mathematics, University of California, Berkeley, 2010.
 - Assistant Professor (2016–2023) and Associate Professor (2023–present), Clemson University.
-- Visiting Scholar, Federal Reserve Bank of Atlanta (2017–present); previously at the Federal Reserve Banks of Cleveland (2018) and Minneapolis (2015), and at the University of Cambridge, Department of Land Economy (2023).
+- Visiting Scholar, University of Cambridge, Department of Land Economy (2023).
 
 ## Service and recognition
 
@@ -31,7 +31,7 @@ I teach AI in Finance, Real Estate Principles, Real Estate Finance, and Contempo
 ## Work with me {#work-with-me}
 
 - **Media and expert comment.** Interviews and background on housing and mortgage markets, commercial real estate, real estate agents, and AI in finance. Past coverage includes *The Economist*, *The Washington Post*, and public radio.
-- **Research collaboration.** Joint work with academics, Federal Reserve and industry economists, and data partners on housing, mortgages, and text-as-data methods.
+- **Research collaboration.** Joint work with academics, policy and industry economists, and data partners on housing, mortgages, and text-as-data methods.
 - **Consulting.** Advisory work for real estate and financial firms on AI and machine learning: turning listings, contracts, and other text into usable measures, building auditable AI workflows, and evaluating AI tools and vendors.
 
 A short email describing the request is the best way to start.
