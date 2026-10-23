@@ -7,7 +7,7 @@
     <p class="role">{{ cfg.author.title }}, {{ cfg.author.affiliation }} · {{ cfg.author.other_affiliation }}</p>
     <p class="lede">{{ profile.positioning }}</p>
     <p class="lede">{{ profile.warm_line }}</p>
-    <p class="cta"><a class="btn" href="/research/">Read my research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> <a class="quiet" href="{{ cfg.author.google_scholar }}">Google Scholar</a> <a class="quiet" href="{{ cfg.author.ssrn_author }}">SSRN</a> <a class="quiet" href="{{ cfg.author.linkedin }}">LinkedIn</a> <a class="quiet" href="{{ cfg.author.crebook }}">CRE resources (CREBook.net)</a> <a class="quiet" href="{{ cfg.author.podcast }}">Podcast</a></p>
+    <p class="cta"><a class="btn" href="/research/">Read my research</a> <a class="btn ghost" href="{{ cfg.author.cv_pdf }}">CV (PDF)</a> <a class="quiet" href="{{ cfg.author.google_scholar }}">Google Scholar</a> <a class="quiet" href="{{ cfg.author.ssrn_author }}">SSRN</a> <a class="quiet" href="{{ cfg.author.linkedin }}">LinkedIn</a> <a class="quiet" href="{{ cfg.author.crebook }}">CREBook.net (our textbook site)</a> <a class="quiet" href="{{ cfg.author.podcast }}">Podcast</a></p>
   </div>
   <img class="headshot" src="{{ cfg.author.photo }}" alt="Portrait of {{ cfg.author.name }}" width="220" height="220">
 </section>
@@ -46,7 +46,7 @@
     <ul class="list">
     {% for b in profile.textbooks %}<li><em>{{ b.title }}</em>{% if b.edition %}, {{ b.edition }}{% endif %} ({{ b.publisher }}, {{ b.year }}){% if b.url %} · <a href="{{ b.url }}">companion site</a>{% endif %}</li>
     {% endfor %}
-    <li><a href="{{ cfg.author.crebook }}">CREBook.net</a>: free commercial real estate teaching resources (slides, spreadsheets, exercises) for the Routledge text</li>
+    <li><a href="{{ cfg.author.crebook }}">CREBook.net</a>, the website for our textbook <em>Commercial Real Estate Analysis for Investment, Finance and Development</em>, 4th edition: chapter overviews, slides, exercises, spreadsheet models, a glossary, and career resources</li>
     <li><a href="{{ podcast.url }}">{{ podcast.name }}</a>, the companion podcast, one chapter per episode{% if podcast.episodes %}; latest: <a href="{{ podcast.episodes[0].url or '/teaching/#podcast' }}">{{ podcast.episodes[0].title }}</a>{% endif %}</li>
     </ul>
     <p class="meta"><a href="/teaching/">Courses, textbooks, and how I teach</a></p>
