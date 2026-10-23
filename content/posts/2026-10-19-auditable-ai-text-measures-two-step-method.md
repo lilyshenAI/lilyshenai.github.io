@@ -4,7 +4,7 @@ date: 2026-10-19
 order: 2
 description: "A practical method for using large language models as measurement tools in economics and finance. The model discovers the vocabulary for each economic category across the full corpus; a fixed, published vocabulary then scores every document, so results are reproducible, traceable phrase by phrase, and testable out of sample."
 tags: [methods, large language models, text analysis, reproducibility, listing remarks]
-papers: [shen-2026-cheap-talk, shen-2026-listing-language-price-discovery]
+papers: [shen-2026-cheap-talk]
 faq:
   - q: "Should a large language model assign the score to each document directly?"
     a: "Not for the main measure. In the two-step method the model discovers the vocabulary for each economic category, and a frozen, published vocabulary then scores every document deterministically. Live model scoring of a subsample is useful as a validation check, with agreement statistics against the rule-based scores and human readers, but it should not be the number reported in the tables."

@@ -4,7 +4,7 @@ date: 2026-10-19
 order: 3
 description: "Soft information is what a listing says that structured fields cannot: condition, character, seller circumstances, local demand. This explainer defines the term, contrasts it with hard information, and summarizes what my research finds when listing text is measured with machine learning: it is priced, it changes marketing time, and it moves before price indices do."
 tags: [soft information, housing markets, listing remarks, explainer, hedonic pricing]
-papers: [shen-ross-2021-property-description, shen-springer-2022-odd-one-out, shen-2026-cheap-talk, shen-2026-soft-information-price-discovery]
+papers: [shen-ross-2021-property-description, shen-springer-2022-odd-one-out, shen-2026-cheap-talk]
 faq:
   - q: "What is the difference between hard and soft information in real estate?"
     a: "Hard information is quantifiable and verifiable: bedrooms, bathrooms, square footage, lot size, year built, tax records. Soft information requires context or judgment to interpret and is hard to codify: the condition and character of a home, the seller's circumstances, and local demand as described in the listing remarks written by the agent."
@@ -39,7 +39,7 @@ Three reasons.
 
 **Economic categories of listing language.** In [Cheap Talk or Priced Information? (2026)](/posts/cheap-talk-or-priced-information-listing-remarks/), an LLM organizes the language of 63,067 Atlanta listings into auditable categories. Residual information is associated with 7.7 percent higher sale prices and 2.5 fewer days on market; adverse disclosure with 17.4 percent lower sale prices; urgency language with 4.7 percent lower sale prices but no distinct change in marketing time.
 
-**Aggregated market signals.** In [Soft Information and Price Discovery in Illiquid Asset Markets (2026)](/posts/soft-information-price-discovery-illiquid-assets/), the same listings are aggregated to local-market-year cells. Seller-stress language rises in weak periods and in weaker local markets. Much of its predictive power for next-year price-index changes reflects the share of distressed sales, but the text channels remain jointly significant after that composition is controlled (F = 7.09, p = 0.003). A companion paper extends the approach to more than two million listings across the Carolinas and Georgia.
+**Aggregated market signals.** The same categories can be aggregated across a local market and tracked over time, so that the tone of listings becomes a market-level indicator of seller stress. That is where I am taking this work next.
 
 ## What soft information is not
 

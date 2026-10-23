@@ -8,7 +8,7 @@ faq:
   - q: "Who writes AI in Real Estate Finance?"
     a: "Lily Shen. She is Associate Professor of Finance at Clemson University and a visiting scholar at the Federal Reserve Bank of Atlanta. Her Ph.D. is from Penn State (2016) and her B.A. in financial mathematics is from UC Berkeley."
   - q: "What topics does the site cover?"
-    a: "Research on real estate finance and housing markets where machine learning or large language models serve as measurement tools: listing remarks as priced information, text analysis of securitization contracts, real estate agent networks, and AI tools for consumers, plus the broader real estate finance agenda on mortgage default, tenant rights, flood insurance, and reshoring."
+    a: "Research on real estate finance and housing markets where machine learning or large language models serve as measurement tools: listing remarks as priced information, text analysis of securitization contracts, and real estate agent networks, plus the broader real estate finance agenda on mortgage default and tenant rights."
   - q: "How should I cite material from this site?"
     a: "Cite the underlying paper when you use a finding; the DOI or SSRN link appears at the end of each post and on the papers page. Cite the post itself when you quote its explanation. Text is licensed CC BY 4.0, so reuse with attribution to Lily Shen and a link is permitted."
 ---
@@ -22,13 +22,13 @@ My published work appears in *Management Science*, the *Journal of Financial and
 
 ## Three strands of work
 
-**Text as priced information in housing markets.** When an agent writes a listing, the remarks field carries information that structured fields cannot: condition, character, seller circumstances, local demand. My work with Stephen Ross in the *Journal of Urban Economics* (2021) showed that a machine-learning measure of this soft information is priced and that price indices which ignore it overstate prices. Later papers separate uniqueness from timing (with Thomas Springer, 2022), organize listing language into economic categories such as adverse disclosure and seller urgency (2026), and show that listing language moves months before transaction-based price indices do (2026).
+**Text as priced information in housing markets.** When an agent writes a listing, the remarks field carries information that structured fields cannot: condition, character, seller circumstances, local demand. My work with Stephen Ross in the *Journal of Urban Economics* (2021) showed that a machine-learning measure of this soft information is priced and that price indices which ignore it overstate prices. Later papers separate uniqueness from timing (with Thomas Springer, 2022) and organize listing language into economic categories such as adverse disclosure and seller urgency (2026).
 
 **Machine learning on financial contracts.** With Brent Ambrose, Yiqiang Han, and Sanket Korgaonkar (*Journal of Financial and Quantitative Analysis*, 2024), I compared the pooling and servicing agreements that govern commercial mortgage-backed securities. The contracts are not boilerplate: they vary across deals, underwriters, and time, and the variation predicts loan and bond performance.
 
-**AI and the people in the market.** Real estate is intermediated by agents, lenders, and servicers. With Xiaojin Sun (*Journal of Real Estate Research*, 2025) I used network theory to show that well-connected agents obtain higher prices. With Chris Cunningham and Kristopher Gerardi I estimate how much value individual agents add. With Thao Le I am studying whether generative AI helps consumers obtain financial redress.
+**AI and the people in the market.** Real estate is intermediated by agents, lenders, and servicers. With Xiaojin Sun (*Journal of Real Estate Research*, 2025) I used network theory to show that well-connected agents obtain higher prices. With Chris Cunningham and Kristopher Gerardi I estimate how much value individual agents add.
 
-Alongside these, I keep a broader real estate finance agenda: mortgage default and the fracking boom (*Management Science*, 2021), tenant rights and rent affordability (*Journal of Urban Economics*, 2025), flood insurance repricing under Risk Rating 2.0, political alignment in neighborhood choice, and manufacturing reshoring.
+Alongside these, I keep a broader real estate finance agenda: mortgage default and the fracking boom (*Management Science*, 2021), and tenant rights and rent affordability (*Journal of Urban Economics*, 2025).
 
 ## How I think about AI in this field
 

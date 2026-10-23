@@ -2,3 +2,6 @@ __pycache__/
 .DS_Store
 *.bak
 public/
+
+content/_unpublished_*
+*.yaml.bak
