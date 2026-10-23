@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Textbooks</h1>
-<p class="intro">I have taught real estate at Clemson since 2016, in person and online, and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard textbooks in the field and wrote the assessment materials for both books in their entirety. For <em>Real Estate Finance and Investments</em> I also wrote the new chapter on artificial intelligence in real estate finance and investment.</p>
+<p class="intro">I have taught real estate at Clemson since 2016, in person and online, and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard textbooks in the field and wrote the assessment materials for both books in their entirety. For <em>Commercial Real Estate Analysis</em> I was responsible for the chapters on mortgages and the secondary mortgage market, and for <em>Real Estate Finance and Investments</em> I wrote the new chapter on artificial intelligence in real estate finance and investment.</p>
 {% for b in profile.textbooks %}
 <article class="paper book" id="{{ b.key }}">
   {% if b.cover %}<img class="book-cover" src="{{ b.cover }}" alt="Cover of {{ b.title }}" loading="lazy">{% endif %}
