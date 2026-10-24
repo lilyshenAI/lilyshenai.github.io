@@ -51,7 +51,7 @@ Body in Markdown. Link other posts with /posts/<slug>/ and the paper list with /
 
 Rules that keep the site credible: quote numbers only from the published or posted paper; name the
 paper and coauthors in the first paragraph; keep one idea per post; set `updated:` when a working
-paper's numbers change. `draft: true` hides a post from the build. A post dated in the future is held back until that date; GitHub Actions rebuilds the site daily at 13:00 UTC, so a dated post goes live on schedule without a push.
+paper's numbers change. `draft: true` hides a post from the build. `redirect_from: [old-slug]` keeps an old URL working after a rename. A post dated in the future is held back until that date; GitHub Actions rebuilds the site daily at 13:00 UTC, so a dated post goes live on schedule without a push.
 
 New paper → add an entry to `data/papers.yaml` (DOI verified via https://api.crossref.org/works/<doi>).
 

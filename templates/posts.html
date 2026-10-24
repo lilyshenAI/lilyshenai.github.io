@@ -2,7 +2,7 @@
 {% block content %}
 <h1>{{ series.name }}</h1>
 {% if kind == 'blog' %}
-<p class="meta">{{ series.tagline }}. New post every week. <a href="/blog/feed.xml">RSS</a> · <a href="/tags/">Topics</a> · <a href="/llms-full.txt">All posts as one text file</a></p>
+<p class="meta">{{ series.tagline }}. <a href="/blog/feed.xml">RSS</a> · <a href="/tags/">Topics</a> · <a href="/llms-full.txt">All posts as one text file</a></p>
 {% else %}
 <p class="meta">{{ series.tagline }}. Each note summarizes one paper or one idea in plain language, with the numbers, the caveats, and a citation block. <a href="/posts/feed.xml">RSS</a> · <a href="/tags/">Topics</a> · <a href="/llms-full.txt">All notes as one text file</a></p>
 {% endif %}

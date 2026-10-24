@@ -2,7 +2,7 @@
 title: "Notes from my workshop on AI agents"
 date: 2026-10-23
 description: "What I covered in a workshop for faculty and staff in our college on setting up an AI agent: how it differs from the chat window, the commands that work in both the app and the terminal, how to set up a folder and a short rules file for a task you repeat, a literature folder as the example, and how to check the output."
-tags: [AI Weekly, AI agents, research workflow]
+tags: [AI Briefs, AI agents, research workflow]
 faq:
   - q: "What is the difference between an AI chat app and an AI agent?"
     a: "A chat app only sees what you paste into it, one question at a time. An agent works inside a folder on your computer. It reads the files there, writes new files, handles a task with several steps, and asks before it changes anything."

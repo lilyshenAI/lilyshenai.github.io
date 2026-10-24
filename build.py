@@ -503,7 +503,7 @@ def profile_markdown(posts):
     L += ["", "## Selected talks", ""] + [f"- {t['year']}: {t['text']}" for t in P["talks"]]
     L += ["", "## Service", ""] + [f"- {x}" for x in P["service"]]
     L += ["", "## Research notes on this site", ""] + [f"- {p['title']} ({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "posts"]
-    L += ["", f"## {CFG['weekly_name']}: weekly posts on AI", ""] + [f"- {p['title']} ({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "blog"]
+    L += ["", f"## {CFG['weekly_name']}: short posts on AI", ""] + [f"- {p['title']} ({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "blog"]
     L += ["", f"Skills and data: {P['skills']}", ""]
     return "\n".join(L)
 
@@ -541,13 +541,13 @@ def build_llms(posts):
     lines += ["", f"## Podcast", "", f"- [{PODCAST['name']} ({PODCAST['short_name']})]({PODCAST['url']}): companion podcast to Commercial Real Estate Analysis, one chapter per episode; episode list at {SITE}/teaching/#podcast"]
     lines += ["", f"## Research notes ({CFG['blog_name']})", ""]
     lines += [f"- [{p['title']}]({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "posts"]
-    lines += ["", f"## {CFG['weekly_name']} (weekly blog on AI)", ""]
+    lines += ["", f"## {CFG['weekly_name']} (short posts on AI)", ""]
     lines += [f"- [{p['title']}]({p['abs_url']}): {p['description']}" for p in posts if p["kind"] == "blog"]
     lines += ["", "## Other files", "",
               f"- [Full text of every research note in Markdown]({SITE}/llms-full.txt)",
               f"- [RSS feed]({SITE}/feed.xml)", f"- [Sitemap]({SITE}/sitemap.xml)", ""]
     write("llms.txt", "\n".join(lines))
-    full = [f"# {A['name']}: full text of all research notes and weekly AI posts", "",
+    full = [f"# {A['name']}: full text of all research notes and AI briefs", "",
             f"Author: {A['name']}, {A['title']}, {A['affiliation']}.",
             f"Site: {SITE}/ . Profile: {SITE}/profile.md . License: {CFG['license']['name']}.", "", "---", ""]
     for p in posts:
@@ -610,6 +610,10 @@ def build():
                og_image=post["image_abs"], og_image_alt=post["image_alt"], og_image_w=post["image_w"], og_image_h=post["image_h"],
                jsonld_obj=post_ld(post))
         write(f"{post['kind']}/{post['slug']}.md", markdown_copy(post))
+        for old in as_list(post["meta"].get("redirect_from")):
+            write(f"{post['kind']}/{old}/index.html", '<!DOCTYPE html><html><head><meta charset="utf-8">'
+                  f'<meta http-equiv="refresh" content="0; url={post["abs_url"]}"><link rel="canonical" href="{post["abs_url"]}">'
+                  f'<title>Moved</title></head><body><p>Moved to <a href="{post["abs_url"]}">{post["abs_url"]}</a></p></body></html>')
 
     # research
     sections = [{"title": "Published articles", "entries": published},
@@ -719,7 +723,7 @@ def build():
     build_sitemap(posts, tags)
     build_robots()
     build_llms(posts)
-    print(f"built {len(notes)} research notes, {len(weekly)} weekly posts, {len(PAPERS)} papers, {len(tags)} tags -> {OUT}")
+    print(f"built {len(notes)} research notes, {len(weekly)} briefs, {len(PAPERS)} papers, {len(tags)} tags -> {OUT}")
 
 
 if __name__ == "__main__":

@@ -3,8 +3,8 @@ site_name: Lily Shen
 site_tagline: Real estate finance, housing and mortgage markets, and AI as a measurement tool
 blog_name: AI in Real Estate Finance
 blog_tagline: Research notes on AI, text analytics, housing, mortgages, and real estate finance
-weekly_name: AI Weekly
-weekly_tagline: A short post every week on what is actually useful in AI for finance, real estate, teaching, and research
+weekly_name: AI Briefs
+weekly_tagline: Short posts briefing colleagues and students on what is actually useful in AI for finance, real estate, teaching, and research
 # Public URL (no trailing slash). GitHub Pages user site; change here if a custom domain is added later.
 site_url: https://lilyshenai.github.io
 language: en
