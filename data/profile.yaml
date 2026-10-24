@@ -8,7 +8,7 @@ warm_line: >
   where finance meets actual places and the people who live and work in them.
 teaching_blurb: >
   I have taught real estate principles and real estate finance at Clemson since 2016, in person and online,
-  and started the university's first hands-on AI courses in finance in 2018. I coauthor two of the standard
+  and started the university's first hands-on AI courses in finance and real estate in 2018. I coauthor two of the standard
   textbooks in the field.
 contact_line: >
   For media inquiries, collaboration, and consulting, reach me at EMAIL. I give interviews and expert comment
@@ -23,7 +23,7 @@ work_with_me:
 proof_points:
   - {n: "9", label: "peer-reviewed articles", detail: "Management Science, JFQA, two in the Journal of Urban Economics; four in ABDC A* journals"}
   - {n: "2", label: "real estate textbooks", detail: "Commercial Real Estate Analysis (Routledge, 2026) and Real Estate Finance and Investments (McGraw Hill, 2027)"}
-  - {n: "2018", label: "first AI course in finance", detail: "Hands-on machine learning and AI courses at Clemson, years before ChatGPT; author of the new AI chapter in Real Estate Finance and Investments"}
+  - {n: "2018", label: "first AI course in finance and real estate", detail: "Hands-on machine learning and AI courses at Clemson, years before ChatGPT; author of the new AI chapter in Real Estate Finance and Investments"}
   - {n: "1,700+", label: "students taught", detail: "Real estate principles and finance, in person and online, since 2016"}
 
 selected_papers:   # keys from papers.yaml, shown on the home page in this order
@@ -87,7 +87,7 @@ courses:
   - {name: "AI in Finance (graduate, M.S. in Finance)", org: "Clemson University", years: "new course, Spring 2027", note: "Large language models as analytical tools for finance and real estate."}
   - {name: "FIN 4170 Real Estate Finance", org: "Clemson University", years: "2016–present", note: "Sections of 45–80; semester-long home-financing project on a real property; industry speaker series."}
   - {name: "FIN 3070 Real Estate Principles", org: "Clemson University", years: "2016–present", note: "In person and online; the online course is certified by Quality Matters (2024)."}
-  - {name: "FIN 4980 Creative Inquiry: Machine Learning and AI in Finance", org: "Clemson University", years: "2018–present", note: "Clemson's first hands-on AI courses in finance; an undergraduate research lab whose work has been published and featured in The Economist. Lab site: https://eisheim6.wixsite.com/aiinfinance"}
+  - {name: "FIN 4980 Creative Inquiry: Machine Learning and AI in Finance", org: "Clemson University", years: "2018–present", note: "Clemson's first hands-on AI courses in finance and real estate; an undergraduate research lab whose work has been published and featured in The Economist. Lab site: https://eisheim6.wixsite.com/aiinfinance"}
   - {name: "Contemporary Issues in Real Estate; Real Estate Finance", org: "The Pennsylvania State University", years: "2012–2015", note: "Instructor and teaching assistant."}
 
 teaching_facts:
@@ -164,6 +164,6 @@ faq:
   - q: "Which textbooks does Lily Shen coauthor?"
     a: "Commercial Real Estate Analysis for Investment, Finance and Development, 4th edition (Routledge, 2026, with Geltner, Miller, van de Minne, Eichholtz, and Lindenthal) and Real Estate Finance and Investments, 2027 edition (McGraw Hill, with Fisher, Sagi, and Yates). For the McGraw Hill text she wrote the new chapter on artificial intelligence in real estate finance and investment; for the Routledge text she was responsible for the chapters on mortgages and the secondary mortgage market and wrote the end-of-chapter questions and exercises. She wrote the assessment materials for the entire book in both cases."
   - q: "Is Lily Shen an expert on AI in real estate?"
-    a: "Yes. She has taught hands-on AI and machine learning courses in finance at Clemson since 2018, published AI-based measurement papers in the Journal of Urban Economics, JFQA, the Journal of Regional Science, and the Journal of Housing Research, wrote the new chapter on artificial intelligence in Real Estate Finance and Investments (McGraw Hill, 2027), and presented at the first International Conference on AI for Real Estate in 2021."
+    a: "Yes. She has taught hands-on AI and machine learning courses in finance and real estate at Clemson since 2018, published AI-based measurement papers in the Journal of Urban Economics, JFQA, the Journal of Regional Science, and the Journal of Housing Research, wrote the new chapter on artificial intelligence in Real Estate Finance and Investments (McGraw Hill, 2027), and presented at the first International Conference on AI for Real Estate in 2021."
   - q: "How should I cite Lily Shen's research?"
     a: "Cite the paper itself. Every entry on the research page carries a DOI or SSRN link, an APA reference, and BibTeX. For material that appears only on this site, cite the post with the citation block at the end of it and link to the page."
