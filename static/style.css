@@ -9,7 +9,7 @@ body{margin:0;overflow-wrap:anywhere;background:var(--bg);color:var(--ink);font-
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
 a:hover{color:var(--accent-ink)}
 .wrap{max-width:64rem;margin:0 auto;padding:0 1rem}
-h1,h2,h3,.brand,.stat .n{font-family:var(--serif);font-weight:600;letter-spacing:-.01em}
+h1,h2,h3,.brand,
 h1{font-size:2.1rem;line-height:1.2;margin:.4rem 0 .8rem}
 h2{font-size:1.45rem;line-height:1.3;margin:2.4rem 0 .8rem;padding-top:.9rem;border-top:1px solid var(--line)}
 h3{font-size:1.12rem;line-height:1.35;margin:1.3rem 0 .3rem}
@@ -43,10 +43,10 @@ main.wide{max-width:64rem}
 .btn.ghost:hover{background:var(--tint);color:var(--accent-ink)}
 .cta .quiet{font-size:.93rem}
 /* at a glance */
-.glance{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem 2rem;margin:1.8rem 0 .4rem;padding:1.1rem 0 .3rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stat .n{font-size:1.75rem;line-height:1.1;color:var(--ink)}
-.stat .l{font-weight:600;font-size:.93rem;margin-top:.15rem}
-.stat .d{color:var(--sub);font-size:.85rem;margin-top:.25rem;line-height:1.45}
+.proof{margin:1.6rem 0 .4rem;padding:1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--sub);font-size:.98rem}
+
+
+
 /* section header rows */
 .row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
 .row h2{flex:1 1 auto}
@@ -76,9 +76,11 @@ ul.list li:last-child{border-bottom:0}
 .note{background:var(--tint);border-radius:10px;padding:1rem 1.2rem;margin:2.2rem 0 0;font-size:.97rem}
 .note p{margin:.3rem 0}
 .email{font-family:var(--serif);font-style:italic}
-.faq details{border-bottom:1px solid var(--line);padding:.55rem 0}
-.faq summary{cursor:pointer;font-weight:600;color:var(--ink)}
-.faq p{margin:.5rem 0 .3rem;color:var(--sub)}
+details.faq,details.cite{margin:1.6rem 0 0;padding:.6rem 0;border-top:1px solid var(--line)}
+details.faq summary,details.cite summary{cursor:pointer;font-weight:600;color:var(--sub)}
+details.faq h3{font-size:1rem;margin:.9rem 0 .2rem}
+details.faq p{margin:.3rem 0;color:var(--sub)}
+details.cite p{font-size:.95rem;margin:.6rem 0 .3rem}
 /* posts, papers */
 .summary{font-size:1.08rem;color:var(--sub);border-left:3px solid var(--accent);padding-left:.9rem;margin:1rem 0 1.5rem}
 .post-card{padding:1rem 0;border-bottom:1px solid var(--line)}
@@ -108,5 +110,5 @@ footer.site-footer p{margin:.35rem 0}
 .tag{display:inline-block;font-size:.8rem;color:var(--sub);margin-right:.5rem}
 .tag a{color:var(--sub)}
 img{max-width:100%;height:auto}
-@media (max-width:760px){html{font-size:16px}h1{font-size:1.7rem}.hero{grid-template-columns:1fr;gap:1.2rem}.headshot{width:150px;height:150px;justify-self:start;order:-1}.hero h1{font-size:2.2rem}.glance{grid-template-columns:1fr 1fr;gap:.9rem 1.2rem}.two-col{grid-template-columns:1fr}.site-header nav{gap:.1rem .8rem}.site-header nav a{font-size:.88rem}}
+@media (max-width:760px){html{font-size:16px}h1{font-size:1.7rem}.hero{grid-template-columns:1fr;gap:1.2rem}.headshot{width:150px;height:150px;justify-self:start;order:-1}.hero h1{font-size:2.2rem}.two-col{grid-template-columns:1fr}.site-header nav{gap:.1rem .8rem}.site-header nav a{font-size:.88rem}}
 .post-image{margin:0 0 1.7rem}.post-image img{display:block;width:100%;height:auto;border-radius:8px}.post-image figcaption{font-size:.88rem;color:var(--sub);margin-top:.5rem}

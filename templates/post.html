@@ -21,13 +21,13 @@
 {{ post.html }}
 </div>
 {% if post.faq %}
-<section class="faq">
-<h2>Questions this post answers</h2>
+<details class="faq">
+<summary>Questions this post answers</summary>
 {% for f in post.faq %}
 <h3>{{ f.q }}</h3>
 <p>{{ f.a }}</p>
 {% endfor %}
-</section>
+</details>
 {% endif %}
 {% if post.papers %}
 <section class="papers-cited">
@@ -41,14 +41,14 @@
 {% endfor %}
 </section>
 {% endif %}
-<section class="cite">
-<h2>How to cite this post</h2>
+<details class="cite">
+<summary>Cite this post</summary>
 <p>{{ post.cite_apa }}</p>
-<details><summary>BibTeX</summary><pre>{{ post.cite_bibtex|e }}</pre></details>
-</section>
+<pre>{{ post.cite_bibtex|e }}</pre>
+</details>
 <footer class="post-footer">
   {% if post.tags %}<p class="meta">Tags: {% for t in post.tags %}<a href="/tags/{{ t|slug }}/">{{ t }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
-  <p class="meta"><a href="/{{ post.kind }}/{{ post.slug }}.md">Plain-text (Markdown) version of this post</a> · <a href="/{{ post.kind }}/">All {{ post.series }} posts</a></p>
+  <p class="meta"><a href="/{{ post.kind }}/">All {{ post.series }} posts</a> · <a href="/{{ post.kind }}/{{ post.slug }}.md">Plain text</a></p>
 </footer>
 {% if related %}
 <section class="related">

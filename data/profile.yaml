@@ -1,11 +1,17 @@
 # Structured facts about Lily Shen, taken from her CV (October 2026). Edit here, then run build.py.
 headline: "AI and real estate finance, grounded in published research."
 positioning: >
-  Associate Professor of Finance at Clemson University. I study housing and mortgage markets and use machine learning and large language models to turn
-  text into auditable economic measures. Coauthor of two standard real estate textbooks.
+  Associate Professor of Finance at Clemson University. I study housing and mortgage markets. Much of my recent work uses
+  machine learning and language models to read the text that markets produce, property listings and securitization
+  contracts, and measure what it tells us about prices and risk.
 warm_line: >
   Real estate has been my field since 2009, and I still like it for the same reason: it is
   where finance meets actual places and the people who live and work in them.
+proof_line: >
+  Nine peer-reviewed articles, including Management Science, the Journal of Financial and Quantitative Analysis, and two in
+  the Journal of Urban Economics. Coauthor of two standard real estate textbooks, Commercial Real Estate Analysis
+  (Routledge, 2026) and Real Estate Finance and Investments (McGraw Hill, 2027), and author of the new AI chapter in the
+  latter. Started Clemson's first hands-on AI courses in finance and real estate in 2018.
 teaching_blurb: >
   I have taught real estate principles and real estate finance at Clemson since 2016, in person and online,
   and started the university's first hands-on AI courses in finance and real estate in 2018. I coauthor two of the standard
@@ -19,12 +25,6 @@ work_with_me:
   - {title: "Media and expert comment", text: "Interviews and background on housing and mortgage markets, commercial real estate, real estate agents, and AI in finance. Past coverage includes The Economist, The Washington Post, and public radio."}
   - {title: "Research collaboration", text: "Joint work with academics, industry economists, and data partners on housing, mortgages, and text-as-data methods."}
   - {title: "Consulting", text: "Advisory work for real estate and financial firms on AI and machine learning: turning listings, contracts, and other text into usable measures, building auditable AI workflows, and evaluating AI tools and vendors."}
-
-proof_points:
-  - {n: "9", label: "peer-reviewed articles", detail: "Management Science, JFQA, two in the Journal of Urban Economics; four in ABDC A* journals"}
-  - {n: "2", label: "real estate textbooks", detail: "Commercial Real Estate Analysis (Routledge, 2026) and Real Estate Finance and Investments (McGraw Hill, 2027)"}
-  - {n: "2018", label: "first AI course in finance and real estate", detail: "Hands-on machine learning and AI courses at Clemson, years before ChatGPT; author of the new AI chapter in Real Estate Finance and Investments"}
-  - {n: "1,700+", label: "students taught", detail: "Real estate principles and finance, in person and online, since 2016"}
 
 selected_papers:   # keys from papers.yaml, shown on the home page in this order
   - shen-ross-2021-property-description

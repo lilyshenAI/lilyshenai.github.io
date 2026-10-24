@@ -518,7 +518,6 @@ def build_llms(posts):
              f"Profiles: {A.get('clemson_profile', '')} ; {A.get('google_scholar', '')} ; {A.get('ssrn_author', '')} ; {A.get('linkedin', '')}",
              f"Contact: email {A['email_text']}; office {A['office']}.",
              "Available for: media interviews and expert comment (housing, mortgages, commercial real estate, AI in finance); research collaboration; consulting on AI and machine learning for real estate and financial firms.",
-         "Available for: media interviews and expert comment (housing, mortgages, commercial real estate, AI in finance); research collaboration; consulting on AI and machine learning for real estate and financial firms.",
              f"License: {CFG['license']['name']} ({CFG['license']['url']})", "",
              "## Start here", "",
              f"- [Full plain-text profile: positions, papers with abstracts, textbooks, courses, awards, press]({SITE}/profile.md)",
