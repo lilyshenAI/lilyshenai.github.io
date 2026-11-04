@@ -76,11 +76,15 @@ ul.list li:last-child{border-bottom:0}
 .note{background:var(--tint);border-radius:10px;padding:1rem 1.2rem;margin:2.2rem 0 0;font-size:.97rem}
 .note p{margin:.3rem 0}
 .email{font-family:var(--serif);font-style:italic}
-details.faq,details.cite{margin:1.6rem 0 0;padding:.6rem 0;border-top:1px solid var(--line)}
-details.faq summary,details.cite summary{cursor:pointer;font-weight:600;color:var(--sub)}
+details.faq,details.cite,details.papers{margin:1.6rem 0 0;padding:.6rem 0;border-top:1px solid var(--line)}
+details.faq summary,details.cite summary,details.papers summary{cursor:pointer;font-weight:600;color:var(--sub)}
 details.faq h3{font-size:1rem;margin:.9rem 0 .2rem}
 details.faq p{margin:.3rem 0;color:var(--sub)}
 details.cite p{font-size:.95rem;margin:.6rem 0 .3rem}
+details.papers .paper{margin:.9rem 0 0;padding:0;border:0}
+details.papers .apa{font-size:.95rem;margin:0 0 .2rem}
+details.papers .links{margin:0}
+details.papers details{margin:.1rem 0 0}
 /* posts, papers */
 .summary{font-size:1.08rem;color:var(--sub);border-left:3px solid var(--accent);padding-left:.9rem;margin:1rem 0 1.5rem}
 .post-card{padding:1rem 0;border-bottom:1px solid var(--line)}

@@ -29,9 +29,9 @@
 {% endfor %}
 </details>
 {% endif %}
-{% if post.papers %}
-<section class="papers-cited">
-<h2>{{ 'Papers' if post.papers|length > 1 else 'Paper' }} discussed in this post</h2>
+{% if post.papers or post.references %}
+<details class="papers">
+<summary>{{ 'Papers' if (post.papers|length + post.references|length) > 1 else 'Paper' }} discussed in this post</summary>
 {% for p in post.papers %}
 <div class="paper">
   <p class="apa">{{ p.apa }}</p>
@@ -39,7 +39,14 @@
   <details><summary>BibTeX</summary><pre>{{ p.bibtex|e }}</pre></details>
 </div>
 {% endfor %}
-</section>
+{% for p in post.references %}
+<div class="paper">
+  <p class="apa">{{ p.apa }}</p>
+  <p class="links">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">Publisher (DOI)</a>{% elif p.url %}<a href="{{ p.url }}">Publisher</a>{% endif %}</p>
+  <details><summary>BibTeX</summary><pre>{{ p.bibtex|e }}</pre></details>
+</div>
+{% endfor %}
+</details>
 {% endif %}
 <details class="cite">
 <summary>Cite this post</summary>

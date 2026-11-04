@@ -1,0 +1,43 @@
+# Other people's work cited in posts. Referenced from post front matter (references: [key]).
+# These are NOT Lily's papers; they are listed in a post's "Papers discussed" block but never on /research/.
+- key: levitt-syverson-2008
+  bibkey: levitt2008market
+  title: "Market Distortions When Agents Are Better Informed: The Value of Information in Real Estate Transactions"
+  authors: [Steven D. Levitt, Chad Syverson]
+  journal: Review of Economics and Statistics
+  year: 2008
+  volume: 90
+  issue: 4
+  pages: "599-611"
+  doi: 10.1162/rest.90.4.599
+
+- key: nowak-smith-2017
+  bibkey: nowak2017textual
+  title: "Textual Analysis in Real Estate"
+  authors: [Adam Nowak, Patrick Smith]
+  journal: Journal of Applied Econometrics
+  year: 2017
+  volume: 32
+  issue: 4
+  pages: "896-918"
+  doi: 10.1002/jae.2550
+
+- key: le-mikolov-2014
+  bibkey: le2014distributed
+  title: "Distributed Representations of Sentences and Documents"
+  authors: [Quoc Le, Tomas Mikolov]
+  journal: Proceedings of the 31st International Conference on Machine Learning
+  year: 2014
+  volume: 32
+  pages: "1188-1196"
+  url: https://proceedings.mlr.press/v32/le14.html
+
+- key: mikolov-2013
+  bibkey: mikolov2013distributed
+  title: "Distributed Representations of Words and Phrases and Their Compositionality"
+  authors: [Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, Jeff Dean]
+  journal: Advances in Neural Information Processing Systems
+  year: 2013
+  volume: 26
+  pages: "3111-3119"
+  url: https://papers.nips.cc/paper_files/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html

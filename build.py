@@ -41,6 +41,8 @@ SITE = CFG["site_url"].rstrip("/")
 AUTHOR = CFG["author"]
 PAPERS = yaml.safe_load((ROOT / "data" / "papers.yaml").read_text())
 PAPERS_BY_KEY = {p["key"]: p for p in PAPERS}
+REFERENCES = yaml.safe_load((ROOT / "data" / "references.yaml").read_text()) or []  # other people's work cited in posts
+REFERENCES_BY_KEY = {r["key"]: r for r in REFERENCES}
 PROFILE = yaml.safe_load((ROOT / "data" / "profile.yaml").read_text())
 PODCAST = yaml.safe_load((ROOT / "data" / "podcast.yaml").read_text())
 MD_EXT = ["extra", "toc", "sane_lists"]
@@ -258,8 +260,8 @@ def post_ld(post):
          "license": CFG["license"]["url"]}
     if post.get("image_abs"):
         b["image"] = post["image_abs"]
-    if post["papers"]:
-        b["citation"] = [article_ld(p) for p in post["papers"]]
+    if post["papers"] or post["references"]:
+        b["citation"] = [article_ld(p) for p in post["papers"] + post["references"]]
         b["about"] = [{"@type": "Thing", "name": p["title"]} for p in post["papers"]]
     g.append(b)
     if post["faq"]:
@@ -318,11 +320,16 @@ def load_posts(kind="posts"):
             if k not in PAPERS_BY_KEY:
                 sys.exit(f"{path.name}: unknown paper key '{k}' (see data/papers.yaml)")
             papers.append(PAPERS_BY_KEY[k])
+        references = []
+        for k in as_list(meta.get("references")):
+            if k not in REFERENCES_BY_KEY:
+                sys.exit(f"{path.name}: unknown reference key '{k}' (see data/references.yaml)")
+            references.append(REFERENCES_BY_KEY[k])
         words = len(re.findall(r"\w+", body))
         post = dict(kind=kind, series=SERIES[kind]["name"], slug=slug, url=f"/{kind}/{slug}/", abs_url=f"{SITE}/{kind}/{slug}/",
                     title=meta["title"], description=" ".join(meta["description"].split()),
                     date=date, updated=as_date(meta.get("updated", date)),
-                    tags=as_list(meta.get("tags")), papers=papers, faq=meta.get("faq") or [],
+                    tags=as_list(meta.get("tags")), papers=papers, references=references, faq=meta.get("faq") or [],
                     **post_image(meta, path),
                     html=html, markdown=body.strip(), words=words,
                     reading=max(1, round(words / 220)), source=path.name, meta=meta)
@@ -372,6 +379,11 @@ def markdown_copy(post):
     if post["papers"]:
         head.append("Papers discussed:")
         for p in post["papers"]:
+            head.append("- " + re.sub(r"</?em>", "", paper_apa(p)))
+        head.append("")
+    if post["references"]:
+        head.append("Other work discussed:")
+        for p in post["references"]:
             head.append("- " + re.sub(r"</?em>", "", paper_apa(p)))
         head.append("")
     body = [post["markdown"], ""]
@@ -569,6 +581,9 @@ def build():
         p["apa"] = paper_apa(p)
         p["bibtex"] = paper_bibtex(p)
         p["posts"] = []
+    for r in REFERENCES:
+        r["apa"] = paper_apa(r)
+        r["bibtex"] = paper_bibtex(r)
     notes = load_posts("posts")
     weekly = load_posts("blog")
     posts = sorted(notes + weekly, key=lambda p: (-p["date"].toordinal(), p["slug"]))
