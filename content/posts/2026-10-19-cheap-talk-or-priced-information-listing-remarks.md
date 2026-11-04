@@ -17,7 +17,7 @@ Economists have a ready null hypothesis for what a seller says about the thing b
 
 ## Data and method
 
-The sample is 63,067 Atlanta MLS transactions from 2007 to 2017. An LLM scans the corpus and organizes listing language into auditable property and transaction categories, following the [two-step method](/posts/auditable-ai-text-measures-two-step-method/): the model discovers the vocabulary and a frozen vocabulary does the scoring. The main categories are residual information (property content beyond the structured fields), adverse disclosure, urgency pressure, and market stress. All regressions are within search-area-year markets and conditional on a saturated hedonic specification, so the comparison is between similar homes in the same local market and year.
+The sample is 63,067 Atlanta MLS transactions from 2007 to 2017. An LLM scans the corpus and organizes listing language into auditable property and transaction categories, following the [two-step method](/blog/four-ways-to-turn-text-into-a-variable/): the model discovers the vocabulary and a frozen vocabulary does the scoring. The main categories are residual information (property content beyond the structured fields), adverse disclosure, urgency pressure, and market stress. All regressions are within search-area-year markets and conditional on a saturated hedonic specification, so the comparison is between similar homes in the same local market and year.
 
 ## Results by category
 

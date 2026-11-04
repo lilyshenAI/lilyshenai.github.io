@@ -29,4 +29,4 @@ The finding is a market-efficiency result as much as an agent-performance result
 
 ## Recognition
 
-The paper received an American Real Estate Society Best Article Award. It connects to my work with Chris Cunningham and Kristopher Gerardi on estimating agent value-added, and to the broader question of how intermediaries process [soft information](/posts/what-is-soft-information-in-housing-markets/) in housing markets.
+The paper received an American Real Estate Society Best Article Award. It connects to my work with Chris Cunningham and Kristopher Gerardi on estimating agent value-added, and to the broader question of how intermediaries process soft information in housing markets.

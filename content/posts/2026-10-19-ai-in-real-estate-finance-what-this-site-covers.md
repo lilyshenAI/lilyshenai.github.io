@@ -32,7 +32,7 @@ Alongside these, I keep a broader real estate finance agenda: mortgage default a
 
 ## How I think about AI in this field
 
-AI is useful in economics when it produces a *measure*, not a prediction: a variable that corresponds to an economic concept, can be audited phrase by phrase, is reproducible by someone who does not have access to the model, and is validated out of sample. The headline accuracy of a model is rarely the point. Identification and interpretation are. I describe the method I use in [a separate post](/posts/auditable-ai-text-measures-two-step-method/).
+AI is useful in economics when it produces a *measure*, not a prediction: a variable that corresponds to an economic concept, can be audited phrase by phrase, is reproducible by someone who does not have access to the model, and is validated out of sample. The headline accuracy of a model is rarely the point. Identification and interpretation are. I describe the method I use in [a brief on the method](/blog/four-ways-to-turn-text-into-a-variable/).
 
 ## What a post looks like
 
