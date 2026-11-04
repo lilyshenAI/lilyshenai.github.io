@@ -1,6 +1,6 @@
 ---
 title: "Four ways to turn listing text into a variable"
-date: 2026-11-05
+date: 2026-11-04
 description: "Hedonic models, AVMs, appraisals, and price indices all run on the structured fields and drop the listing remark. Researchers have turned that text into a variable four ways: a word list you write, LASSO on frequent words, text vectors, and asking an AI to rate each listing. Here is how they compare, and the fifth way I used for the paper I presented at the ODU real estate symposium: an AI agent scans the listing remarks for 63,067 houses sold in Atlanta over a decade and builds the phrase list, and a frozen list scores every listing."
 tags: [AI Briefs, text as data, large language models, house prices, appraisal]
 image: odu-symposium-oct-2026.jpg
