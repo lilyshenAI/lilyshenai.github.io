@@ -355,7 +355,7 @@ def render(template, rel, **ctx):
 def related_posts(post, posts, n=4):
     scored = []
     for q in posts:
-        if q is post:
+        if q is post or q["kind"] != post["kind"]:
             continue
         score = len(set(post["tags"]) & set(q["tags"])) + 2 * len(
             {p["key"] for p in post["papers"]} & {p["key"] for p in q["papers"]})
