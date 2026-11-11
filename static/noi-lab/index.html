@@ -122,14 +122,17 @@ footer.bar .where{font-size:.85rem;color:var(--muted)}
   </div>
 </section>
 
-<section class="scene" data-name="Rent">
-  <h2>How much rent comes in?</h2>
+<section class="scene" data-name="Income">
+  <h2>How much income comes in?</h2>
   <p class="lead">All 12 apartments together rent for <b>$13,000 a month</b>.</p>
   <div class="q" data-ans="156000" data-hint="$13,000 × 12 months." data-done="Potential gross income: every apartment rented, all year.">
     <div class="ask">Rent for a full year, if every apartment is rented</div></div>
   <p class="lead" style="margin-top:16px">About <b>2.5%</b> of that is lost to empty apartments and unpaid rent.</p>
-  <div class="q" data-ans="152100" data-hint="$156,000 minus 2.5% of $156,000." data-done="Effective gross income: the rent actually collected.">
+  <div class="q" data-ans="152100" data-hint="$156,000 minus 2.5% of $156,000." data-done="Rent actually collected.">
     <div class="ask">Rent actually collected in a year</div></div>
+  <p class="lead" style="margin-top:16px">The laundry room brings in another <b>$100 a month</b>. That is miscellaneous income.</p>
+  <div class="q" data-ans="153300" data-hint="$152,100 + $1,200 of laundry income ($100 × 12)." data-done="Effective gross income: rent collected plus miscellaneous income.">
+    <div class="ask">Total income collected in a year</div></div>
 </section>
 
 <section class="scene" data-name="Sort the bills">
@@ -149,24 +152,24 @@ footer.bar .where{font-size:.85rem;color:var(--muted)}
   </table>
   <div class="q" data-ans="58590" data-hint="$25,500 + $9,690 + $23,400." data-done="Total operating expenses.">
     <div class="ask">Total operating expenses</div></div>
-  <p class="lead" style="margin-top:16px">The seller's sheet stops there. The building is from 1927, so you set aside <b>$300 per apartment</b> each year for big replacements.</p>
-  <div class="q" data-ans="3600" data-hint="12 apartments × $300." data-done="Capex reserve: a little every year, not the whole bill at once.">
-    <div class="ask">Your capex reserve for the year</div></div>
+  <p class="lead" style="margin-top:16px">The seller's sheet stops there. The building is from 1927, so you plan on <b>$400 per apartment</b> each year for big replacements.</p>
+  <div class="q" data-ans="4800" data-hint="12 apartments × $400." data-done="Capex: a little every year, not the whole bill at once.">
+    <div class="ask">Your capex for the year</div></div>
 </section>
 
 <section class="scene" data-name="NOI">
   <h2>What does the building earn?</h2>
   <table class="st">
-    <tr><td>Rent actually collected</td><td>$152,100</td></tr>
+    <tr><td>Effective gross income</td><td>$153,300</td></tr>
     <tr><td>− Operating expenses</td><td>58,590</td></tr>
-    <tr><td>− Capex reserve</td><td>3,600</td></tr>
+    <tr><td>− Capex</td><td>4,800</td></tr>
   </table>
-  <div class="q" data-ans="89910" data-hint="$152,100 − $58,590 − $3,600." data-done="Net operating income." data-reveal="noireveal">
+  <div class="q" data-ans="89910" data-hint="$153,300 − $58,590 − $4,800." data-done="Net operating income." data-reveal="noireveal">
     <div class="ask">Net operating income (NOI)</div></div>
   <div id="noireveal" class="hidden">
-    <div class="receipt"><div class="opex" style="flex:0 0 38.5%">Operating expenses $58,590</div><div class="res" style="flex:0 0 2.4%"></div><div class="noi" style="flex:1">NOI $89,910</div></div>
-    <div class="legend">Where each dollar of collected rent goes. The thin gold slice is the $3,600 reserve.</div>
-    <p>The seller's NOI, with no reserve, was <b>$93,510</b>. For a 1927 building, that is optimistic.</p>
+    <div class="receipt"><div class="opex" style="flex:0 0 38.2%">Operating expenses $58,590</div><div class="res" style="flex:0 0 3.1%"></div><div class="noi" style="flex:1">NOI $89,910</div></div>
+    <div class="legend">Where each dollar of income goes. The thin gold slice is the $4,800 of capex.</div>
+    <p>With no capex, the NOI would be <b>$94,710</b>. For a 1927 building, that is optimistic.</p>
   </div>
 </section>
 
@@ -220,8 +223,8 @@ footer.bar .where{font-size:.85rem;color:var(--muted)}
   <div id="takeaways" class="hidden">
     <p>There is no single right answer. What matters is the NOI and the cap rate behind your number.</p>
     <ol class="take">
-      <li>NOI is what a building earns from operations: rent collected minus operating expenses and a capex reserve.</li>
-      <li>Big replacements go into NOI as a yearly reserve.</li>
+      <li>NOI is what a building earns from operations: rent and miscellaneous income collected, minus operating expenses and capex.</li>
+      <li>Capex goes into NOI a little every year, not the whole bill at once.</li>
       <li>Value = NOI ÷ cap rate.</li>
     </ol>
   </div>
@@ -363,8 +366,8 @@ $("#cap").addEventListener("input",drawCap);
 // ---------- step 7: what if ----------
 function scenario(){
   var on={}; $$("#whatifs input").forEach(function(c){on[c.dataset.k]=c.checked; c.parentNode.classList.toggle("on",c.checked)});
-  var pgi=(on.rent?14400:13000)*12, vac=on.vac?2/12:0.025, egi=pgi*(1-vac);
-  var k=on.cost?1.1:1, opex=25500*k+9690*k+23400, noi=egi-opex-3600, cap=on.rate?0.08:0.07;
+  var pgi=(on.rent?14400:13000)*12, vac=on.vac?2/12:0.025, egi=pgi*(1-vac)+1200;
+  var k=on.cost?1.1:1, opex=25500*k+9690*k+23400, noi=egi-opex-4800, cap=on.rate?0.08:0.07;
   return {on:on,noi:noi,cap:cap,val:noi/cap};
 }
 function drawWhatIf(){
@@ -375,7 +378,7 @@ function drawWhatIf(){
   $("#wVal").className="v"+(Math.abs(s.val-base)<1?"":(s.val>base?" up":" down"));
   $("#wGap").textContent=(d>=0?"+":"−")+fmt(Math.round(Math.abs(d)/1000)*1000);
   $("#wGap").className="v "+(d>=0?"up":"down");
-  $("#roofnote").textContent=s.on.roof?"NOI does not change. That is what the reserve is for. But $60,000 is almost 17 years of a $3,600 reserve. Was $300 per apartment enough?":"";
+  $("#roofnote").textContent=s.on.roof?"NOI does not change. Capex is already in it, at $4,800 a year. But $60,000 is more than 12 years of that. Was $400 per apartment enough?":"";
 }
 $$("#whatifs input").forEach(function(c){c.addEventListener("change",drawWhatIf)});
 
