@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
 <title>Would You Buy This Building? NOI Lab</title>
+<meta name="robots" content="noindex, nofollow">
 <style>
 :root{--maroon:#870A0F;--maroon-d:#3F0000;--red:#C20019;--tint:#F8EFEE;--ink:#2B1B1B;--muted:#6B6B6B;--line:#E6D9D8;--bg:#FAF7F6;--card:#fff;--good:#1a7f4b;--goodbg:#E3F3EA;--bad:#b3261e;--badbg:#FBE6E4}
 *{box-sizing:border-box}
@@ -198,8 +198,6 @@ footer.bar .where{font-size:.85rem;color:var(--muted)}
   <p>Predict first: does the value go up or down? Then tick the box.</p>
   <div class="whatifs" id="whatifs">
     <label><input type="checkbox" data-k="rent"><span>Rents rise to the seller's projection<small>$14,400 a month instead of $13,000</small></span></label>
-    <label><input type="checkbox" data-k="vac"><span>Two apartments sit empty all year<small>2 of 12 units, instead of 2.5% lost</small></span></label>
-    <label><input type="checkbox" data-k="cost"><span>Property tax and insurance go up 10%</span></label>
     <label><input type="checkbox" data-k="rate"><span>Interest rates rise<small>Buyers now want an 8% cap rate instead of 7%</small></span></label>
     <label><input type="checkbox" data-k="roof"><span>The roof must be replaced: $60,000<small id="roofnote"></small></span></label>
   </div>
@@ -222,11 +220,6 @@ footer.bar .where{font-size:.85rem;color:var(--muted)}
   <p id="recap"></p>
   <div id="takeaways" class="hidden">
     <p>There is no single right answer. What matters is the NOI and the cap rate behind your number.</p>
-    <ol class="take">
-      <li>NOI is what a building earns from operations: rent and miscellaneous income collected, minus operating expenses and capex.</li>
-      <li>Capex goes into NOI a little every year, not the whole bill at once.</li>
-      <li>Value = NOI ÷ cap rate.</li>
-    </ol>
   </div>
 </section>
 
@@ -320,13 +313,9 @@ $$(".q[data-ans]").forEach(function(q){
 // ---------- step 3: sort the bills ----------
 var CARDS=[
   ["Property tax","Operating expense","A cost of running the building."],
-  ["Renovate a kitchen","Capex","A big replacement."],
   ["Fix a leaky faucet","Operating expense","A small repair, paid as it happens."],
   ["New roof","Capex","A big replacement."],
-  ["Insurance","Operating expense","A cost of running the building."],
-  ["Depreciation","Neither","Not a cash cost. Nobody writes a check for it."],
-  ["Management fee","Operating expense","A cost of running the building."],
-  ["Replace the AC units","Capex","A big replacement."]
+  ["Depreciation","Neither","Not a cash cost. Nobody writes a check for it."]
 ];
 var sorted=0, firstTry=0;
 CARDS.forEach(function(c){
