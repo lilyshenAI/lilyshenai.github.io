@@ -131,7 +131,7 @@ footer.bar .where{font-size:.85rem;color:var(--muted)}
     <tr data-steps="2"><td>+</td><td>Miscellaneous income (MI)</td></tr>
     <tr class="eq" data-steps="2 5"><td>=</td><td>Effective gross income (EGI)</td></tr>
     <tr data-steps="3 4 5"><td>−</td><td>Operating expenses (OE)</td></tr>
-    <tr data-steps="3 4 5"><td>−</td><td>Capital expenditures (capex)</td></tr>
+    <tr data-steps="3 4 5"><td>−</td><td>Capital expenditures (CAPEX)</td></tr>
     <tr class="eq noi" data-steps="5"><td>=</td><td>Net operating income (NOI)</td></tr>
   </table>
   <h3>Direct capitalization</h3>
@@ -312,7 +312,7 @@ document.addEventListener("keydown",function(e){
 function lockGuess(){
   var v=parseMoney($("#guess").value);
   if(!isFinite(v)||v<=0){$("#guessfb").textContent="Type a dollar amount, for example 1,000,000.";return}
-  if(v<10000) v*=1e6; // "1.2" means 1.2 million
+  if(v<100) v*=1e6; else if(v<10000) v*=1e3; // "1.2" means 1.2 million, "950" means 950 thousand
   guess=v; $("#guessfb").textContent="Locked in: "+fmt(v)+". We will come back to it.";
 }
 $("#lock").addEventListener("click",lockGuess);
@@ -331,7 +331,7 @@ $$(".q[data-ans]").forEach(function(q){
   function check(){
     var v=parseMoney(inp.value);
     if(!isFinite(v)){fb.className="fb bad";fb.textContent="Type a number.";return}
-    if(ans>=1e6&&v<10000) v*=1e6;
+    if(ans>=1e6){ if(v<100) v*=1e6; else if(v<10000) v*=1e3; }
     if(Math.abs(v-ans)<=Math.max(1,ans*tol)){fb.className="fb good";fb.textContent="Correct. "+q.dataset.done;reveal()}
     else{fb.className="fb bad";fb.textContent="Not yet. Hint: "+q.dataset.hint}
   }
