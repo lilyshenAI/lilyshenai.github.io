@@ -152,13 +152,14 @@ table.plain thead th:first-child { padding-left: 0; }
 <p>The pattern holds within the same house. With address fixed effects, demand-heat language goes with 1.5 percent higher prices and 8.5 fewer days on market across repeat listings of one home. The ordering also holds in the independent Atlanta MLS.</p>
 
 <h2>From listings to county prices</h2>
-<p>The county-month test regresses forward six-month growth in a hedonic house-price index on the three standardized signals. The index is built from the same MLS sales. The conventional controls are lagged six-month price growth, new listings and their growth, growth in original list prices, housing composition, and lagged failed-listing share, days on market, and sale-to-list ratio. The comparison is across counties in the same state and month.</p>
+<p>The county-month test regresses forward six-month growth in a hedonic house-price index on the three standardized signals. The index is built from the same MLS sales. The comparison is across counties in the same state and month.</p>
+<p>The controls are what anyone can compute from the MLS without reading a remark, and the table adds them in three steps. First, the county's price growth over the previous six months, the number of new listings, and how fast listing volume and asking prices are growing. Second, the mix of homes on the market (size, age, bedrooms, bathrooms). Third, how the market cleared a year earlier (failed-listing share, days on market, sale-to-list ratio). What remains on the signals is information in the wording that these numbers do not carry.</p>
 
 <div class="tablewrap"><table class="reg">
 <caption>Listing signals and six-month county price growth</caption>
 <thead>
 <tr><th></th><th>(1)</th><th>(2)</th><th>(3)</th><th>(4)</th><th>(5)</th></tr>
-<tr class="titles"><th></th><th>FE only</th><th>+ momentum/listings</th><th>+ composition</th><th>+ liquidity</th><th>Month FE</th></tr>
+<tr class="titles"><th></th><th>Fixed effects only</th><th>+ past prices and listings</th><th>+ housing mix</th><th>+ past market clearing</th><th>Calendar-month FE</th></tr>
 </thead><tbody>
 <tr><th scope="row">Demand heat language (std.)</th><td>0.0023</td><td>0.0053<span class="st">**</span></td><td>0.0057<span class="st">**</span></td><td>0.0058<span class="st">***</span></td><td>0.0041<span class="st">*</span></td></tr>
 <tr class="se"><th scope="row"></th><td>(0.0020)</td><td>(0.0021)</td><td>(0.0020)</td><td>(0.0020)</td><td>(0.0022)</td></tr>
@@ -168,10 +169,10 @@ table.plain thead th:first-child { padding-left: 0; }
 <tr class="se"><th scope="row"></th><td>(0.0022)</td><td>(0.0017)</td><td>(0.0019)</td><td>(0.0019)</td><td>(0.0023)</td></tr>
 <tr class="mid"><th scope="row">House characteristics in HPI</th><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
 <tr><th scope="row">Transaction circumstances in HPI</th><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr><th scope="row">Price momentum</th><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr><th scope="row">Listing activity and pricing</th><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr><th scope="row">Housing composition</th><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr><th scope="row">Lagged market-clearing outcomes</th><td>No</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+<tr><th scope="row">Past six-month price growth</th><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><th scope="row">New listings and list-price growth</th><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><th scope="row">Housing mix</th><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><th scope="row">Past market-clearing outcomes</th><td>No</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr>
 <tr><th scope="row">County FE</th><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
 <tr><th scope="row">State x month FE</th><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr>
 <tr><th scope="row">Month FE</th><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
@@ -181,9 +182,9 @@ table.plain thead th:first-child { padding-left: 0; }
 <tr><th scope="row">Observations</th><td>2,090</td><td>2,090</td><td>2,090</td><td>2,090</td><td>2,090</td></tr>
 <tr><th scope="row">Within R2</th><td>0.003</td><td>0.278</td><td>0.281</td><td>0.283</td><td>0.265</td></tr>
 </tbody></table></div>
-<p class="notes">Primary sample: 2,090 county-months in 19 counties, North and South Carolina, 2001 to 2019. The dependent variable is forward six-month growth in the county MLS hedonic index, in log points, so 0.0058 is 0.58 percentage points. Signals are standardized county-month shares. Columns 1 to 4 compare counties within the same state and month; column 5 uses calendar-month effects. Regressions are weighted by scored listings. Standard errors in parentheses. * p &lt; 0.10, ** p &lt; 0.05, *** p &lt; 0.01.</p>
+<p class="notes">Primary sample: 2,090 county-months in 19 counties, North and South Carolina, 2001 to 2019. The dependent variable is forward six-month growth in the county MLS hedonic index, in log points, so 0.0058 is 0.58 percentage points. Signals are standardized county-month shares. Each column adds one block of controls that can be computed without reading a remark. Column 2 adds the county's price growth over the previous six months, the number of new listings and its twelve-month growth, and twelve-month growth in original list prices. Column 3 adds the average size, age, bedrooms and bathrooms of the homes listed. Column 4 adds the failed-listing share, median days on market and sale-to-list ratio, each lagged twelve months. Columns 1 to 4 compare counties within the same state and month; column 5 uses calendar-month effects. Regressions are weighted by scored listings. Standard errors in parentheses. * p &lt; 0.10, ** p &lt; 0.05, *** p &lt; 0.01.</p>
 
-<p>With the full conventional set, demand heat is 0.58 percentage points, significant at the 1 percent level, and the three signals are jointly significant with a p-value of 0.006. The last column uses calendar-month effects, so that counties in different states are compared within a month, and gives 0.41, significant at the 10 percent level.</p>
+<p>With fixed effects alone, demand heat is 0.23. Once past prices and listing activity are held fixed it is 0.53, and with all three sets of controls, demand heat is 0.58 percentage points, significant at the 1 percent level, and the three signals are jointly significant with a p-value of 0.006. The last column uses calendar-month effects, so that counties in different states are compared within a month, and gives 0.41, significant at the 10 percent level.</p>
 <p>Asset frictions also carry a positive coefficient, 0.55 within state-month. The paper reads this as distressed inventory moving through clearing and recovery. Seller pressure predicts weaker outcomes for its own listing and has no stable relation with county price growth.</p>
 <p>A single favorable-minus-unfavorable index adds 0.0003 to the within R2 and is indistinguishable from zero. The three typed signals add 0.0021. Keeping the type of information is what makes the language informative.</p>
 
